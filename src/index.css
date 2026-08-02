@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+* {
+    box-sizing: border-box;
+}
+
+:root, .container {
+    height: 100dvh;
+    
+}
+
+body {
+    background-color: #f3f4f6;
+}
+
+html.dark body {
+    background-color: #374151;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    user-select: none;
+
+    max-width: 800px;
+    margin: auto;
+    /* 
+    background: #fff; */
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    font-family: Josefin Sans;
+}
+
+header {
+    display: none;
+}
+
+#header {
+    grid-area: header;
+}
+
+.categories {
+    grid-area: categories;
+}
+
+nav {
+    grid-area: nav;
+    display: none;
+}
+
+nav a,
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-content,
+.editabe {
+    overflow-y: auto;
+    min-height: 0;
+    flex: 1;
+}
+
+#floating-actions-container {
+    display: none;
+}
+
+input {
+    width: 100%;
+}
+
+/* Favorite button */
+
+.filled {
+    display: none;
+    justify-content: center;
+    align-content: center;
+}
+
+#favorite_btn.active .outlineHeart {
+    display: none;
+}
+
+#favorite_btn.active .filled {
+    display: block;
+}
+
+.answers{
+    height: 100%;
+}
+
+.answers button {
+    width: 100%;
+}
+
+/* Smartphone */
+
+@media (max-width: 768px) {
+
+    
+    .container {
+        flex: 1;
+        min-height: 0;
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        grid-template-rows:
+            auto auto minmax(0, 1fr) auto;
+
+        grid-template-areas:
+            "header"
+            "categories"
+            "content"
+            "nav";
+    }
+
+    #header {
+        display: flex;
+    }
+
+    .quiz,
+    .scroll-content,
+    .editable {
+        grid-area: content;
+        min-height: 0;
+        overflow-y: auto;
+    }
+
+    nav {
+    grid-area: nav;
+    display: flex;
+}
+    
+
+    #floating-actions-container {
+        display: block;
+    }
+}
+
+
+
+/* --------------------------- FLOATING BUTTON MENU -------------------------- */
+#floating-actions-menu {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: opacity .2s, transform .2s;
+}
+
+#floating-actions-menu.open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+}
