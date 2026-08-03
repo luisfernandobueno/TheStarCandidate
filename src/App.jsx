@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import Navbar, { getRandomQuestion } from "./components/Navbar";
+import Navbar from "./components/Navbar";
 
 import Home from "./pages/Home";
 import Favorites from "./pages/Favorites";
@@ -9,10 +9,31 @@ import Search from "./pages/Search";
 import AddNew from "./pages/AddNew";
 import QuizPage from "./pages/QuizPage";
 import Edit from "./pages/Edit";
-
+const fetch_url = "https://api.npoint.io/facb5749d433f9be2b92";
 import { fetchPost } from "./javascript/script";
 
 function App() {
+  /* FetchGet data from api  */
+  
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch(fetch_url)
+      .then((res) => res.json())
+      .then((data) => setData(data.questions))
+      .catch((error) => console.error(error));
+  }, []);
+
+
+  const getRandomQuestion = () => {
+    const questions = data;
+    const index = Math.floor(Math.random() * questions.length);
+    return questions[index];
+  };
+
+
+
+
 
   // Initial question
   const initialQuestion = getRandomQuestion();
@@ -63,13 +84,18 @@ function App() {
     }
   }, [darkMode]);
 
+
+
+
+
+
   window.speechSynthesis.cancel();
 
   return (
     <div
       className={`container ${darkMode
-          ? "bg-gray-700 text-gray-100"
-          : "bg-gray-100 text-gray-900"
+        ? "bg-gray-700 text-gray-100"
+        : "bg-gray-100 text-gray-900"
         }`}
     >
       <Router>
@@ -89,38 +115,38 @@ function App() {
               firstQuestion={selectedQuestion}
               darkMode={darkMode}
               setDarkMode={setDarkMode}
+              /* handleBack and handleNext are passed through Home component to manage the BottomNavbar on lg screen */
               handleBack={handleBack}
               handleNext={handleNext}
               historyIndex={historyIndex}
+              data={data}
+              url={fetch_url}
+
             />
           </Route>
 
 
           <Route path="/favorites">
             <Navbar
-              setSelectedQuestion={setSelectedQuestion}
               darkMode={darkMode}
-              handleBack={handleBack}
-              handleNext={handleNext}
-              historyIndex={historyIndex}
             />
             <Favorites
               darkMode={darkMode}
               setDarkMode={setDarkMode}
+              data={data}
+              url={fetch_url}
             />
           </Route>
 
           <Route path="/search">
-            <Navbar
-              setSelectedQuestion={setSelectedQuestion}
+           <Navbar
               darkMode={darkMode}
-              handleBack={handleBack}
-              handleNext={handleNext}
-              historyIndex={historyIndex}
             />
             <Search
               darkMode={darkMode}
               setDarkMode={setDarkMode}
+              data={data}
+              url={fetch_url}
             />
           </Route>
 
@@ -128,7 +154,7 @@ function App() {
             <AddNew
               darkMode={darkMode}
               setDarkMode={setDarkMode}
-              fetchPost={fetchPost}
+            /* fetchPost={fetchPost} */
             />
           </Route>
 
@@ -137,17 +163,13 @@ function App() {
               darkMode={darkMode}
               setDarkMode={setDarkMode}
               question={historyArr[historyIndex]}
-              fetchPost={fetchPost}
+            /* fetchPost={fetchPost} */
             />
           </Route>
 
           <Route path="/quiz">
             <Navbar
-              setSelectedQuestion={setSelectedQuestion}
               darkMode={darkMode}
-              handleBack={handleBack}
-              handleNext={handleNext}
-              historyIndex={historyIndex}
             />
             <QuizPage
               darkMode={darkMode}

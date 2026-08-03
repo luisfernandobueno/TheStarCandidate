@@ -1,9 +1,10 @@
+export { setupFloatingActions, readOutLoud, favoriteState, fetchGet, fetchPost };
 const url_interview_data = "https://getpantry.cloud/apiv1/public/b0f739090ece026cc71470723277bc6e";
 
 
 
 
-export const setupFloatingActions = () => {
+const setupFloatingActions = () => {
     const floatingActionsTrigger = document.querySelector("#floating-actions-trigger");
     const floatingActionsMenu = document.querySelector("#floating-actions-menu");
 
@@ -59,7 +60,7 @@ export const setupFloatingActions = () => {
 }
 
 
-export const readOutLoud = (info) => {
+const readOutLoud = (info) => {
     console.log("Hello world from TTS");
 
     // If TTS is already active, stop it and exit
@@ -90,7 +91,7 @@ export const readOutLoud = (info) => {
     // window.speechSynthesis.cancel();
 };
 
-export const favoriteState = () => {
+const favoriteState = () => {
     favorite_btn.classList.toggle("active");
     console.log("Favorite Button Clicked!")
     /* console.log("Lenght favorites list: ", data.filter(item => item.favorite).length)
@@ -107,7 +108,7 @@ export const favoriteState = () => {
 
 /* SENDS THE DATA TO UPLOAD IT ONLINE */
 /* SENDS THE DATA TO UPLOAD IT ONLINE */
-export const fetchPost = (data) => {
+const fetchPost = (data) => {
 
     originalData.lines = data;
 
@@ -136,7 +137,8 @@ export const fetchPost = (data) => {
 }
 
 
-export const fetchGet = async () => {    return fetch(url_interview_data)
+const fetchGet = () => {
+    return fetch(url_interview_data)
         .then(res => res.json())
         .then(json => {
             //console.log(json);

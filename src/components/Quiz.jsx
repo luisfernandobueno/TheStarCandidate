@@ -49,7 +49,7 @@ export default function Quiz({ questions }) {
         return (
             // START SCREEN
 
-<section className="quiz flex min-h-[calc(100vh-64px)] flex-col items-center justify-center gap-4 lg:min-h-[calc(100vh-64px)]">
+<section className="flex flex-col items-end justify-center gap-4 lg:min-h-[calc(100vh-64px)]">
 
                 <h2 className="text-3xl font-bold text-sky-500">
                     Start Quiz
@@ -90,7 +90,7 @@ export default function Quiz({ questions }) {
         return (
             // FINISHED SCREEN
 
-<section className="quiz flex min-h-[calc(100vh-64px)] flex-col items-center justify-center text-center">
+<section className="flex flex-col items-end justify-center gap-4 lg:min-h-[calc(100vh-64px)]">
 
                 <h2 className="text-sky-500 text-2xl font-bold">
                     Quiz Finished!
@@ -116,7 +116,7 @@ export default function Quiz({ questions }) {
     return (
         // QUIZ SCREEN
 
-<section className="flex min-h-[calc(100dvh-64px)] flex-col">
+<section className="flex flex-col items-end justify-center gap-4 lg:min-h-[calc(100vh-64px)]">
 
             <div className="flex-1 flex flex-col justify-center items-center text-center px-4">
 

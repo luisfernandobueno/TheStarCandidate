@@ -1,12 +1,8 @@
 import { useState } from "react";
-import api from "../javascript/api.json";
+
 import { Link, useLocation } from "react-router-dom";
 
-export const getRandomQuestion = () => {
-    const questions = api.questions;
-    const index = Math.floor(Math.random() * questions.length);
-    return questions[index];
-};
+
 
 
 
@@ -25,7 +21,7 @@ const Navbar = ({ setSelectedQuestion, darkMode, handleBack, handleNext, history
     `;
 
     const buttonClasses = `
-        m-1 p-3 flex-1 rounded-xl transition-colors
+        m-1 p-3 flex-1 rounded-xl transition-colors  flex items-center justify-center
         ${darkMode
             ? "hover:bg-gray-700"
             : "hover:bg-gray-200"}
@@ -36,7 +32,7 @@ const Navbar = ({ setSelectedQuestion, darkMode, handleBack, handleNext, history
             <nav className={navClasses}>
 
                 {isHome && (
-                    <button
+                    <div
                         onClick={handleBack}
                         disabled={historyIndex <= 0}
                         className={buttonClasses}
@@ -44,7 +40,7 @@ const Navbar = ({ setSelectedQuestion, darkMode, handleBack, handleNext, history
                         <span className="material-symbols-outlined">
                             arrow_circle_left
                         </span>
-                    </button>
+                    </div>
                 )}
 
                 {!isHome && (
@@ -82,14 +78,14 @@ const Navbar = ({ setSelectedQuestion, darkMode, handleBack, handleNext, history
                 )}
 
                 {isHome && (
-                    <button
+                    <div
                         onClick={handleNext}
                         className={buttonClasses}
                     >
                         <span className="material-symbols-outlined">
                             arrow_circle_right
                         </span>
-                    </button>
+                    </div>
                 )}
 
             </nav>

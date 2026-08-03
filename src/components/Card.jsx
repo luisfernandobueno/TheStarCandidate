@@ -15,7 +15,7 @@ const Card = ({ info }) => {
     localStorage.removeItem("questionSearched");
 
     if (!info) {
-        return <h2>Move Left or Right to start learning.</h2>;
+        return <h2 className="mx-4">Move Right to start learning. </h2>;
     }
 
     useEffect(() => {

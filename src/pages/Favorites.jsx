@@ -1,16 +1,22 @@
 
 import Header from "../components/Header";
 import api from "../javascript/api.json";
+
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 
 
-const Favorites = ({ darkMode, setDarkMode }) => {
-    
+const Favorites = ({ darkMode, setDarkMode, data, url }) => {
+    console.clear()
     const history = useHistory();
-    const questions = api.questions;
+    const questions = data;
     
     const [search, setSearch] = useState("")
+    console.log(url)
+        console.log("data brought from fetch get on online api:", questions)
+        console.log("personal api, json file in javascript folder:", api)
+    const favoritesCount = questions.filter(item => item.favorite).length
+    
     const filteredQuestions = questions.filter(
         item =>
             item.favorite &&
@@ -51,8 +57,10 @@ const Favorites = ({ darkMode, setDarkMode }) => {
                         tune
                     </span>
                 </button>
+
                 
             </section>
+            
             <section className="scroll-content mx-3 p-1 bg-gray-100  dark:bg-gray-900 rounded-xl  inset-shadow-sm shadow-sm">
                 <div className="">
                     {

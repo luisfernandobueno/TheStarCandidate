@@ -194,12 +194,12 @@ export default function RichTextEditor({
 
             {/* Bottom Buttons */}
 
-            <div className="border-t p-4 flex gap-4">
+            <div className="border-t px-4 py-1 flex">
 
                 <button
                     type="button"
                     onClick={() => history.push("/")}
-                    className="flex-1 rounded-full border py-3"
+                    className="flex-1 rounded-full py-3"
                 >
                     Cancel
                 </button>

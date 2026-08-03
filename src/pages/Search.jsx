@@ -7,16 +7,18 @@ import { fetchGet } from "../javascript/script";
 
 
 
-const Search = ({ darkMode, setDarkMode }) => {
+const Search = ({ darkMode, setDarkMode, data, url  }) => {
 
+    console.clear()
     //let questions = []; 
     const history = useHistory();
-    const questions = api.questions;
+    const questions = data;
     /* fetchGet().then(data => {
         questions = data;
     }); */
-    //const questions = fetchGet();
-    //console.log(questions)
+    console.log(url)
+    console.log("data brought from fetch get on online api:",questions)
+    console.log("personal api, json file in javascript folder:", api)
     
     const [search, setSearch] = useState("")
     const filteredQuestions = questions.filter((index) => index.question.toLowerCase().includes(search.toLowerCase()))

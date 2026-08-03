@@ -99,12 +99,12 @@ const Header = ({ header, darkMode, setDarkMode }) => {
                         </Link>
                     ))}
 
-                    <button
+                    <div
                         onClick={() => setDarkMode(!darkMode)}
-                        className="flex w-full items-center justify-center rounded-lg p-3 text-2xl transition-colors hover:bg-gray-200 dark:hover:bg-gray-700"
+                        className="flex w-full items-center border rounded-lg p-3 text-2xl transition-colors hover:bg-gray-200 dark:hover:bg-gray-700"
                     >
-                        {darkMode ? "🌞" : "🌙"}
-                    </button>
+                        {darkMode ? "🌞 Switch Theme" : "🌙 Switch Theme"}
+                    </div>
 
                 </div>
             </aside>

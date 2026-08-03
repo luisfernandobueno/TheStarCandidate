@@ -6,7 +6,8 @@ const Home = ({
     firstQuestion,
     darkMode,
     setDarkMode,
-    handleBack, handleNext, historyIndex
+    handleBack, handleNext, historyIndex,
+    data, url
 }) => {
     window.speechSynthesis.cancel();
 
