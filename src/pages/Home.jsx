@@ -1,13 +1,25 @@
 import Header from "../components/Header";
 import Card from "../components/Card";
-import BottomNavbar from "../components/BottomNavbar";
+
+import {
+
+    favoriteState
+} from "../javascript/script";
+
+
 
 const Home = ({
     firstQuestion,
     darkMode,
     setDarkMode,
-    handleBack, handleNext, historyIndex,
-    data, url
+    data,
+    setData,
+    url,
+    open,
+    onClose,
+    isFavorite,
+    setIsFavorite,
+    deleteQuestion
 }) => {
     window.speechSynthesis.cancel();
 
@@ -15,23 +27,32 @@ const Home = ({
         localStorage.getItem("questionSearched")
     );
 
+
+
     return (
         <>
-            
 
-                <Header
-                    header="Home"
-                    darkMode={darkMode}
-                    setDarkMode={setDarkMode}
-                />
 
-                <Card
-                    info={questionSearched || firstQuestion}
-                    darkMode={darkMode}
-                />
+            <Header
+                header="Home"
+                darkMode={darkMode}
+                setDarkMode={setDarkMode}
+            />
 
-                <BottomNavbar handleBack={handleBack} handleNext={handleNext} historyIndex={historyIndex}/>
-            
+            <Card
+                url={url}
+                data={data}
+                info={questionSearched || firstQuestion}
+                darkMode={darkMode}
+                open={open}
+                onClose={onClose}
+                isFavorite={isFavorite}
+                setIsFavorite={setIsFavorite}
+                deleteQuestion={deleteQuestion}
+            />
+
+
+
         </>
     );
 };

@@ -1,15 +1,24 @@
 import { useEffect } from "react";
-import {
-    setupFloatingActions,
-    favoriteState
-} from "../javascript/script";
+
+import FloatingActionsMenu from "../components/FloatingActionsMenu";
 
 import Categories from "./Categories";
-import ModalDelete from "./DeleteModal";
-import FloatingActionsMenu from "./FloatingActionsMenu";
+import ModalDelete from "./ModalDelete";
 
 
-const Card = ({ info }) => {
+const Card = ({
+    url,
+    data,
+    info,
+    open,
+    onClose,
+    isFavorite,
+    setIsFavorite,
+    deleteQuestion
+}) => {
+    /* console.clear(); */
+    /* console.log("location: Card Component | url:", url)
+    console.log("location: Card Component | data:", data) */
     window.speechSynthesis.cancel();
 
     localStorage.removeItem("questionSearched");
@@ -18,17 +27,15 @@ const Card = ({ info }) => {
         return <h2 className="mx-4">Move Right to start learning. </h2>;
     }
 
-    useEffect(() => {
-        setupFloatingActions();
-        favoriteState();
-    }, []);
+
+    /* setIsFavorite(isFavorite); */
 
     return (
         <>
             <Categories topic={info.topic} />
 
-           <section
-    className="
+            <section
+                className="
         scroll-content
         flex-1
         min-h-0
@@ -42,7 +49,7 @@ const Card = ({ info }) => {
         dark:text-gray-100
         overflow-y-auto
     "
->
+            >
 
                 {/* ...your existing content... */}
 
@@ -54,11 +61,14 @@ const Card = ({ info }) => {
 
                 <div id="example" className="px-1 py-2 text-xs editable" > <p>{info.example}</p> </div>
 
-                <FloatingActionsMenu />
 
-                
+
+                <ModalDelete
+                    info={info}
+                    deleteQuestion={deleteQuestion}
+                />
             </section >
-            
+
         </>
     );
 };

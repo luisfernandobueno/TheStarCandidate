@@ -1,13 +1,22 @@
 
 import Header from "../components/Header";
-import api from "../javascript/api.json";
+/* import api from "../javascript/api.json"; */
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
-import { fetchGet } from "../javascript/script";
+import { useEffect } from "react";
 
 
 
-const Search = ({ darkMode, setDarkMode, data, url  }) => {
+const Search = ({ darkMode, setDarkMode, fetch_url  }) => {
+
+    const [data, setData] = useState([]);
+    useEffect(() => {
+        fetch(fetch_url)
+          .then((res) => res.json())
+          .then((data) => setData(data.questions))
+          .catch((error) => console.error(error));
+      }, []);
+
 
     console.clear()
     //let questions = []; 
@@ -16,9 +25,9 @@ const Search = ({ darkMode, setDarkMode, data, url  }) => {
     /* fetchGet().then(data => {
         questions = data;
     }); */
-    console.log(url)
+    console.log(fetch_url)
     console.log("data brought from fetch get on online api:",questions)
-    console.log("personal api, json file in javascript folder:", api)
+    /* console.log("personal api, json file in javascript folder:", api) */
     
     const [search, setSearch] = useState("")
     const filteredQuestions = questions.filter((index) => index.question.toLowerCase().includes(search.toLowerCase()))
@@ -58,7 +67,7 @@ const Search = ({ darkMode, setDarkMode, data, url  }) => {
                 
             </section>
 
-            <section className="scroll-content mx-3 p-1 bg-gray-100  dark:bg-gray-900 rounded-xl  inset-shadow-sm shadow-sm">
+            <section className="scroll-content mx-3 mb-3 p-1 bg-gray-100  dark:bg-gray-900 rounded-xl  inset-shadow-sm shadow-sm">
                 <div className="">
                     {filteredQuestions.map((item) => (
                         <div onClick={() => saveQuestionLS(item)} className="m-2 p-1 rounded-lg bg-gray-200  dark:bg-gray-700 inset-shadow-sm shadow-sm">

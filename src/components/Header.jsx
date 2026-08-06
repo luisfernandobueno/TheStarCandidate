@@ -1,11 +1,26 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import api from "../javascript/api.json";
+
+
 
 const Header = ({ header, darkMode, setDarkMode }) => {
     const questions = api.questions;
 
     const [sidebarOpen, setSidebarOpen] = useState(false);
+
+
+
+
+
+
+
+
+
+
+    const location = useLocation();
+    const isHome = location.pathname === "/";
+
 
     const navItems = [
         {
@@ -36,8 +51,14 @@ const Header = ({ header, darkMode, setDarkMode }) => {
 
         {
             name: "Favorites",
-            icon: "⭐",
+            icon: "❤️",
             path: "/favorites",
+        },
+
+        {
+            name: "Resumee",
+            icon: "👤",
+            path: "/resumee",
         },
     ];
 
@@ -113,7 +134,7 @@ const Header = ({ header, darkMode, setDarkMode }) => {
 
             <section className="bg-gray-100 dark:bg-gray-700  lg:ml-64 lg:hidden">
 
-                <section className="flex items-center px-4 py-3  ">
+                <header className="flex items-center px-4 py-3  ">
 
                     {/* Left */}
 
@@ -135,14 +156,29 @@ const Header = ({ header, darkMode, setDarkMode }) => {
                     {/* Right */}
 
                     <div className="flex w-12 justify-end lg:hidden">
-                        <button className="dark:text-white  ">
-                            <span className="material-symbols-outlined">
-                                tune
-                            </span>
-                        </button>
+
+                        {isHome && (
+                            <button
+                                id="toggleDeleteAlert_btn"
+                                /*  className={buttonClasses} */
+                                onClick={() => document.getElementById("modal-box").showModal()}
+
+                                className="md:hidden"
+                            >
+                                <span className="material-symbols-outlined">
+                                    delete
+                                </span>
+                            </button>)}
                     </div>
 
-                </section>
+
+
+
+
+                </header>
+
+
+                
 
             </section>
         </>

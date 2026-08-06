@@ -4,15 +4,26 @@ import api from "../javascript/api.json";
 
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
+import { useEffect } from "react";
 
 
-const Favorites = ({ darkMode, setDarkMode, data, url }) => {
+const Favorites = ({ darkMode, setDarkMode, fetch_url }) => {
     console.clear()
+
+    const [data, setData] = useState([]);
+        useEffect(() => {
+            fetch(fetch_url)
+              .then((res) => res.json())
+              .then((data) => setData(data.questions))
+              .catch((error) => console.error(error));
+          }, []);
+
+
     const history = useHistory();
     const questions = data;
     
     const [search, setSearch] = useState("")
-    console.log(url)
+    console.log(fetch_url)
         console.log("data brought from fetch get on online api:", questions)
         console.log("personal api, json file in javascript folder:", api)
     const favoritesCount = questions.filter(item => item.favorite).length
@@ -44,7 +55,7 @@ const Favorites = ({ darkMode, setDarkMode, data, url }) => {
             darkMode={darkMode}
                 setDarkMode={setDarkMode}
             />
-            <section className="search mx-3 mb-1 flex bg-gray-200 dark:bg-gray-900 rounded-full  inset-shadow-sm shadow-sm">
+            <section className="search  mx-3 mb-1 flex bg-gray-200 dark:bg-gray-900 rounded-full  inset-shadow-sm shadow-sm">
                 <input
                     type="text"
                     placeholder="Search your question..."
@@ -61,7 +72,7 @@ const Favorites = ({ darkMode, setDarkMode, data, url }) => {
                 
             </section>
             
-            <section className="scroll-content mx-3 p-1 bg-gray-100  dark:bg-gray-900 rounded-xl  inset-shadow-sm shadow-sm">
+            <section className="scroll-content mx-3 mb-3 p-1 bg-gray-100  dark:bg-gray-900 rounded-xl  inset-shadow-sm shadow-sm">
                 <div className="">
                     {
                         filteredQuestions.map(item => (

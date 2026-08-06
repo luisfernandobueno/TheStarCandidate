@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-:root, .container {
+:root, .container, body {
     height: 100dvh;
     
 }
@@ -19,11 +19,11 @@ html.dark body {
     background-color: #374151;
 }
 
-html,
+/* html,
 body {
     height: 100%;
     margin: 0;
-}
+} */
 
 body {
     user-select: none;
@@ -32,17 +32,14 @@ body {
     margin: auto;
     /* 
     background: #fff; */
-    height: 100dvh;
+    /* height: 100dvh; */
     display: flex;
     flex-direction: column;
     font-family: Josefin Sans;
 }
 
 header {
-    display: none;
-}
-
-#header {
+    
     grid-area: header;
 }
 
@@ -50,11 +47,11 @@ header {
     grid-area: categories;
 }
 
-nav {
+/* nav {
     grid-area: nav;
     display: none;
 }
-
+ */
 nav a,
 .icon {
     display: flex;
@@ -124,7 +121,7 @@ input {
             "nav";
     }
 
-    #header {
+    header {
         display: flex;
     }
 

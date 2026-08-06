@@ -1,63 +1,8 @@
-export { setupFloatingActions, readOutLoud, favoriteState, fetchGet, fetchPost };
+export { readOutLoud, favoriteState,  };
 const url_interview_data = "https://getpantry.cloud/apiv1/public/b0f739090ece026cc71470723277bc6e";
 
 
 
-
-const setupFloatingActions = () => {
-    const floatingActionsTrigger = document.querySelector("#floating-actions-trigger");
-    const floatingActionsMenu = document.querySelector("#floating-actions-menu");
-
-    if (!floatingActionsTrigger || !floatingActionsMenu) return;
-
-    let floatingActionsPressTimer;
-    let floatingActionsLongPressTriggered = false;
-
-    // Open menu after long press
-    floatingActionsTrigger.addEventListener("pointerdown", () => {
-        floatingActionsLongPressTriggered = false;
-
-        floatingActionsPressTimer = setTimeout(() => {
-            floatingActionsMenu.classList.add("open");
-            floatingActionsLongPressTriggered = true;
-        }, 0);
-    });
-
-    // Cancel if released too early
-    const cancelFloatingActionsPress = () => {
-        clearTimeout(floatingActionsPressTimer);
-    };
-
-    floatingActionsTrigger.addEventListener("pointerup", cancelFloatingActionsPress);
-    floatingActionsTrigger.addEventListener("pointerleave", cancelFloatingActionsPress);
-    floatingActionsTrigger.addEventListener("pointercancel", cancelFloatingActionsPress);
-
-    // Prevent the click generated after a long press
-    floatingActionsTrigger.addEventListener("click", (e) => {
-        if (floatingActionsLongPressTriggered) {
-            e.preventDefault();
-            e.stopPropagation();
-        }
-    });
-
-    // Close when clicking outside
-    document.addEventListener("click", (e) => {
-        if (
-            !floatingActionsMenu.contains(e.target) &&
-            e.target !== floatingActionsTrigger
-        ) {
-            floatingActionsMenu.classList.remove("open");
-        }
-    });
-
-    // Close after selecting an option
-    floatingActionsMenu.querySelectorAll("button").forEach(option => {
-        option.addEventListener("click", () => {
-            console.log("Selected:", option.textContent);
-            floatingActionsMenu.classList.remove("open");
-        });
-    });
-}
 
 
 const readOutLoud = (info) => {
@@ -136,18 +81,5 @@ const fetchPost = (data) => {
     //fetchGet();
 }
 
-
-const fetchGet = () => {
-    return fetch(url_interview_data)
-        .then(res => res.json())
-        .then(json => {
-            //console.log(json);
-
-            const data = json.lines;
-            //console.log(data);
-
-            return data;
-        });
-}
 
 

@@ -14,7 +14,7 @@ export default function QuizPage({ darkMode, setDarkMode }) {
                     setDarkMode={setDarkMode}
                 />
 
-    <main className="scroll-content mx-3 p-2 flex bg-gray-200 dark:bg-gray-900  inset-shadow-sm shadow-sm rounded-xl">
+    <main className="scroll-content mx-3 mb-3 p-2 flex bg-gray-200 dark:bg-gray-900  inset-shadow-sm shadow-sm rounded-xl">
       <Quiz questions={questions} />
     </main>
 
