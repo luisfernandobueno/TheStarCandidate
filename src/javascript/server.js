@@ -4,6 +4,7 @@ import cors from "cors"; // Allows requests from other origins (your React front
 
 // Creates the Express application.
 const app = express();
+const port = process.env.PORT || 3000;
 
 // Enables Cross-Origin Resource Sharing.
 app.use(cors());
@@ -392,7 +393,7 @@ app.delete("/:id",(req,res)=>{
     0.0.0.0 allows devices on your local network
     to connect to this server.
 */
-app.listen(3000,"0.0.0.0",()=>{
+app.listen(port,()=>{
 
     console.log(
         "Server running on http://0.0.0.0:3000"
