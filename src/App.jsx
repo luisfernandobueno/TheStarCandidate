@@ -12,10 +12,11 @@ import Edit from "./pages/Edit";
 import Resumee from "./pages/Resumee";
 
 //const fetch_url = "https://api.npoint.io/facb5749d433f9be2b92";
-const fetch_url = "http://192.168.1.45:3000";
+//const fetch_url = "http://192.168.1.45:3000";
+const fetch_url = "https://thestarcandidate.onrender.com/";
 
 function App() {
-
+console.log(fetch_url)
 
   async function deleteQuestion(id) {
     try {
