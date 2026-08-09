@@ -1,4 +1,7 @@
 import Header from "../components/Header";
+import PDFViewer from "../components/PDFViewer";
+
+
 
 
  const Resumee = ({darkMode, setDarkMode}) => {
@@ -8,7 +11,7 @@ import Header from "../components/Header";
                 darkMode={darkMode}
                 setDarkMode={setDarkMode}
             />
-        <section><h1>Welcome to Resumee section</h1></section>
+        <PDFViewer />
         </>)
 }
 
