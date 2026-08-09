@@ -55,11 +55,11 @@ const Header = ({ header, darkMode, setDarkMode }) => {
             path: "/favorites",
         },
 
-        {
+        /* {
             name: "Resumee",
             icon: "👤",
             path: "/resumee",
-        },
+        }, */
     ];
 
     return (

@@ -6,7 +6,8 @@
       "favorite": false,
       "explanation": "This is to assess how self-aware you are and how you work on your weaknesses.",
       "answer": "I sometimes overthink things, especially when I want to ensure everything is perfect. However, I’ve been working on balancing this by improving my decision-making speed and embracing that not everything needs to be flawless to move forward.",
-      "example": "..."
+      "example": "...",
+      "id": 0
     },
     {
       "question": "Why did you leave your last job?",
@@ -14,7 +15,8 @@
       "favorite": false,
       "explanation": "This helps clarify your career path and what motivates your transitions.",
       "answer": "I left my last position due to a need to focus on personal growth and to care for a family member, which has shaped my skills in time management, empathy, and resilience. Now, I’m excited to re-enter the workforce and apply these enhanced skills.",
-      "example": "..."
+      "example": "...",
+      "id": 1
     },
     {
       "question": "How do you handle stress and pressure?",
@@ -22,7 +24,8 @@
       "answer": "When situations of stress and anxiety arise, I use breathing techniques to release the pressure and restore a calm state of mind. In addition, I've been practicing mindfulness for the past three years. This practice has significantly reduced my overall anxiety and stress levels, improved my ability to handle stressful situations, and provided a clearer and more focused mindset. \n \n For example, in a previous role, we faced a tight project deadline that caused significant stress among the team. By employing mindfulness and breathing exercises, I was able to maintain my composure and focus, which allowed me to manage my tasks efficiently and support my colleagues effectively. These practices help me maintain self-control and approach pressure-filled situations with a logical and calm mindset.",
       "topic": "Recruiter",
       "favorite": true,
-      "example": "For example, in a previous role, we faced a tight project deadline that caused significant stress among the team. By employing mindfulness and breathing exercises, I was able to maintain my composure and focus, which allowed me to manage my tasks efficiently and support my colleagues effectively."
+      "example": "For example, in a previous role, we faced a tight project deadline that caused significant stress among the team. By employing mindfulness and breathing exercises, I was able to maintain my composure and focus, which allowed me to manage my tasks efficiently and support my colleagues effectively.",
+      "id": 2
     },
     {
       "question": "Describe a time you faced a significant challenge at work and how you handled it.",
@@ -30,7 +33,8 @@
       "favorite": true,
       "explanation": "Behavioral questions like this help assess how you respond to challenges and adversity.",
       "answer": "During my time in customer service, there was a situation where a client was extremely frustrated. I remained calm and listened attentively to their concerns, showing empathy while finding a solution that met their needs. This experience helped me develop stronger problem-solving and communication skills.",
-      "example": "..."
+      "example": "...",
+      "id": 3
     },
     {
       "question": "What motivates you?",
@@ -38,7 +42,8 @@
       "favorite": false,
       "explanation": "This helps employers understand what drives you and if it aligns with the role.",
       "answer": "I am motivated by continuous learning and personal growth. Whether it’s improving my skills in programming or advancing my language abilities, I’m always seeking opportunities to expand my knowledge and contribute more effectively.",
-      "example": "..."
+      "example": "...",
+      "id": 4
     },
     {
       "question": "How do you prioritize tasks when you have multiple deadlines?",
@@ -46,7 +51,8 @@
       "favorite": false,
       "explanation": "This question evaluates your organizational and time management skills.",
       "answer": "I prioritize tasks by urgency and importance, using tools like task lists or digital planners to stay on track. I break down larger tasks into manageable steps and ensure I allocate time for each task based on deadlines and priorities.",
-      "example": "..."
+      "example": "...",
+      "id": 5
     },
     {
       "question": "Describe a time when you worked as part of a team.",
@@ -54,7 +60,8 @@
       "favorite": false,
       "explanation": "Teamwork is critical in most environments; they want to see how well you collaborate.",
       "answer": "In my administrative role, I worked closely with other team members to ensure tasks were completed efficiently. We had to coordinate and communicate constantly, and I took on a proactive role, ensuring the team was organized and on schedule.",
-      "example": "..."
+      "example": "...",
+      "id": 6
     },
     {
       "question": "What do you know about this company?",
@@ -62,7 +69,8 @@
       "favorite": false,
       "explanation": "This evaluates how much research you’ve done and how serious you are about the role.",
       "answer": "I know that your company values innovation and creativity, which are core to my personal and professional interests. Your focus on growth and development aligns with my goals, and I’m excited about the opportunity to contribute to your team.",
-      "example": "..."
+      "example": "...",
+      "id": 7
     },
     {
       "question": "How do you adapt to new environments?",
@@ -70,7 +78,8 @@
       "favorite": true,
       "explanation": "This helps employers gauge your flexibility and adaptability.",
       "answer": "I adapt quickly by observing, listening, and understanding the new environment’s expectations. My curiosity drives me to learn as much as I can, and I’m comfortable adjusting my approach to fit new situations, which has helped me thrive in diverse roles.",
-      "example": "..."
+      "example": "...",
+      "id": 8
     },
     {
       "question": "What are your salary expectations?",
@@ -78,7 +87,8 @@
       "favorite": false,
       "explanation": "This question ensures that your compensation expectations align with the company’s budget.",
       "answer": "I’m open to discussing compensation, and I understand that it should reflect my skills, experience, and the value I bring to the team. I’m flexible and focused on finding a mutually beneficial arrangement.",
-      "example": "..."
+      "example": "...",
+      "id": 9
     },
     {
       "question": "How do you stay updated on industry trends?",
@@ -86,7 +96,8 @@
       "favorite": false,
       "explanation": "They want to see how you keep learning and staying relevant.",
       "answer": "I stay updated by following industry blogs, participating in online forums, and taking relevant courses to keep my skills sharp. For example, in web development, I regularly explore new frameworks and tools to ensure I’m up to date with the latest trends.",
-      "example": "..."
+      "example": "...",
+      "id": 10
     },
     {
       "question": "Do you prefer to work independently or in a team?",
@@ -94,7 +105,8 @@
       "favorite": false,
       "explanation": "This assesses how you function in different work settings.",
       "answer": "I enjoy both. I am comfortable working independently when tasks require focus, but I also thrive in collaborative environments where I can share ideas and contribute to group success.",
-      "example": "..."
+      "example": "...",
+      "id": 11
     },
     {
       "question": "How do you handle difficult customers?",
@@ -102,7 +114,8 @@
       "favorite": false,
       "explanation": "This evaluates your customer service skills and your ability to manage tough situations.",
       "answer": "I handle difficult customers by staying calm and empathetic, actively listening to their concerns, and offering solutions. My experience in customer service has taught me to address issues professionally while focusing on resolving the situation.",
-      "example": "..."
+      "example": "...",
+      "id": 12
     },
     {
       "question": "What is your biggest achievement to date?",
@@ -110,7 +123,8 @@
       "favorite": false,
       "explanation": "They want to learn about something you’re proud of and how it reflects your skills.",
       "answer": "One of my biggest achievements has been self-learning English to a C1 level, which took dedication and consistency. This achievement shows my capacity for self-discipline and my commitment to personal and professional development.",
-      "example": "..."
+      "example": "...",
+      "id": 13
     },
     {
       "question": "What skills do you think are essential for this role?",
@@ -118,7 +132,8 @@
       "favorite": false,
       "explanation": "They want to see if you understand the role and its requirements.",
       "answer": "Key skills include strong communication, time management, and problem-solving abilities. Depending on the role, specific technical skills like proficiency in web development tools or a focus on customer service are also critical.",
-      "example": "..."
+      "example": "...",
+      "id": 14
     },
     {
       "question": "How do you handle multiple tasks at the same time?",
@@ -126,7 +141,8 @@
       "favorite": false,
       "explanation": "This evaluates your ability to prioritize and manage workload.",
       "answer": "I prioritize tasks based on their urgency and importance, using tools like task lists and schedules to stay organized. By breaking down larger tasks and tackling them systematically, I ensure that I can handle multiple responsibilities without feeling overwhelmed.",
-      "example": "..."
+      "example": "...",
+      "id": 15
     },
     {
       "question": "What would you do if you disagreed with a coworker?",
@@ -134,7 +150,8 @@
       "favorite": false,
       "explanation": "This assesses your conflict resolution skills and teamwork.",
       "answer": "I believe in open communication and understanding different perspectives. If I disagreed with a coworker, I would approach the conversation respectfully, listen to their viewpoint, and try to find common ground or a solution that benefits the project.",
-      "example": "..."
+      "example": "...",
+      "id": 16
     },
     {
       "question": "Describe your work ethic.",
@@ -142,7 +159,8 @@
       "favorite": false,
       "explanation": "This helps them understand your dedication and approach to work.",
       "answer": "I have a strong work ethic, and I’m dedicated to staying organized, meeting deadlines, and continuously improving. I’m proactive, taking the initiative to learn and improve my skills, and I’m committed to delivering high-quality work.",
-      "example": "..."
+      "example": "...",
+      "id": 17
     },
     {
       "question": "What do you like to do outside of work?",
@@ -150,7 +168,8 @@
       "favorite": true,
       "explanation": "This helps the Recruiter learn more about your personal interests and how you balance work-life.",
       "answer": "Outside of work, I enjoy learning languages, practicing mindfulness, and exploring web development projects. I also find fulfillment in helping others, whether through cooking or other supportive activities.",
-      "example": "..."
+      "example": "...",
+      "id": 18
     },
     {
       "question": "What do you consider to be your greatest accomplishment?",
@@ -158,7 +177,8 @@
       "favorite": false,
       "explanation": "This lets them see what you’re most proud of and how you define success.",
       "answer": "My greatest accomplishment is achieving a high level of English proficiency on my own. It was a long process that required discipline and dedication, and it taught me the value of persistence and self-motivation.",
-      "example": "..."
+      "example": "...",
+      "id": 19
     },
     {
       "question": "How do you approach problem-solving?",
@@ -166,7 +186,8 @@
       "answer": "Approaching problem-solving involves several key steps that I consistently follow to ensure effective resolution. Firstly, I define the problem clearly by gathering all relevant information and identifying the root cause. This initial step is crucial because it sets the foundation for developing viable solutions. \n \n Next, I analyze the situation from different angles and brainstorm potential solutions. I weigh the pros and cons of each option, considering factors such as feasibility, impact on stakeholders, and alignment with organizational goals. \n \n Once I have a range of possible solutions, I prioritize them based on urgency and potential impact. I prefer to involve stakeholders or team members in the decision-making process to gain diverse perspectives and ensure buy-in. \n \n After selecting the best course of action, I implement the solution methodically, monitoring its progress closely. Flexibility is essential during this phase to adjust strategies as needed based on feedback and unforeseen challenges. \n \n Finally, I evaluate the outcome to determine the effectiveness of the solution and identify any lessons learned for future reference. Continuous improvement is key to refining problem-solving approaches and enhancing overall organizational efficiency.",
       "topic": "Recruiter",
       "favorite": true,
-      "example": "..."
+      "example": "...",
+      "id": 20
     },
     {
       "question": "What kind of work environment do you thrive in?",
@@ -174,7 +195,8 @@
       "favorite": false,
       "explanation": "This helps assess if you're a cultural fit for the company.",
       "answer": "I thrive in environments that encourage collaboration and creativity, where team members support each other and work together to achieve common goals. I also appreciate workplaces that offer structure but allow flexibility for personal development.",
-      "example": "..."
+      "example": "...",
+      "id": 21
     },
     {
       "question": "Can you describe a time when you worked as part of a team to achieve a goal?",
@@ -182,7 +204,8 @@
       "favorite": false,
       "explanation": "They want to assess your teamwork and collaboration skills.",
       "answer": "During my time working in customer service, we had a particularly busy week, and I collaborated closely with my teammates to handle the increased workload efficiently. We communicated constantly to ensure tasks were distributed fairly, and we achieved our goals by staying organized and supportive of each other.",
-      "example": "..."
+      "example": "...",
+      "id": 22
     },
     {
       "question": "What steps do you take to improve your technical skills?",
@@ -190,7 +213,8 @@
       "favorite": false,
       "explanation": "This assesses your approach to self-improvement and staying current with industry trends.",
       "answer": "I regularly practice coding and stay updated with the latest web development trends through online courses and resources. I also engage with developer communities to exchange ideas and best practices, which helps me continuously improve my skills.",
-      "example": "..."
+      "example": "...",
+      "id": 23
     },
     {
       "question": "How do you handle stress or pressure?",
@@ -198,7 +222,8 @@
       "favorite": false,
       "explanation": "This reveals how well you manage high-pressure situations.",
       "answer": "I handle stress by staying focused on the task at hand and breaking it into smaller, manageable steps. I also practice mindfulness and meditation, which helps me stay calm and approach challenges with a clear mind.",
-      "example": "..."
+      "example": "...",
+      "id": 24
     },
     {
       "question": "Can you provide an example of when you showed leadership?",
@@ -206,7 +231,8 @@
       "favorite": false,
       "explanation": "They want to see if you take initiative and can lead others.",
       "answer": "During a retreat where I helped with meal preparation, we faced a shortage of staff. I took the initiative to organize the remaining team, delegated tasks based on each person's strengths, and ensured that we completed everything on time without compromising quality.",
-      "example": "..."
+      "example": "...",
+      "id": 25
     },
     {
       "question": "What motivates you to do your best at work?",
@@ -214,7 +240,8 @@
       "favorite": false,
       "explanation": "They want to understand what drives your performance.",
       "answer": "I’m motivated by the impact my work has on others. Whether it’s a customer, colleague, or client, knowing that my contributions help make their lives easier or their businesses better pushes me to always do my best.",
-      "example": "..."
+      "example": "...",
+      "id": 26
     },
     {
       "question": "Tell me about a time you had to adapt to a significant change at work.",
@@ -222,7 +249,8 @@
       "favorite": false,
       "explanation": "They want to gauge your flexibility and adaptability.",
       "answer": "When I transitioned from administrative tasks to web development, it required a significant shift in mindset and skills. I adapted by dedicating time to learning the new technical skills I needed and seeking guidance from more experienced developers to ease the transition.",
-      "example": "..."
+      "example": "...",
+      "id": 27
     },
     {
       "question": "How do you prioritize your tasks when you have multiple deadlines?",
@@ -230,7 +258,8 @@
       "favorite": false,
       "explanation": "This tests your time management and organizational skills.",
       "answer": "I prioritize tasks by urgency and importance, using tools like task lists and schedules. I focus first on tasks that are critical to meeting deadlines, and I break them into smaller steps to ensure steady progress.",
-      "example": "..."
+      "example": "...",
+      "id": 28
     },
     {
       "question": "Describe a time when you had to learn something quickly.",
@@ -238,7 +267,8 @@
       "favorite": false,
       "explanation": "They want to see how fast you can adapt and learn on the job.",
       "answer": "When I first started learning JavaScript, I had to quickly understand certain programming concepts for a project deadline. I immersed myself in tutorials and practiced daily, which helped me grasp the fundamentals and apply them in time for the project.",
-      "example": "..."
+      "example": "...",
+      "id": 29
     },
     {
       "question": "Can you give an example of a project you successfully completed?",
@@ -246,7 +276,8 @@
       "favorite": false,
       "explanation": "They want to assess your ability to see projects through to completion.",
       "answer": "One successful project was developing a simple language-learning web page using HTML, CSS, and JavaScript. I integrated a JSON file to dynamically load words and created an interactive experience for users. It was my first project handling both frontend and external data.",
-      "example": "..."
+      "example": "...",
+      "id": 30
     },
     {
       "question": "How do you ensure that you meet project deadlines?",
@@ -254,7 +285,8 @@
       "favorite": false,
       "explanation": "This assesses your project management and time management skills.",
       "answer": "I stay on track by setting clear milestones and using task management tools to break down projects into smaller steps. This allows me to monitor progress closely and make adjustments if necessary to meet deadlines.",
-      "example": "..."
+      "example": "...",
+      "id": 31
     },
     {
       "question": "Tell me about a time you solved a problem creatively.",
@@ -262,7 +294,8 @@
       "favorite": false,
       "explanation": "They want to see if you think outside the box and apply creativity to problem-solving.",
       "answer": "When working on a website layout, I encountered limitations with the default CSS grid system. Instead of sticking with the default, I researched alternative layout techniques, using flexbox and custom media queries to create a responsive design that worked seamlessly across devices.",
-      "example": "..."
+      "example": "...",
+      "id": 32
     },
     {
       "question": "What do you do when you encounter a task you don’t know how to complete?",
@@ -270,7 +303,8 @@
       "favorite": false,
       "explanation": "This shows your resourcefulness and willingness to learn.",
       "answer": "If I encounter a task I’m unfamiliar with, I start by researching solutions through online resources or tutorials. If needed, I ask for advice from colleagues or mentors. I see it as an opportunity to learn and grow.",
-      "example": "..."
+      "example": "...",
+      "id": 33
     },
     {
       "question": "How do you stay organized when managing multiple projects?",
@@ -278,7 +312,8 @@
       "favorite": false,
       "explanation": "This evaluates your ability to manage complex workloads.",
       "answer": "I use task management tools and prioritize tasks based on their deadlines and importance. I also schedule specific time blocks for each project to ensure that I can give adequate attention to each one without sacrificing quality.",
-      "example": "..."
+      "example": "...",
+      "id": 34
     },
     {
       "question": "Describe a time when you had to go above and beyond to complete a task.",
@@ -286,7 +321,8 @@
       "favorite": false,
       "explanation": "This shows your dedication and willingness to put in extra effort.",
       "answer": "While working in customer service, there was an instance where a customer had a complicated issue that couldn’t be resolved during my shift. I stayed late to help solve the problem, coordinating with different teams to ensure the customer left satisfied.",
-      "example": "..."
+      "example": "...",
+      "id": 35
     },
     {
       "question": "What are some things you do to stay motivated during long projects?",
@@ -294,7 +330,8 @@
       "favorite": false,
       "explanation": "They want to assess your long-term focus and persistence.",
       "answer": "I stay motivated by breaking the project into smaller, manageable tasks and celebrating progress at each milestone. I also remind myself of the final goal and the impact the project will have, which keeps me focused.",
-      "example": "..."
+      "example": "...",
+      "id": 36
     },
     {
       "question": "How do you handle working with a difficult colleague?",
@@ -302,7 +339,8 @@
       "favorite": false,
       "explanation": "This evaluates your interpersonal skills and ability to work in teams.",
       "answer": "If I work with a difficult colleague, I maintain professionalism and focus on clear communication. I try to understand their perspective while ensuring that the team's goals remain the priority, and I seek to find common ground to work efficiently together.",
-      "example": "..."
+      "example": "...",
+      "id": 37
     },
     {
       "question": "Tell me about a time when you had to give feedback to someone.",
@@ -310,7 +348,8 @@
       "favorite": false,
       "explanation": "This assesses your communication skills and ability to offer constructive feedback.",
       "answer": "In a group project, one of my team members was struggling with their part of the work. I approached them with specific, constructive feedback, offering to help them improve. This led to a better outcome for the project and improved collaboration within the team.",
-      "example": "..."
+      "example": "...",
+      "id": 38
     },
     {
       "question": "What steps do you take to maintain a work-life balance?",
@@ -318,7 +357,8 @@
       "favorite": false,
       "explanation": "This shows how you manage stress and avoid burnout.",
       "answer": "I prioritize my tasks efficiently during work hours to avoid taking work home with me. I also set boundaries, ensuring I have time for personal activities like exercise, meditation, and hobbies to recharge and stay productive.",
-      "example": "..."
+      "example": "...",
+      "id": 39
     },
     {
       "question": "How do you keep yourself updated with industry trends?",
@@ -326,7 +366,8 @@
       "favorite": false,
       "explanation": "They want to see if you are committed to continuous learning.",
       "answer": "I follow industry blogs, attend webinars, and take online courses to stay updated. I also engage with professional communities where new trends and technologies are discussed, which helps me keep pace with the latest developments.",
-      "example": "..."
+      "example": "...",
+      "id": 40
     },
     {
       "question": "What would your previous colleagues say about you?",
@@ -334,7 +375,8 @@
       "favorite": false,
       "explanation": "This question aims to see how you perceive yourself and your relationships at work.",
       "answer": "My previous colleagues would likely describe me as reliable, organized, and always willing to help others. They would probably mention that I’m a fast learner and a good team player who can handle stressful situations calmly.",
-      "example": "..."
+      "example": "...",
+      "id": 41
     },
     {
       "question": "Can you describe a time when you went above and beyond for a customer or colleague?",
@@ -342,7 +384,8 @@
       "favorite": false,
       "explanation": "This question tests your dedication to providing exceptional service or support.",
       "answer": "While working in customer service, I noticed a regular customer struggling to find a product. Instead of simply pointing them in the right direction, I took the time to help them compare products and find the best option. They later returned to thank me for the personalized attention.",
-      "example": "..."
+      "example": "...",
+      "id": 42
     },
     {
       "question": "How do you handle working under tight deadlines?",
@@ -350,7 +393,8 @@
       "favorite": true,
       "explanation": "This question evaluates your time management skills and ability to work effectively under pressure. Your answer should demonstrate a structured approach to managing deadlines, including prioritization, use of tools, and communication strategies.",
       "answer": "Handling tight deadlines has been a significant aspect of my professional experience, and I approach it with a structured and proactive mindset. When faced with tight deadlines, I begin by carefully assessing the scope and requirements of the task or project. This initial step allows me to create a detailed plan that breaks down the work into manageable steps with clear timelines. \n \n I prioritize tasks based on urgency and impact, focusing first on critical deliverables while ensuring quality standards are met. To maintain efficiency, I utilize tools such as time management apps or project management software to track progress and milestones. These tools help me stay organized and ensure I stay on track to meet deadlines effectively. \n \n Communication is also key in handling tight deadlines. I keep stakeholders informed of progress, potential challenges, and adjustments to timelines as necessary. This transparency fosters trust and collaboration, which are crucial in achieving successful outcomes under pressure. \n \n In challenging situations, I remain adaptable and ready to adjust priorities if unexpected issues arise. This flexibility allows me to navigate obstacles while keeping the overall project goals in sight.",
-      "example": "..."
+      "example": "...",
+      "id": 43
     },
     {
       "question": "How do you approach learning new software or technologies?",
@@ -358,7 +402,8 @@
       "favorite": true,
       "explanation": "This tests your adaptability and willingness to learn new tools.",
       "answer": "I start by exploring tutorials or documentation for the software, then apply what I’ve learned through practice. I also seek advice from experienced colleagues or online communities if needed to speed up my learning curve.",
-      "example": "..."
+      "example": "...",
+      "id": 44
     },
     {
       "question": "Tell me about a time when you worked on a team project. How did you contribute?",
@@ -366,7 +411,8 @@
       "favorite": false,
       "explanation": "This question gauges your teamwork and collaboration skills.",
       "answer": "During a web development project, I took charge of front-end design, ensuring user-friendly layouts. I also regularly communicated with the back-end developers to integrate our work smoothly, leading to the successful completion of the project.",
-      "example": "..."
+      "example": "...",
+      "id": 45
     },
     {
       "question": "How would you handle a disagreement with a co-worker?",
@@ -374,7 +420,8 @@
       "favorite": false,
       "explanation": "This tests your conflict resolution skills and emotional intelligence.",
       "answer": "I would first listen to their perspective fully to understand their concerns. Then, I’d calmly explain my point of view, focusing on finding common ground or a solution that benefits both sides, rather than dwelling on differences.",
-      "example": "..."
+      "example": "...",
+      "id": 46
     },
     {
       "question": "Describe a situation where you had to quickly adapt to change.",
@@ -382,7 +429,8 @@
       "favorite": false,
       "explanation": "This question tests your flexibility and ability to handle sudden changes.",
       "answer": "During a project, we had to switch to a new platform mid-way. I adapted by learning the new system quickly and collaborating with my team to ensure that we could transition smoothly without affecting the project's timeline.",
-      "example": "..."
+      "example": "...",
+      "id": 47
     },
     {
       "question": "What are the most important qualities you are looking for in a candidate for this role?",
@@ -390,7 +438,8 @@
       "answer": "<br>",
       "example": "...",
       "favorite": false,
-      "topic": "Encouragement"
+      "topic": "Encouragement",
+      "id": 48
     },
     {
       "question": "Can you describe a time when you had to manage multiple priorities at once?",
@@ -398,7 +447,8 @@
       "favorite": false,
       "explanation": "This question tests your time management and organizational skills.",
       "answer": "While working on several web development tasks, I prioritized them based on urgency and client deadlines. I maintained open communication with my team and set clear daily goals, which allowed me to manage all priorities effectively without missing any deadlines.",
-      "example": "..."
+      "example": "...",
+      "id": 49
     },
     {
       "question": "Describe a situation where you had to give a presentation or explain something complex to others.",
@@ -406,7 +456,8 @@
       "favorite": false,
       "explanation": "They want to assess your communication and presentation skills.",
       "answer": "I had to explain the technical aspects of a website redesign to non-technical clients. I broke down the process into simple terms, used visual aids, and checked for understanding throughout the presentation to ensure everyone was on the same page.",
-      "example": "..."
+      "example": "...",
+      "id": 50
     },
     {
       "question": "Why a ✨ waiter ✨?&nbsp;",
@@ -414,7 +465,8 @@
       "answer": "<b><u>Tips:</u></b><div>• Not having to ask for money to take the bus.</div><div>• Start buying the things i may need right away, like clothing.</div><div>• An environment where you mostly develop soft skills, specially the social ones.</div><div>• Access to delicious food on a daily basis, eating good all the time<br><br></div>",
       "example": "<br>",
       "favorite": false,
-      "topic": "Encouragement"
+      "topic": "Encouragement",
+      "id": 51
     },
     {
       "question": "Can you describe a time when you received constructive criticism? ✨",
@@ -422,7 +474,8 @@
       "answer": "During my time as a customer service representative, I received constructive criticism from my supervisor regarding my handling of a difficult customer interaction. The feedback highlighted the need for better active listening skills to fully understand customer concerns before offering solutions. \n \n While initially taken aback, I embraced the feedback as a growth opportunity. I took an online course on active listening and sought advice from experienced colleagues. In a subsequent similar situation, I applied these skills by listening attentively to the customer's issues, acknowledging their feelings, and then providing a well-thought-out solution. This led to a much more positive outcome, with the customer expressing satisfaction and my supervisor commending my improved approach. \n \n This experience reinforced the importance of being receptive to feedback and continuously seeking ways to enhance my skills and performance.",
       "example": "I received constructive criticism from my supervisor regarding my handling of a difficult customer interaction. The feedback highlighted the need for better active listening skills to fully understand customer concerns before offering solutions.",
       "favorite": true,
-      "topic": "Encouragement"
+      "topic": "Encouragement",
+      "id": 52
     },
     {
       "question": "How do you handle multitasking?",
@@ -430,7 +483,8 @@
       "favorite": true,
       "explanation": "This question explores your ability to manage multiple responsibilities simultaneously and effectively. Your answer should demonstrate your organizational skills and how you prioritize tasks to ensure all are completed efficiently.",
       "answer": "In my previous role as a customer service representative, multitasking was a regular part of my job. To handle multiple tasks effectively, I relied on a combination of prioritization and time management skills. \n \n Firstly, I would start my day by creating a to-do list, prioritizing tasks based on their urgency and importance. This helped me focus on the most critical tasks first while ensuring that all responsibilities were addressed. I also used various tools, such as task management software and calendar alerts, to keep track of deadlines and appointments. \n \n For example, there were days when I had to manage customer inquiries via phone and email while also handling administrative tasks like updating records and preparing reports. By allocating specific time slots for each task and staying organized, I could ensure that everything was completed efficiently without compromising the quality of my work. \n \n Additionally, I found it essential to stay flexible and adaptable, as unexpected tasks or urgent issues often arose. In such cases, I would reassess my priorities and adjust my schedule accordingly to accommodate these changes. \n \n This approach to multitasking allowed me to maintain high productivity levels and consistently meet my job's demands.",
-      "example": "I had to manage customer inquiries via phone and email while also handling administrative tasks like updating records and preparing reports."
+      "example": "I had to manage customer inquiries via phone and email while also handling administrative tasks like updating records and preparing reports.",
+      "id": 53
     },
     {
       "question": "Can you give an example of a time when you went above and beyond your job duties?",
@@ -438,7 +492,8 @@
       "favorite": true,
       "explanation": "This question seeks to understand your commitment, initiative, and willingness to exceed expectations. Your answer should illustrate a specific instance where you took extra steps to achieve a positive outcome.",
       "answer": "During my year working as an intern at Banco Republica, I was granted approximately 20 days of leave that I had to take throughout the year. I used about 5 days over the year, leaving me with around 15 days towards the end, specifically the last three months. \n \n Knowing that December is a particularly busy time for the institution due to the issuance of loans to senior citizens for the holiday season, I decided on my own initiative to plan my remaining leave days strategically. I chose to take five consecutive days of leave each month in September, October, and November. This way, I could be fully available in December to support the increased workload and assist my colleagues. \n \n I communicated this plan to my supervisors, who were very supportive and appreciated the initiative. This proactive approach ensured that I could contribute significantly during a critical period, going above and beyond my usual responsibilities to support the team and maintain a smooth operation during the busiest time of the year. \n \n As a result, my presence in December helped manage the increased demand effectively, ensuring that our customers received timely service and my colleagues had the support they needed during this peak period.",
-      "example": "I decided on my own initiative to plan my remaining leave days strategically. I chose to take five consecutive days of leave each month in September, October, and November. This way, I could be fully available in December to support the increased workload and assist my colleagues."
+      "example": "I decided on my own initiative to plan my remaining leave days strategically. I chose to take five consecutive days of leave each month in September, October, and November. This way, I could be fully available in December to support the increased workload and assist my colleagues.",
+      "id": 54
     },
     {
       "question": "What motivates you to perform well in your job?",
@@ -446,7 +501,8 @@
       "favorite": true,
       "explanation": "This question assesses what drives your work ethic and how aligned your motivations are with the role. Your answer should reflect your personal and professional motivations and how they contribute to your performance.",
       "answer": "What motivates me to perform well in my job is a combination of personal and professional factors. On a personal level, I am driven by a strong desire to continuously improve and develop my skills. I find great satisfaction in learning new things and taking on challenges that push me out of my comfort zone. For example, I have taken courses in web development and languages like English, Portuguese, and italian, which have broadened my skill set and enhanced my ability to communicate effectively. \n \n Professionally, I am motivated by the impact I can have on others through my work. In my previous roles in customer service, I found it extremely rewarding to help customers resolve their issues and improve their overall experience. Knowing that my efforts can make a positive difference in someone's day drives me to give my best every day. For instance, my proactive approach in resolving customer complaints not only improved customer satisfaction but also received positive feedback from my supervisors. \n \n Additionally, I thrive in environments where I can collaborate with a team towards common goals. I enjoy the sense of accomplishment that comes from working together to overcome challenges and achieve success. This collaborative spirit not only motivates me to perform well but also helps to foster a positive and productive work atmosphere. For example, in my previous role, our team’s collaborative efforts led to a 15% increase in customer satisfaction scores over six months. \n \n Overall, my motivation stems from a combination of personal growth, making a positive impact, and being part of a collaborative team. These factors drive me to excel in my job and continuously strive for excellence.",
-      "example": "For example, I have taken courses in web development and languages like English, Portuguese, and italian, which have broadened my skill set and enhanced my ability to communicate effectively."
+      "example": "For example, I have taken courses in web development and languages like English, Portuguese, and italian, which have broadened my skill set and enhanced my ability to communicate effectively.",
+      "id": 55
     },
     {
       "question": "How do you ensure accuracy in your work?",
@@ -454,7 +510,8 @@
       "favorite": true,
       "explanation": "This question explores your attention to detail and methods for maintaining high-quality work. Your answer should demonstrate specific strategies or techniques you use to ensure accuracy.",
       "answer": "Ensuring accuracy in my work is paramount to me, especially in roles that involve handling sensitive information or financial transactions. One method I use is double-checking my work meticulously. For instance, when processing customer orders or financial transactions, I always review each detail to ensure accuracy before finalizing them. This habit helps me catch any potential errors early on and ensures that the final output is precise and reliable. \n \n Additionally, I utilize tools like checklists or software features that assist in validating data. These tools not only streamline the process but also serve as a safeguard against human error. By systematically following these procedures, I can confidently deliver work that meets high standards of accuracy and quality. \n \n For example, in my previous role, my attention to detail and rigorous checking process resulted in a significant reduction in processing errors by 20%, which improved overall customer satisfaction and operational efficiency.",
-      "example": "For example, in my previous role, my attention to detail and rigorous checking process resulted in a significant reduction in processing errors by 20%, which improved overall customer satisfaction and operational efficiency."
+      "example": "For example, in my previous role, my attention to detail and rigorous checking process resulted in a significant reduction in processing errors by 20%, which improved overall customer satisfaction and operational efficiency.",
+      "id": 56
     },
     {
       "question": "Can you describe a time when you had to make a difficult decision at work?",
@@ -462,7 +519,8 @@
       "favorite": true,
       "explanation": "This question assesses your decision-making skills and ability to handle difficult situations. Your answer should include a specific instance where you faced a challenging decision, how you approached it, and the outcome.",
       "answer": "One challenging decision I faced in a previous role involved reallocating resources during a sudden budget cut. As a team leader, I had to determine the most effective way to maintain productivity without compromising team morale or project timelines. \n \n First, I gathered input from team members to understand their priorities and concerns. This collaborative approach helped me gain valuable insights into how different aspects of our projects would be impacted by potential cuts. \n \n After careful analysis and consideration, I decided to streamline non-essential projects and redistribute resources to critical areas. I communicated transparently with my team about the decision-making process and the reasons behind it, emphasizing our shared goal of maintaining operational efficiency despite the constraints. \n \n Although it was a tough decision with short-term challenges, it ultimately strengthened our team's cohesion and sharpened our focus on key deliverables. Learning from this experience, I continue to prioritize open communication and strategic thinking in navigating complex decisions.",
-      "example": "One challenging decision I faced in a previous role involved reallocating resources during a sudden budget cut."
+      "example": "One challenging decision I faced in a previous role involved reallocating resources during a sudden budget cut.",
+      "id": 57
     },
     {
       "question": "How do you keep yourself updated with the latest industry trends?",
@@ -470,7 +528,8 @@
       "answer": "To stay updated with the latest industry trends, I employ a multi-faceted approach that combines regular reading, active participation in professional communities, and continuous learning. Firstly, I subscribe to key industry publications and newsletters to receive timely updates on important developments. Websites like LinkedIn, industry-specific blogs, and news sites are excellent resources for this. \n \n I also participate in webinars, online courses, and workshops to enhance my knowledge and skills. Platforms like Coursera, Udemy, and LinkedIn Learning offer a wide range of courses that are relevant to my field. This continuous learning helps me stay ahead of the curve and understand emerging trends and technologies. \n \n Networking plays a crucial role in staying informed as well. I engage with professional communities through social media groups, forums, and attending industry conferences and events. This not only helps me gain insights from peers and experts but also allows me to contribute to discussions and share my knowledge. \n \n Lastly, I follow thought leaders and influencers in my industry on social media platforms. Their insights and perspectives provide valuable context and foresight into where the industry is heading.",
       "topic": "Recruiter",
       "favorite": true,
-      "example": "..."
+      "example": "...",
+      "id": 58
     },
     {
       "question": "Can you describe a time when you had to adapt to a major change at work?",
@@ -478,7 +537,8 @@
       "answer": "During my time working in customer service, our company underwent a significant transition when we switched to a new customer relationship management (CRM) system. This change was part of a larger effort to improve efficiency and customer satisfaction. Initially, the new system seemed complex and unfamiliar, causing concern among the team about maintaining productivity during the transition. \n \n To adapt to this major change, I took the initiative to familiarize myself with the new CRM system as quickly as possible. I dedicated extra hours outside of my regular work schedule to complete online tutorials and participate in training sessions provided by the company. Additionally, I proactively sought advice and tips from colleagues who had prior experience with similar systems. \n \n Once I became comfortable with the new system, I offered to assist my teammates who were struggling with the transition. I organized small group sessions where we could share our challenges and solutions, fostering a collaborative environment. By doing this, I not only improved my own proficiency but also helped my team adapt more smoothly to the new system. \n \n Through these efforts, we were able to minimize disruptions and maintain our service levels. The experience taught me the importance of flexibility, continuous learning, and the value of teamwork in navigating significant changes at work.",
       "topic": "Recruiter",
       "favorite": true,
-      "example": "..."
+      "example": "...",
+      "id": 59
     },
     {
       "question": "How do you ensure effective communication within your team?",
@@ -486,7 +546,8 @@
       "answer": "To ensure effective communication within my team, I rely on a combination of clear and consistent communication channels, active listening, and fostering an open and inclusive environment. Firstly, I make sure to establish clear communication channels, such as regular team meetings, email updates, and instant messaging platforms like Slack or Microsoft Teams. This ensures that everyone is on the same page and has access to the necessary information. \n \n Active listening is another critical component. I make it a point to listen carefully to my team members' ideas, concerns, and feedback. By doing so, I can address issues promptly and make informed decisions that consider the input of the entire team. Encouraging open dialogue and valuing everyone's contributions helps build trust and ensures that team members feel heard and respected. \n \n I also prioritize clarity and conciseness in my communication. Whether I'm sharing project updates, providing instructions, or discussing goals, I strive to be as clear and concise as possible to avoid misunderstandings. When communicating complex information, I often use visual aids, such as charts or diagrams, to help convey the message more effectively. \n \n Additionally, I foster an environment where feedback is welcomed and constructive. I encourage team members to share their thoughts on processes and suggest improvements. This not only enhances communication but also promotes a culture of continuous improvement and collaboration. \n \n Lastly, I make use of regular check-ins, both individually and as a team, to ensure everyone is aligned and any issues are addressed early. These check-ins provide an opportunity to discuss progress, set expectations, and celebrate successes, further strengthening team cohesion and communication.",
       "topic": "Recruiter",
       "favorite": true,
-      "example": "..."
+      "example": "...",
+      "id": 60
     },
     {
       "question": "Describe a time when you had to take initiative at work.",
@@ -494,7 +555,8 @@
       "answer": "In my previous role in customer service, our team noticed a recurring issue with the way customer inquiries were being handled. We were frequently receiving the same types of questions, which led to longer response times and frustrated customers. I realized that creating a comprehensive FAQ document could help address this issue and improve our overall efficiency. \n \n Taking the initiative, I first gathered data on the most common questions from our customer service logs. Then, I collaborated with team members to ensure that all possible queries were covered and that the information provided was accurate and helpful. I also consulted with the marketing team to make sure the language used was consistent with our brand voice. \n \n Once the FAQ document was complete, I proposed the idea to my supervisor, who supported its implementation. I took the lead in training the team on how to use the document effectively and incorporated their feedback to refine it further. The implementation of the FAQ document significantly reduced the number of repetitive inquiries and allowed us to respond to customers more quickly and efficiently. \n \n The success of this project not only improved our customer satisfaction rates but also demonstrated the positive impact of proactive problem-solving. it was a valuable experience that underscored the importance of taking initiative to identify and address issues before they escalate.",
       "topic": "Recruiter",
       "favorite": true,
-      "example": "..."
+      "example": "...",
+      "id": 61
     },
     {
       "question": "Can you describe a project you worked on that required a lot of attention to detail?",
@@ -502,7 +564,8 @@
       "answer": "In my previous role as a customer service representative, I was tasked with updating and organizing the customer database. This project required meticulous attention to detail, as even a small error could lead to significant issues, such as miscommunication or loss of important customer information. \n \n To ensure accuracy, I started by cross-referencing the existing data with recent customer interactions to verify the information. I created a detailed checklist to track the progress and ensure that no steps were overlooked. Additionally, I set up regular reviews with my team to catch any discrepancies early on and correct them promptly. \n \n One specific instance that stands out was when I noticed that a series of entries had inconsistent phone numbers. I took the initiative to contact those customers directly to verify their information. This not only corrected the errors but also helped in building a stronger rapport with our customers, who appreciated the proactive approach. \n \n By the end of the project, we had a highly accurate and organized customer database. This project not only improved our efficiency in handling customer inquiries but also enhanced the overall customer experience by ensuring that we had reliable information readily available.",
       "topic": "Recruiter",
       "favorite": true,
-      "example": "One specific instance that stands out was when I noticed that a series of entries had inconsistent phone numbers. I took the initiative to contact those customers directly to verify their information. This not only corrected the errors but also helped in building a stronger rapport with our customers, who appreciated the proactive approach."
+      "example": "One specific instance that stands out was when I noticed that a series of entries had inconsistent phone numbers. I took the initiative to contact those customers directly to verify their information. This not only corrected the errors but also helped in building a stronger rapport with our customers, who appreciated the proactive approach.",
+      "id": 62
     },
     {
       "question": "How do you balance multiple tasks and priorities?",
@@ -510,7 +573,8 @@
       "answer": "Balancing multiple tasks and priorities effectively has been crucial in my previous roles, especially in customer service and administrative positions. One method I find effective is prioritizing tasks based on deadlines and importance. I start each day by creating a detailed to-do list and categorizing tasks into urgent, important, and less critical categories. \n \n To ensure I stay organized, I utilize productivity tools like task management software or simple spreadsheets. These tools help me track progress, set reminders, and adjust priorities as needed throughout the day. Additionally, I maintain open communication with team members and supervisors to clarify expectations and ensure alignment on priorities. \n \n When faced with unexpected tasks or changes in priorities, I remain flexible and adaptable. I evaluate each new task's urgency and impact on overall goals before integrating it into my schedule. This approach allows me to maintain productivity without sacrificing quality in my work. \n \n Lastly, I periodically review my workload and adjust strategies to optimize efficiency. By continuously refining my time management techniques and staying proactive, I've been able to successfully manage complex projects and deliver results consistently.",
       "topic": "Recruiter",
       "favorite": true,
-      "example": "..."
+      "example": "...",
+      "id": 63
     },
     {
       "question": "Can you describe a time when you had to persuade someone to see things your way?",
@@ -518,7 +582,8 @@
       "topic": "Recruiter",
       "favorite": true,
       "answer": "In my previous role, there was a pivotal project aimed at enhancing client satisfaction through a new customer service approach. Initially, some team members were hesitant due to concerns about increased workload and potential disruptions. Recognizing the importance of gaining consensus, I proactively organized a meeting to discuss the benefits of the proposed changes. \n \n During the meeting, I presented a comprehensive analysis of customer feedback and industry trends that supported the need for adaptation. I listened carefully to their concerns and addressed each one with practical solutions, highlighting how the new approach could streamline processes and improve client retention rates. \n \n To further build support, I invited their input to tailor the implementation plan according to their specific concerns. By fostering open dialogue and showing empathy towards their perspectives, I successfully gained their buy-in. As a result, the team became more engaged, and we effectively implemented the new approach, significantly enhancing our service delivery and client satisfaction metrics.",
-      "example": "..."
+      "example": "...",
+      "id": 64
     },
     {
       "question": "How do you handle conflicting priorities?",
@@ -526,7 +591,8 @@
       "answer": "Managing conflicting priorities effectively is crucial in my approach to work. In a previous role, I frequently encountered situations where multiple urgent tasks demanded immediate attention. To navigate this challenge, I developed a systematic approach: \n \n Firstly, I prioritize tasks based on deadlines and impact on overall goals. This involves assessing which tasks are time-sensitive and critical to organizational objectives. \n \n Secondly, I maintain open communication with stakeholders and team members to ensure alignment on priorities. Regular check-ins and updates help in adjusting schedules and reallocating resources as needed. \n \n Thirdly, I leverage time management techniques such as the Eisenhower Matrix to categorize tasks by urgency and importance. This method allows me to focus on high-priority tasks while delegating or scheduling lower-priority items accordingly. \n \n Lastly, I remain adaptable and flexible, ready to adjust priorities as circumstances change. By staying organized and proactive, I ensure that I meet deadlines and deliver high-quality results even under pressure.",
       "topic": "Recruiter",
       "favorite": true,
-      "example": "..."
+      "example": "...",
+      "id": 65
     },
     {
       "question": "Can you describe a time when you had to deal with a difficult client?",
@@ -534,7 +600,8 @@
       "answer": "In my previous role in customer service, I encountered a situation where a client expressed dissatisfaction with our product due to a misunderstanding in its functionality. The client insisted on a full refund immediately, which was against our company policy. \n \n To address this, I remained calm and empathetic, actively listening to the client's concerns to uncover the root cause of their dissatisfaction. I apologized sincerely for the inconvenience caused and took the time to explain our product's features and benefits in detail, emphasizing how it aligned with their original needs. \n \n Despite the policy constraints, I proposed a compromise where we offered a partial refund along with additional support, including personalized training and troubleshooting sessions with our technical team. This approach aimed to resolve their issues effectively while demonstrating our commitment to their satisfaction. \n \n Through transparent communication and collaborative problem-solving, I managed to turn the situation around. The client appreciated our willingness to listen and work together towards a solution that met their needs. As a result, they decided to continue using our product, reflecting a positive outcome from the challenging interaction.",
       "topic": "Recruiter",
       "favorite": false,
-      "example": "..."
+      "example": "...",
+      "id": 66
     },
     {
       "question": "Can you describe a time when you had to make a quick decision with limited information?",
@@ -542,7 +609,8 @@
       "answer": "Making quick decisions with limited information is a scenario I've encountered frequently, particularly in fast-paced environments. One instance that stands out is when I was working as a customer service representative and encountered a situation where a customer urgently needed a resolution to an issue that wasn't covered by our standard procedures. \n \n In this case, the customer's problem was unique and required a solution tailored to their specific circumstances. Despite not having all the details initially, I quickly assessed the core issue by asking targeted questions to the customer. I gathered as much relevant information as possible within a short timeframe. \n \n Next, I leveraged my knowledge of company policies and past experiences to propose a preliminary solution that addressed the immediate concern while ensuring compliance with our guidelines. I communicated transparently with the customer about the steps we would take and the expected timeline for resolution. \n \n After implementing the solution, I followed up with the customer to ensure their satisfaction and offered further assistance if needed. This experience reinforced the importance of decisiveness and effective communication in resolving urgent issues promptly.",
       "topic": "Recruiter",
       "favorite": true,
-      "example": "..."
+      "example": "...",
+      "id": 67
     },
     {
       "question": "What do you consider to be the most important qualities for success in this role?",
@@ -550,7 +618,8 @@
       "answer": "The most important qualities for success in any role, in my view, include a combination of technical proficiency, strong communication skills, adaptability, and a proactive attitude. \n \n Firstly, technical proficiency is crucial because it ensures that I can perform my tasks effectively and contribute to the organization's goals. Whether it's understanding complex systems or utilizing software tools, staying updated with industry trends and technologies is essential. \n \n Secondly, strong communication skills are vital for fostering collaboration within teams, building relationships with clients, and conveying ideas clearly. Effective communication ensures that everyone is on the same page and facilitates problem-solving. \n \n Thirdly, adaptability allows me to respond to changes in the workplace environment or industry trends. Being adaptable means embracing new challenges, learning from experiences, and adjusting my approach to meet evolving needs. \n \n Lastly, a proactive attitude enables me to take initiative, identify opportunities for improvement, and contribute positively to the team's success. Proactivity demonstrates my commitment to achieving goals and exceeding expectations. \n \n Overall, I believe these qualities not only contribute to individual success but also enhance team dynamics and organizational growth.",
       "topic": "Recruiter",
       "favorite": true,
-      "example": "..."
+      "example": "...",
+      "id": 68
     },
     {
       "question": "How do you manage your time to ensure all tasks are completed?",
@@ -558,7 +627,8 @@
       "answer": "Managing time effectively is crucial to my approach to work. I employ several strategies to ensure that I meet deadlines and complete tasks efficiently. \n \n Firstly, I prioritize tasks based on urgency and importance. I use techniques like Eisenhower's Urgent/Important matrix to categorize tasks and focus on those that require immediate attention while delegating or scheduling less urgent tasks accordingly. \n \n Additionally, I break down larger tasks into smaller, manageable steps. This helps me maintain momentum and ensures steady progress towards completion without feeling overwhelmed. \n \n I am also a proponent of using time-blocking techniques. By allocating specific time slots for different activities throughout the day, I can maintain focus and minimize distractions. This structured approach allows me to dedicate uninterrupted time to each task, improving productivity. \n \n Regularly reviewing and adjusting my schedule is another key aspect of my time management strategy. This allows me to adapt to changes in priorities or unexpected challenges while ensuring that I stay on track to meet deadlines. \n \n Lastly, I prioritize self-care and work-life balance. Taking breaks and maintaining a healthy routine enhances my productivity and prevents burnout, enabling me to consistently deliver high-quality work.",
       "topic": "Recruiter",
       "favorite": true,
-      "example": "..."
+      "example": "...",
+      "id": 69
     },
     {
       "question": "Can you give an example of a time when you had to work on a team project?",
@@ -566,7 +636,8 @@
       "answer": "Working effectively within a team is something I value greatly. One memorable team project I participated in was during my time at a previous employer, where we were tasked with implementing a new customer relationship management (CRM) system across different departments. \n \n I was designated as the project coordinator, responsible for facilitating communication between team members and ensuring each department's requirements were met. Initially, we faced challenges with integrating the CRM system with existing software used by various departments, which caused delays and frustration among team members. \n \n To address this, I organized regular meetings to discuss progress, identified key stakeholders from each department to gather specific requirements, and established a clear timeline with milestones. Through collaborative problem-solving sessions, we brainstormed solutions and prioritized tasks based on urgency and impact. \n \n By fostering open communication and leveraging each team member's strengths, we successfully customized the CRM system to align with departmental needs while adhering to project deadlines. Our efforts resulted in improved data accessibility and streamlined workflows across the organization, ultimately enhancing customer service efficiency.",
       "topic": "Recruiter",
       "favorite": true,
-      "example": "Improved data accessibility and streamlined workflows across departments."
+      "example": "Improved data accessibility and streamlined workflows across departments.",
+      "id": 70
     },
     {
       "question": "How do you ensure that your work aligns with the company's goals?",
@@ -574,7 +645,8 @@
       "answer": "Ensuring that my work aligns with the company's goals is crucial for driving organizational success and personal satisfaction. I approach this by first understanding the company's mission, vision, and strategic objectives. This foundational knowledge helps me contextualize my role within the broader organizational context. \n \n To align my work effectively, I regularly communicate with my manager and team members to clarify expectations and priorities. By actively seeking feedback, I ensure that my projects and tasks are contributing directly to key business outcomes. This collaborative approach not only enhances alignment but also fosters a sense of ownership and accountability. \n \n Additionally, I stay informed about industry trends and market dynamics relevant to our business. This proactive stance allows me to anticipate changes and align my work accordingly. For instance, if there's a shift in customer preferences or regulatory requirements, I adjust my strategies to align with these evolving factors. \n \n Furthermore, I set clear goals and milestones for myself that are directly tied to the company's objectives. This ensures that my efforts are measurable and impactful. Regularly reviewing progress and outcomes helps me course-correct if needed and celebrate achievements that contribute to the company's overall success. \n \n By maintaining open communication, staying informed, setting clear goals, and regularly assessing alignment, I ensure that my work not only supports but also advances the company's goals effectively.",
       "topic": "Recruiter",
       "favorite": true,
-      "example": "..."
+      "example": "...",
+      "id": 71
     },
     {
       "question": "Can you describe a time when you had to explain a complex concept to someone?",
@@ -582,7 +654,8 @@
       "answer": "Explaining complex concepts effectively is crucial, especially in roles where technical knowledge needs to be communicated clearly. In my previous role as a web developer, I had to explain the intricacies of a new software architecture to non-technical stakeholders. \n \n To ensure understanding, I began by breaking down the concept into simpler terms and providing relatable examples. I tailored my explanations based on the audience's familiarity with technical concepts, which helped in maintaining engagement and clarity. \n \n Additionally, I used visual aids such as diagrams and flowcharts to supplement verbal explanations. This visual approach proved effective in bridging the gap between technical details and practical applications. \n \n Moreover, I encouraged questions and feedback throughout the explanation to gauge comprehension and address any misunderstandings promptly. This interactive approach not only ensured that the stakeholders grasped the concept but also fostered a collaborative atmosphere. \n \n By the end of the session, stakeholders were able to grasp the fundamental aspects of the new architecture, which facilitated smoother decision-making and alignment on project goals.",
       "topic": "Recruiter",
       "favorite": true,
-      "example": "..."
+      "example": "...",
+      "id": 72
     },
     {
       "question": "Can you describe a time when you had to go above and beyond for a client or customer?",
@@ -590,7 +663,8 @@
       "answer": "Going above and beyond for clients has been a hallmark of my approach to customer service. One notable instance was when a client urgently needed a solution tailored to their unique requirements. Despite it being outside our standard offerings, I collaborated closely with our technical team to customize a solution that not only met but exceeded their expectations. I ensured regular updates and proactive communication throughout the process, which helped build trust and satisfaction. \n \n Additionally, during peak seasons, I volunteered to take on extra shifts to assist overwhelmed colleagues in managing client inquiries. This proactive effort not only alleviated workload pressures but also showcased our team's dedication to exceptional service delivery. \n \n Reflecting on these experiences, I've learned that anticipating client needs and delivering personalized solutions are key to fostering long-term relationships and driving business success.",
       "topic": "Recruiter",
       "favorite": true,
-      "example": "..."
+      "example": "...",
+      "id": 73
     },
     {
       "question": "How do you handle competing deadlines?",
@@ -598,14 +672,16 @@
       "improved_answer": "Managing competing deadlines requires a systematic approach to prioritize tasks effectively and manage time efficiently. In my previous roles, I've developed a methodical strategy to navigate these situations. Firstly, I begin by carefully assessing the deadlines and understanding the scope and importance of each task. This allows me to prioritize based on urgency and impact on overall objectives. \n \n Next, I break down larger tasks into smaller, actionable steps and create a timeline or schedule to ensure I stay on track. This helps me allocate sufficient time to each task while considering any dependencies or potential obstacles that may arise. \n \n Communication is also crucial in managing competing deadlines. I maintain open lines of communication with stakeholders or team members involved in each project to clarify expectations, provide updates on progress, and address any potential delays proactively. \n \n Lastly, I remain flexible and adaptable, ready to adjust priorities as needed based on shifting deadlines or new information. By staying organized, communicating effectively, and remaining adaptable, I've consistently met deadlines and delivered quality work even under pressure.",
       "topic": "Recruiter",
       "favorite": true,
-      "example": "In my previous role as a project coordinator, I often had multiple projects with overlapping deadlines. One instance involved coordinating a product launch while simultaneously handling a client's urgent request for customized features. By prioritizing tasks based on deadlines and impact, breaking down tasks into manageable steps, and maintaining clear communication with both internal teams and clients, I successfully managed to meet all deadlines without compromising on quality."
+      "example": "In my previous role as a project coordinator, I often had multiple projects with overlapping deadlines. One instance involved coordinating a product launch while simultaneously handling a client's urgent request for customized features. By prioritizing tasks based on deadlines and impact, breaking down tasks into manageable steps, and maintaining clear communication with both internal teams and clients, I successfully managed to meet all deadlines without compromising on quality.",
+      "id": 74
     },
     {
       "question": "What steps do you take to ensure continuous improvement in your work?",
       "explanation": "This question explores your commitment to self-improvement and professional development.",
       "answer": "Continuous improvement is a cornerstone of my work ethic. I regularly seek feedback from peers and supervisors to identify areas for growth. \n \n Additionally, I proactively pursue learning opportunities such as workshops, online courses, and industry conferences to stay updated with the latest trends and best practices. This not only enhances my skills but also allows me to bring innovative ideas to the table. \n \n Moreover, I believe in setting clear goals for myself, both short-term and long-term, related to professional development. I track my progress against these goals and adjust my approach as needed to ensure I'm consistently evolving and contributing effectively.",
       "topic": "Recruiter",
-      "example": "..."
+      "example": "...",
+      "id": 75
     },
     {
       "question": "Can you describe a time when you successfully managed a project?",
@@ -613,7 +689,8 @@
       "improved_answer": " \n \n In a previous role, I led a team project to overhaul our customer service system. I initiated the project by conducting a thorough needs analysis and outlining clear objectives. I assigned roles based on team members' strengths and held regular meetings to monitor progress and address any issues promptly. \n \n During implementation, unforeseen challenges arose, such as integrating new software with existing systems. I facilitated discussions, collaborated with it, and adjusted timelines as needed to ensure we stayed on track. \n \n As a result, we successfully launched the new system ahead of schedule, improving customer satisfaction by 30% within the first quarter. This experience reinforced my ability to manage complex projects effectively.",
       "topic": "Recruiter",
       "favorite": true,
-      "example": "In my previous role as Project Manager at XYZ Company, I successfully led a cross-functional team of 10 members to implement a new CRM system. This project involved coordinating tasks across departments, managing a budget of $100,000, and ensuring stakeholder alignment throughout the process."
+      "example": "In my previous role as Project Manager at XYZ Company, I successfully led a cross-functional team of 10 members to implement a new CRM system. This project involved coordinating tasks across departments, managing a budget of $100,000, and ensuring stakeholder alignment throughout the process.",
+      "id": 76
     },
     {
       "question": "How do you handle feedback from your supervisors?",
@@ -621,7 +698,8 @@
       "improved_answer": " \n \n I value feedback as a critical tool for growth and development. When receiving feedback from my supervisors, I actively listen to understand their perspective and take notes to ensure I capture all points for improvement. \n \n I maintain a positive attitude, acknowledging areas where I can enhance my performance. Afterward, I reflect on the feedback, identifying actionable steps to address any areas of concern or development opportunities. \n \n For instance, in my previous role, I received feedback about my presentation skills and took a public speaking course to refine my abilities. I believe feedback is essential for professional growth, and I proactively seek opportunities to learn and improve based on constructive input.",
       "topic": "Recruiter",
       "favorite": true,
-      "example": "In a recent performance review, my supervisor provided feedback on my time management skills. I took the feedback seriously and implemented a new scheduling system that helped me prioritize tasks more effectively, resulting in a 20% increase in productivity within the following quarter."
+      "example": "In a recent performance review, my supervisor provided feedback on my time management skills. I took the feedback seriously and implemented a new scheduling system that helped me prioritize tasks more effectively, resulting in a 20% increase in productivity within the following quarter.",
+      "id": 77
     },
     {
       "question": "What do you consider to be your biggest professional failure, and what did you learn from it?",
@@ -629,7 +707,8 @@
       "answer": "One of my biggest professional failures was during a project in my previous role where I was responsible for managing a customer service initiative. Due to a lack of clear communication and inadequate time management, the project was delayed, causing frustration among the team and stakeholders. This experience taught me the critical importance of effective communication and the need for setting realistic timelines and expectations. \n \n I learned to prioritize tasks better, communicate more transparently with team members, and seek feedback regularly to ensure everyone is on the same page. Since then, I have implemented these lessons in my work, which has significantly improved my project management skills and overall efficiency.",
       "topic": "Recruiter",
       "favorite": true,
-      "example": "..."
+      "example": "...",
+      "id": 78
     },
     {
       "question": "Why are you interested in this position?",
@@ -637,7 +716,8 @@
       "answer": "I am particularly interested in this position because it aligns with both my skills and my career aspirations. Over the years, I have developed a strong foundation in [your relevant field/industry], gaining experience in [mention a few key skills or experiences that are broadly applicable, such as customer service, project management, administrative tasks, etc.]. What attracts me most to this role is the opportunity to [mention a couple of aspects that can apply to many jobs, such as work on challenging projects, collaborate with a dynamic team, contribute to a company's growth, etc.]. \n \n I have always been passionate about [a broad interest, such as problem-solving, innovation, efficiency, etc.], and I believe this position will allow me to apply and further develop these skills. Additionally, I am impressed by [something positive about the company or industry that is generally applicable, such as its commitment to innovation, strong market presence, focus on customer satisfaction, etc.]. I am excited about the possibility of contributing to such a [positive adjective] organization and am confident that my background and skills will allow me to make a meaningful impact.",
       "topic": "Recruiter",
       "favorite": true,
-      "example": "..."
+      "example": "...",
+      "id": 79
     },
     {
       "question": "How do you prioritize your work?",
@@ -645,7 +725,8 @@
       "answer": "In order to prioritize my work, I start by making a comprehensive list of all the tasks I need to complete. I then categorize them based on urgency and importance using a method similar to the Eisenhower Matrix, which helps me distinguish between tasks that are urgent and important, important but not urgent, urgent but not important, and neither urgent nor important. This allows me to focus on high-priority tasks that align with both immediate and long-term goals. \n \n Once prioritized, I break down larger tasks into smaller, manageable steps and set clear deadlines for each. I use project management tools such as Trello or Asana to track progress and ensure nothing falls through the cracks. \n \n I also allocate specific time blocks in my calendar dedicated to deep work on high-priority tasks, minimizing distractions and ensuring focused productivity. I regularly review and adjust my priorities as needed, especially when new tasks or changes arise. By maintaining flexibility, I can adapt to shifting priorities while keeping my main objectives on track. \n \n Effective communication with my team and supervisors also helps ensure that I’m aligned with overall goals and can adjust my priorities based on feedback and changing circumstances. By following this structured approach, I am able to manage my workload efficiently, meet deadlines consistently, and ensure that I am contributing effectively to the team’s success.",
       "topic": "Recruiter",
       "favorite": true,
-      "example": "..."
+      "example": "...",
+      "id": 80
     },
     {
       "question": "Can you describe a time when you had to work with a difficult team member?",
@@ -653,7 +734,8 @@
       "answer": "In a previous role, I was part of a project team where one member consistently missed deadlines and was unresponsive to communication. This created tension and delays in our project timeline. To address the situation, I decided to approach the team member privately to understand the root cause of their behavior. \n \n I found that they were struggling with the workload and felt overwhelmed. To support them, I suggested we collaboratively reassign some of their tasks and offered to help with prioritization and time management strategies. Additionally, I proposed regular check-ins to monitor progress and provide support. This approach not only alleviated their stress but also improved our overall team dynamics. By maintaining open and empathetic communication, we were able to rebuild trust and cooperation within the team. \n \n The team member’s performance improved, and we successfully completed the project on time. This experience taught me the importance of empathy, proactive problem-solving, and effective communication in resolving conflicts and fostering a positive team environment.",
       "topic": "Recruiter",
       "favorite": true,
-      "example": "..."
+      "example": "...",
+      "id": 81
     },
     {
       "question": "Why do you want to work for our company?",
@@ -661,7 +743,8 @@
       "answer": "By doing my research for this interview, I came across your company’s values and mission. I was impressed by your commitment to innovation, customer satisfaction, and community involvement. These values resonate deeply with my personal core values. I believe in constantly striving for excellence, going above and beyond to meet customer needs, and giving back to the community. \n \n Furthermore, I am particularly drawn to your company’s emphasis on professional development and fostering a collaborative work environment. I am eager to be part of a team that values continuous learning and teamwork, as I believe these are essential for both personal and professional growth. I am excited about the prospect of contributing to a company that not only values its employees but also strives to make a positive impact in the industry and the community. I see this role as an excellent opportunity to align my skills and career goals with a company that is making meaningful contributions and driving positive change.",
       "topic": "Recruiter",
       "favorite": true,
-      "example": "..."
+      "example": "...",
+      "id": 82
     },
     {
       "question": "Can you tell me about a time when you had to meet a tight deadline?",
@@ -669,7 +752,8 @@
       "answer": "During my programming course, we had a project with a very tight deadline to create a fully functional web application in just two weeks. To manage this, I broke down the project into smaller, manageable tasks and created a detailed timeline using project management software to track our progress. I collaborated closely with my team, ensuring that we communicated effectively and supported each other. We had daily check-ins to monitor our progress and address any issues that arose promptly. \n \n One specific challenge we faced was a major bug in the application a few days before the deadline. We held an emergency meeting to brainstorm solutions and worked extra hours to resolve the issue. Despite the tight deadline, we successfully completed the project on time and received positive feedback from our instructor. This experience taught me the importance of effective time management, teamwork, and maintaining a clear focus under pressure. I believe these skills will be valuable in any fast-paced work environment.",
       "topic": "Recruiter",
       "favorite": true,
-      "example": "..."
+      "example": "...",
+      "id": 83
     },
     {
       "question": "How do you prioritize your work when you have multiple deadlines to meet?",
@@ -677,7 +761,8 @@
       "answer": "When I have multiple deadlines to meet, I prioritize my work by first assessing the urgency and importance of each task. Here’s my approach: \n \n1. Create a Task List: I start by listing all the tasks that need to be completed. This helps me get a clear overview of everything that needs to be done. \n \n2. Prioritize Tasks: I prioritize tasks based on their deadlines and importance, using the Eisenhower Matrix to categorize them. For example, during a previous project, I identified tasks related to client deliverables as urgent and important, while internal documentation was important but not urgent. \n \n3. Set Deadlines: I set specific deadlines for each task, even if they don’t have strict external deadlines. This helped me during a major project where setting internal deadlines ensured steady progress and timely completion. \n \n4. Break Down Tasks: I break down larger tasks into smaller, manageable sub-tasks. This approach was particularly useful when I was working on a complex web development project, allowing me to tackle it step-by-step and track progress. \n \n5. Use Tools: I use project management software like Trello and Asana to schedule tasks and set reminders. These tools were invaluable during my programming course, helping me stay organized and ensure no deadlines were missed. \n \n6. Stay Flexible: I stay flexible and adjust my plan as needed. For instance, if a high-priority task emerges, I re-prioritize my list to accommodate the new deadline. \n \n7. Communicate: If I foresee any potential delays, I communicate with my team or supervisors early on. During a previous role, early communication about potential bottlenecks helped us manage client expectations and secure additional resources when needed. By following these steps, I effectively manage my workload, ensure timely completion of tasks, and maintain high productivity.",
       "topic": "Recruiter",
       "favorite": true,
-      "example": "..."
+      "example": "...",
+      "id": 84
     },
     {
       "question": "How do you handle feedback, especially if it's negative or constructive criticism?",
@@ -685,7 +770,8 @@
       "answer": "I consider myself very open to new perspectives and highly self-aware, capable of handling situations with a high degree of emotional intelligence and maturity. This has been developed through continuous learning and meditation over the past three years. When receiving feedback, I always hope it comes from a place of respect and a desire to help improve, which is how I communicate with others. \n \n When it comes to negative feedback or constructive criticism, I strive to be very open to listening, as it is important to be open to learning and growth. Even if the feedback may be difficult to hear, I recognize that it can often be my ego feeling offended. it may take some time to regain mental clarity, but once I do, I can objectively see the positive contribution of that feedback, which exists to help me grow and evolve.",
       "topic": "Recruiter",
       "favorite": true,
-      "example": "..."
+      "example": "...",
+      "id": 85
     },
     {
       "question": "Describe a situation where you had to collaborate with a difficult team member. How did you handle it?",
@@ -693,7 +779,8 @@
       "answer": "During my time working at Banco República, I encountered a challenging situation where I had to collaborate with a team member who had a very different working style and approach to tasks. This team member preferred a more spontaneous and flexible way of working, while I tend to be more structured and organized. To handle this, I first took the time to understand their perspective and working style by initiating an open conversation. I expressed my appreciation for their flexibility and creativity, which often brought new ideas to the table. At the same time, I shared my own approach and the benefits of having a structured plan. \n \n We agreed to find a middle ground that leveraged both of our strengths. For example, we implemented short daily check-ins to ensure we were aligned on priorities and deadlines, while still allowing space for spontaneous brainstorming sessions. This compromise not only improved our collaboration but also enhanced our overall team performance. \n \n Through this experience, I learned the importance of empathy, active listening, and flexibility when working with diverse team members. it reinforced my belief that effective communication and mutual respect are key to overcoming differences and achieving common goals. As a result, our project was completed ahead of schedule and received positive feedback from our supervisors.",
       "topic": "Recruiter",
       "favorite": true,
-      "example": "..."
+      "example": "...",
+      "id": 86
     },
     {
       "question": "Can you describe a time when you had to learn something new quickly? How did you manage it?",
@@ -701,7 +788,8 @@
       "answer": "During my programming course, I encountered a continuous need to learn new concepts and tools swiftly for our ongoing projects. This required adapting to a faster learning pace than I was accustomed to. To manage this effectively, I initially focused on gaining a broad familiarity with the tools introduced in the course. Instead of diving deeply into each tool right away, I prioritized understanding their basic functionalities and how they could potentially be applied in our projects. \n \n As we progressed, I identified specific tools that were crucial for our project requirements. For instance, when we needed to implement a database management system, I took the time to delve deeply into SQL and database design principles. This allowed me to apply my knowledge directly to our project needs, ensuring efficient data handling and retrieval. By balancing familiarity with practical application, I optimized my learning process and project outcomes. This approach not only enhanced my understanding of various programming tools but also reinforced my ability to adapt quickly to new challenges.",
       "topic": "Recruiter",
       "favorite": true,
-      "example": "..."
+      "example": "...",
+      "id": 87
     },
     {
       "question": "Can you give an example of a time when you had to resolve a conflict within a team? How did you approach the situation?",
@@ -709,7 +797,8 @@
       "answer": "When a conflict arose among my classmates during a team project, I took on the role of a mediator. I facilitated a discussion where each team member could openly express their concerns and discomfort. I emphasized the idea that the success or failure of our project impacted all of us equally, so there was no benefit in blaming anyone. Instead, I encouraged us to focus on our shared objective and work together as a cohesive team. \n \n I created a structured dialogue where everyone had the opportunity to speak without interruption, ensuring each voice was heard and respected. By fostering an environment of mutual respect and understanding, we were able to move past individual grievances and concentrate on our collective goals. This approach helped us to realign our efforts towards achieving our project objectives effectively.",
       "topic": "Recruiter",
       "favorite": true,
-      "example": "..."
+      "example": "...",
+      "id": 88
     },
     {
       "question": "What would you do if you won the lottery?",
@@ -717,7 +806,8 @@
       "favorite": false,
       "explanation": "The Recruiter is assessing your priorities and how grounded you are.",
       "answer": "I would definitely take the opportunity to travel and explore new cultures, especially by learning languages. I’d also invest in learning to fly, something I’ve always wanted to do. Beyond that, I’d focus on giving back, either through volunteering or supporting causes I believe in.",
-      "example": "..."
+      "example": "...",
+      "id": 89
     },
     {
       "question": "What is something you learned recently that excited you?",
@@ -725,7 +815,8 @@
       "favorite": false,
       "explanation": "This is aimed at understanding your approach to learning and curiosity.",
       "answer": "I’ve recently been diving into web development and improving my CSS skills, which has been both challenging and exciting. It’s rewarding to see my designs become more professional and functional.",
-      "example": "..."
+      "example": "...",
+      "id": 90
     },
     {
       "question": "What's the most recent book you read?",
@@ -733,7 +824,8 @@
       "favorite": false,
       "explanation": "This question provides insight into your interests and intellectual curiosity.",
       "answer": "I’ve been exploring personal development books, particularly around psychology and mindfulness, which are topics that resonate with me. I recently read a book on meditation and the power of focus.",
-      "example": "..."
+      "example": "...",
+      "id": 91
     },
     {
       "question": "What is your most-used app on your phone?",
@@ -741,7 +833,8 @@
       "favorite": false,
       "explanation": "This gives insight into your daily habits and interests.",
       "answer": "Probably language learning apps like Duolingo. I’m passionate about improving my skills in Italian and Portuguese, and I use it daily to make progress.",
-      "example": "..."
+      "example": "...",
+      "id": 92
     },
     {
       "question": "If you could switch careers, what would you do?",
@@ -749,7 +842,8 @@
       "favorite": false,
       "explanation": "This question assesses your flexibility and hidden aspirations.",
       "answer": "I’ve always been fascinated by aviation. If I could switch careers, I’d love to become a pilot and explore the world from above.",
-      "example": "..."
+      "example": "...",
+      "id": 93
     },
     {
       "question": "What's one thing people don’t know about you?",
@@ -757,7 +851,8 @@
       "favorite": false,
       "explanation": "This question helps the Recruiter learn something unique about you.",
       "answer": "I’ve been practicing mindfulness and meditation for a while now, which has really helped me stay grounded and improve my focus.",
-      "example": "..."
+      "example": "...",
+      "id": 94
     },
     {
       "question": "What would your perfect day look like?",
@@ -765,7 +860,8 @@
       "favorite": false,
       "explanation": "The Recruiter wants to understand your ideal work-life balance.",
       "answer": "My perfect day would involve some time spent learning or creating, like working on web development projects or learning a new language. I’d also make time for exercise and personal reflection, perhaps through meditation.",
-      "example": "..."
+      "example": "...",
+      "id": 95
     },
     {
       "question": "What is your proudest achievement?",
@@ -773,7 +869,8 @@
       "favorite": false,
       "explanation": "This helps the Recruiter see what you value most in your personal and professional life.",
       "answer": "One of my proudest achievements is learning English on my own to a C1 level. It took a lot of dedication, and it’s opened up so many opportunities for me personally and professionally.",
-      "example": "..."
+      "example": "...",
+      "id": 96
     },
     {
       "question": "How do you handle stress?",
@@ -781,7 +878,8 @@
       "favorite": false,
       "explanation": "The Recruiter wants to understand your coping mechanisms.",
       "answer": "I practice mindfulness and meditation regularly, which helps me stay centered during stressful times. I also break down challenges into smaller, manageable steps, which reduces overwhelm.",
-      "example": "..."
+      "example": "...",
+      "id": 97
     },
     {
       "question": "What do you do to relax after a long day?",
@@ -789,7 +887,8 @@
       "favorite": false,
       "explanation": "This helps the Recruiter see how you maintain work-life balance.",
       "answer": "I enjoy spending time reading or meditating. Sometimes I’ll practice a little language learning or work on personal projects like programming, which I find relaxing in its own way.",
-      "example": "..."
+      "example": "...",
+      "id": 98
     },
     {
       "question": "If you could have dinner with anyone, who would it be and why?",
@@ -797,7 +896,8 @@
       "favorite": false,
       "explanation": "This question explores who inspires you.",
       "answer": "I think it would be amazing to have dinner with someone like Elon Musk, who has a visionary mindset and thinks about the future in bold and innovative ways.",
-      "example": "..."
+      "example": "...",
+      "id": 99
     },
     {
       "question": "If you were a color, which one would you be and why?",
@@ -805,7 +905,8 @@
       "favorite": false,
       "explanation": "This question is a creative way to learn about your personality.",
       "answer": "I’d be blue—calm, reflective, and adaptable. Blue is a color that brings a sense of tranquility and focus, much like how I approach challenges.",
-      "example": "..."
+      "example": "...",
+      "id": 100
     },
     {
       "question": "What’s your favorite hobby outside of work?",
@@ -813,7 +914,8 @@
       "favorite": true,
       "explanation": "The Recruiter wants to know more about your personal interests and how you spend your free time.",
       "answer": "I enjoy a variety of hobbies, but I’m especially passionate about programming and learning new languages. Both keep me curious and engaged in my personal development.",
-      "example": "..."
+      "example": "...",
+      "id": 101
     },
     {
       "question": "What's your go-to karaoke song?",
@@ -821,7 +923,8 @@
       "favorite": true,
       "explanation": "This question is meant to add some levity and see your fun side.",
       "answer": "I’m not a big karaoke person, but if I had to choose, it would be something easy-going and fun, maybe 'Take On Me' by A-ha.",
-      "example": "..."
+      "example": "...",
+      "id": 102
     },
     {
       "question": "What's your favorite movie or TV show?",
@@ -829,7 +932,8 @@
       "favorite": false,
       "explanation": "This helps the Recruiter understand your tastes in entertainment.",
       "answer": "I enjoy animated shows with deep storylines, like 'Avatar: The Last Airbender' or 'Gravity Falls.' They balance great storytelling with lessons about personal growth.",
-      "example": "..."
+      "example": "...",
+      "id": 103
     },
     {
       "question": "What's your least favorite chore?",
@@ -837,7 +941,8 @@
       "favorite": false,
       "explanation": "The Recruiter is looking for a lighthearted answer that also reveals how you manage unpleasant tasks.",
       "answer": "I don’t mind most chores, but if I had to choose, maybe cleaning windows. It’s time-consuming and never seems to be perfect, but I still get it done.",
-      "example": "..."
+      "example": "...",
+      "id": 104
     },
     {
       "question": "If you could only eat one type of cuisine for the rest of your life, what would it be?",
@@ -845,7 +950,8 @@
       "favorite": false,
       "explanation": "This is a fun way to learn about your tastes and preferences.",
       "answer": "I’d go with Italian cuisine. It’s simple, comforting, and there’s so much variety with pasta, pizza, and fresh ingredients.",
-      "example": "..."
+      "example": "...",
+      "id": 105
     },
     {
       "question": "What’s the best gift you’ve ever received?",
@@ -853,7 +959,8 @@
       "favorite": false,
       "explanation": "This question explores what you value and cherish.",
       "answer": "One of the best gifts I’ve received is a book on mindfulness. It sparked my interest in meditation and personal development, which has had a lasting impact on my life.",
-      "example": "..."
+      "example": "...",
+      "id": 106
     },
     {
       "question": "What is something you are really good at?",
@@ -861,7 +968,8 @@
       "favorite": false,
       "explanation": "The Recruiter wants to know what you consider your strengths.",
       "answer": "I’m really good at staying organized and keeping things running smoothly. Whether it’s planning my day or managing a project, I’m efficient and detail-oriented.",
-      "example": "..."
+      "example": "...",
+      "id": 107
     },
     {
       "question": "What’s your guilty pleasure?",
@@ -869,7 +977,8 @@
       "favorite": false,
       "explanation": "This gives the Recruiter insight into how you unwind or indulge.",
       "answer": "I don’t believe in feeling guilty about things you enjoy, but if I had to pick, it would probably be watching animated shows aimed at younger audiences, like 'Gravity Falls.'",
-      "example": "..."
+      "example": "...",
+      "id": 108
     },
     {
       "question": "What’s the best piece of advice you've ever received?",
@@ -877,7 +986,8 @@
       "favorite": false,
       "explanation": "The Recruiter wants to understand what values and lessons guide you.",
       "answer": "The best advice I’ve received is to focus on progress, not perfection. It’s helped me stay motivated and appreciate the journey rather than stressing about the outcome.",
-      "example": "..."
+      "example": "...",
+      "id": 109
     },
     {
       "question": "You have more to offer than you think.",
@@ -885,7 +995,8 @@
       "answer": "It’s easy to focus on what you don’t know, but <span style=\"background-color: rgb(255, 218, 179);\">don’t forget how much you already bring to the table.</span>",
       "example": "undefined",
       "favorite": false,
-      "topic": "Encouragement"
+      "topic": "Encouragement",
+      "id": 110
     },
     {
       "question": "I'm curious to know what aspects of my résumé caught your attention and led to this interview. Understanding this could help me elaborate more on those points or address any specific areas of interest that you might have.",
@@ -893,7 +1004,8 @@
       "topic": "Candidate",
       "favorite": true,
       "answer": "it's not considered rude to ask this question; in fact, it can be seen as a positive move. it demonstrates your interest in understanding what specifically made you stand out as a candidate and shows that you are eager to align your strengths with the company's needs. \n \n ",
-      "example": "..."
+      "example": "...",
+      "id": 111
     },
     {
       "question": "How does the company support work-life balance?",
@@ -901,7 +1013,8 @@
       "answer": "Understanding the company's approach to maintaining a healthy work-life balance.",
       "explanation": "...",
       "favorite": false,
-      "example": "..."
+      "example": "...",
+      "id": 112
     },
     {
       "question": "Can you tell me more about the team I would be working with?",
@@ -909,7 +1022,8 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Understanding the team dynamic is important because working with supportive, collaborative colleagues is key to your job satisfaction and success.",
-      "example": "..."
+      "example": "...",
+      "id": 113
     },
     {
       "question": "What does success look like for this role in the first 6 months to a year?",
@@ -917,7 +1031,8 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "This gives you a clear picture of the expectations and goals, ensuring you're aligned with what the company considers successful performance.",
-      "example": "..."
+      "example": "...",
+      "id": 114
     },
     {
       "question": "What are the biggest challenges someone in this position might face?",
@@ -925,7 +1040,8 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "This helps you prepare for potential obstacles and demonstrates that you're forward-thinking and willing to take on challenges.",
-      "example": "..."
+      "example": "...",
+      "id": 115
     },
     {
       "question": "What are the company’s long-term goals, and how does this role contribute to them?",
@@ -933,7 +1049,8 @@
       "favorite": true,
       "explanation": "n/a",
       "answer": "Understanding the company's vision helps you see how your role fits into the bigger picture, showing your interest in contributing to its success.",
-      "example": "..."
+      "example": "...",
+      "id": 116
     },
     {
       "question": "What kind of training or onboarding process is in place for new employees?",
@@ -941,7 +1058,8 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "This is key to understanding how the company supports new hires and whether they provide the necessary tools for you to excel from the start.",
-      "example": "..."
+      "example": "...",
+      "id": 117
     },
     {
       "question": "How does the company encourage teamwork and collaboration?",
@@ -949,7 +1067,8 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Teamwork is essential in most roles, and understanding how collaboration is fostered helps you assess if the work environment suits your preferred way of working.",
-      "example": "..."
+      "example": "...",
+      "id": 118
     },
     {
       "question": "What are the next steps in the hiring process?",
@@ -957,7 +1076,8 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "This shows you're eager to move forward and also provides clarity on the timeline so you know what to expect after the interview.",
-      "example": "..."
+      "example": "...",
+      "id": 119
     },
     {
       "question": "How do you see the company evolving in the next few years?",
@@ -965,7 +1085,8 @@
       "favorite": true,
       "explanation": "n/a",
       "answer": "It’s important to know the company’s direction to determine if it aligns with your career goals and whether you’ll have opportunities to grow along with it.",
-      "example": "..."
+      "example": "...",
+      "id": 120
     },
     {
       "question": "Can you tell me about the opportunities for cross-departmental collaboration?",
@@ -973,7 +1094,8 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "This helps you understand if there are opportunities to expand your skills by working with other teams, which can be a key factor in your development.",
-      "example": "..."
+      "example": "...",
+      "id": 121
     },
     {
       "question": "What is the company's approach to innovation and new ideas?",
@@ -981,7 +1103,8 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Knowing if the company values and encourages innovation can be important if you're looking for an environment where your creativity and input are appreciated.",
-      "example": "..."
+      "example": "...",
+      "id": 122
     },
     {
       "question": "How does the company handle conflict resolution among employees?",
@@ -989,7 +1112,8 @@
       "favorite": true,
       "explanation": "n/a",
       "answer": "This question helps you gauge how the company addresses workplace issues, ensuring that conflicts are resolved fairly and efficiently.",
-      "example": "..."
+      "example": "...",
+      "id": 123
     },
     {
       "question": "Can you tell me about the opportunities for cross-departmental collaboration?",
@@ -997,7 +1121,8 @@
       "answer": "<br>",
       "example": "...",
       "topic": "Candidate",
-      "favorite": false
+      "favorite": false,
+      "id": 124
     },
     {
       "question": "Can you tell me about the management's approach to mentorship?",
@@ -1005,7 +1130,8 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Mentorship can be crucial to career development, and asking about it shows you're interested in learning from experienced colleagues.",
-      "example": "..."
+      "example": "...",
+      "id": 125
     },
     {
       "question": "What are the company's biggest challenges currently?",
@@ -1013,7 +1139,8 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "This gives you insight into the broader business environment and potential issues you may be helping to solve, showing your proactive mindset.",
-      "example": "..."
+      "example": "...",
+      "id": 126
     },
     {
       "question": "How do you see this role evolving over time?",
@@ -1021,7 +1148,8 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "This question helps you assess long-term growth potential and whether the company sees this role as vital to future plans.",
-      "example": "..."
+      "example": "...",
+      "id": 127
     },
     {
       "question": "How are employee ideas for improvements typically received and acted upon?",
@@ -1029,7 +1157,8 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Knowing if the company is open to employee suggestions shows whether they value innovation and whether you’ll have a voice in improvements.",
-      "example": "..."
+      "example": "...",
+      "id": 128
     },
     {
       "question": "What are the biggest priorities for the department over the next six months?",
@@ -1037,7 +1166,8 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Understanding immediate priorities helps you see where your focus will be and what the company considers most important for your role.",
-      "example": "..."
+      "example": "...",
+      "id": 129
     },
     {
       "question": "How does the company ensure that employees are engaged and motivated?",
@@ -1045,7 +1175,8 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Employee engagement is key to job satisfaction, so this question helps you determine if the company invests in maintaining a positive work environment.",
-      "example": "..."
+      "example": "...",
+      "id": 130
     },
     {
       "question": "What challenges did the company face during the pandemic, and how were they addressed?",
@@ -1053,7 +1184,8 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "This question helps you assess how adaptable and resilient the company is during unforeseen challenges, which is crucial for long-term job security.",
-      "example": "..."
+      "example": "...",
+      "id": 131
     },
     {
       "question": "How are decisions made regarding promotions or internal career moves?",
@@ -1061,7 +1193,8 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Understanding the promotion process gives you an idea of how meritocratic the company is and what steps you need to take to advance.",
-      "example": "..."
+      "example": "...",
+      "id": 132
     },
     {
       "question": "What initiatives does the company have for employee well-being?",
@@ -1069,7 +1202,8 @@
       "favorite": true,
       "explanation": "n/a",
       "answer": "Employee well-being is a priority for a healthy work-life balance, and asking this shows you care about how the company supports mental and physical health.",
-      "example": "..."
+      "example": "...",
+      "id": 133
     },
     {
       "question": "How does the company approach failure and mistakes?",
@@ -1077,7 +1211,8 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Knowing how the company reacts to failure tells you whether they focus on learning and growth or blame, which is crucial for your development.",
-      "example": "..."
+      "example": "...",
+      "id": 134
     },
     {
       "question": "Can you tell me about the company's onboarding process for new hires?",
@@ -1085,7 +1220,8 @@
       "favorite": true,
       "explanation": "n/a",
       "answer": "Understanding the onboarding process is crucial to knowing if you'll receive the necessary support and training to succeed in your role.",
-      "example": "..."
+      "example": "...",
+      "id": 135
     },
     {
       "question": "What key performance indicators (KPIs) are typically used to measure success in this role?",
@@ -1093,7 +1229,8 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "KPIs provide a clear understanding of how your success will be measured, helping you focus on the most important aspects of your performance.",
-      "example": "..."
+      "example": "...",
+      "id": 136
     },
     {
       "question": "What has been the company's biggest accomplishment in the last few years?",
@@ -1101,7 +1238,8 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Learning about major accomplishments gives you a sense of what the company values and highlights its areas of expertise or competitive advantage.",
-      "example": "..."
+      "example": "...",
+      "id": 137
     },
     {
       "question": "How does the company approach career development for employees?",
@@ -1109,7 +1247,8 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Career development is essential for your growth, and this question helps you understand if the company will support your long-term goals.",
-      "example": "..."
+      "example": "...",
+      "id": 138
     },
     {
       "question": "How does the company handle internal communication between departments?",
@@ -1117,7 +1256,8 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "This is crucial for understanding whether communication within the company is efficient and transparent, which can impact your ability to work effectively.",
-      "example": "..."
+      "example": "...",
+      "id": 139
     },
     {
       "question": "What are some of the ways the company celebrates success?",
@@ -1125,7 +1265,8 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Knowing how the company celebrates achievements shows whether they value recognition and how they maintain morale and motivation among employees.",
-      "example": "..."
+      "example": "...",
+      "id": 140
     },
     {
       "question": "How does the company invest in the latest technology or tools to stay competitive?",
@@ -1133,7 +1274,8 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "This question helps you understand if the company is forward-thinking and provides employees with the necessary tools to stay productive and innovative.",
-      "example": "..."
+      "example": "...",
+      "id": 141
     },
     {
       "question": "What are the key challenges someone in this position might face?",
@@ -1141,7 +1283,8 @@
       "answer": "Gaining insight into the potential obstacles and challenges of the role.",
       "favorite": false,
       "explanation": "...",
-      "example": "..."
+      "example": "...",
+      "id": 142
     },
     {
       "question": "How is performance typically measured and reviewed?",
@@ -1149,7 +1292,8 @@
       "answer": "Learning about the criteria and process for evaluating job performance.",
       "favorite": false,
       "explanation": "...",
-      "example": "..."
+      "example": "...",
+      "id": 143
     },
     {
       "question": "Can you describe the team I would be working with?",
@@ -1157,7 +1301,8 @@
       "answer": "Getting information about the team dynamics and who you will be collaborating with.",
       "favorite": false,
       "explanation": "...",
-      "example": "..."
+      "example": "...",
+      "id": 144
     },
     {
       "question": "How would you describe the company culture?",
@@ -1165,7 +1310,8 @@
       "answer": "Understanding the values, environment, and working conditions at the company.",
       "favorite": false,
       "explanation": "...",
-      "example": "..."
+      "example": "...",
+      "id": 145
     },
     {
       "question": "Can you tell me more about the company's mission and values?",
@@ -1173,7 +1319,8 @@
       "answer": "Understanding the core principles and goals of the organization.",
       "explanation": "...",
       "favorite": false,
-      "example": "..."
+      "example": "...",
+      "id": 146
     },
     {
       "question": "What do you enjoy most about working here?",
@@ -1181,7 +1328,8 @@
       "answer": "Gaining insight into the positive aspects of working at the company from the recruiter’s perspective.",
       "explanation": "...",
       "favorite": false,
-      "example": "..."
+      "example": "...",
+      "id": 147
     },
     {
       "question": "Can you describe any current or upcoming projects the team is working on?",
@@ -1189,7 +1337,8 @@
       "answer": "Learning about the team's current or future initiatives and projects.",
       "explanation": "...",
       "favorite": false,
-      "example": "..."
+      "example": "...",
+      "id": 148
     },
     {
       "question": "What are the primary goals for the department this year?",
@@ -1197,7 +1346,8 @@
       "answer": "Understanding the main objectives and priorities for the department in the near term.",
       "favorite": false,
       "explanation": "...",
-      "example": "..."
+      "example": "...",
+      "id": 149
     },
     {
       "question": "What is the company’s approach to diversity and inclusion?",
@@ -1205,7 +1355,8 @@
       "answer": "Understanding the company's policies and initiatives related to diversity and inclusion.",
       "explanation": "...",
       "favorite": false,
-      "example": "..."
+      "example": "...",
+      "id": 150
     },
     {
       "question": "How does the company celebrate achievements and milestones?",
@@ -1213,7 +1364,8 @@
       "answer": "Finding out how the company recognizes and rewards accomplishments.",
       "explanation": "...",
       "favorite": false,
-      "example": "..."
+      "example": "...",
+      "id": 151
     },
     {
       "question": "What kind of onboarding and training programs are available?",
@@ -1221,7 +1373,8 @@
       "answer": "Learning about the support and training provided to new employees.",
       "explanation": "...",
       "favorite": false,
-      "example": "..."
+      "example": "...",
+      "id": 152
     },
     {
       "question": "How would you describe the management style here?",
@@ -1229,7 +1382,8 @@
       "answer": "Understanding the approach and characteristics of management within the company.",
       "explanation": "...",
       "favorite": false,
-      "example": "..."
+      "example": "...",
+      "id": 153
     },
     {
       "question": "Can you describe the ideal candidate for this role?",
@@ -1237,7 +1391,8 @@
       "answer": "Understanding the traits and skills that would make someone perfect for the position.",
       "explanation": "...",
       "favorite": false,
-      "example": "..."
+      "example": "...",
+      "id": 154
     },
     {
       "question": "How does the company support career growth and development?",
@@ -1245,7 +1400,8 @@
       "answer": "Learning about the resources and opportunities provided for career advancement.",
       "explanation": "...",
       "favorite": false,
-      "example": "..."
+      "example": "...",
+      "id": 155
     },
     {
       "question": "What is the company’s approach to remote work or flexible working arrangements?",
@@ -1253,7 +1409,8 @@
       "answer": "Understanding the policies and flexibility regarding remote work options.",
       "explanation": "...",
       "favorite": false,
-      "example": "..."
+      "example": "...",
+      "id": 156
     },
     {
       "question": "What can you tell me about the company's long-term vision and goals?",
@@ -1261,7 +1418,8 @@
       "answer": "Gaining insight into the company’s future direction and strategic objectives.",
       "explanation": "...",
       "favorite": false,
-      "example": "..."
+      "example": "...",
+      "id": 157
     },
     {
       "question": "How do you support employees in achieving a healthy work-life balance?",
@@ -1269,7 +1427,8 @@
       "answer": "Learning about the company’s initiatives and support for maintaining work-life balance.",
       "explanation": "...",
       "favorite": false,
-      "example": "..."
+      "example": "...",
+      "id": 158
     },
     {
       "question": "What is the typical duration of the hiring process?",
@@ -1277,273 +1436,312 @@
       "answer": "Finding out how long it generally takes to complete the hiring process.",
       "explanation": "...",
       "favorite": false,
-      "example": "..."
+      "example": "...",
+      "id": 159
     },
     {
       "question": "Practice your answers to common interview questions.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Preparation helps you articulate your thoughts clearly, reducing anxiety during the interview."
+      "answer": "Preparation helps you articulate your thoughts clearly, reducing anxiety during the interview.",
+      "id": 160
     },
     {
       "question": "Arrive at least 10 minutes early.",
       "topic": "Advice",
       "favorite": true,
       "explanation": "n/a",
-      "answer": "Being early demonstrates punctuality and gives you time to relax before the interview."
+      "answer": "Being early demonstrates punctuality and gives you time to relax before the interview.",
+      "id": 161
     },
     {
       "question": "Stay positive, even when discussing past challenges.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "A positive attitude showcases your resilience and ability to learn from past experiences."
+      "answer": "A positive attitude showcases your resilience and ability to learn from past experiences.",
+      "id": 162
     },
     {
       "question": "Use appropriate body language to convey confidence.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Open body language, like uncrossed arms, shows that you are approachable and engaged."
+      "answer": "Open body language, like uncrossed arms, shows that you are approachable and engaged.",
+      "id": 163
     },
     {
       "question": "Be mindful of your tone of voice.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "A confident tone conveys authority and self-assurance, while a hesitant tone can undermine your message."
+      "answer": "A confident tone conveys authority and self-assurance, while a hesitant tone can undermine your message.",
+      "id": 164
     },
     {
       "question": "Tailor your resume and cover letter to the job.",
       "topic": "Advice",
       "favorite": true,
       "explanation": "n/a",
-      "answer": "Customization shows that you’ve done your homework and are genuinely interested in the position."
+      "answer": "Customization shows that you’ve done your homework and are genuinely interested in the position.",
+      "id": 165
     },
     {
       "question": "Follow the Recruiter's lead on formality.",
       "topic": "Advice",
       "favorite": true,
       "explanation": "n/a",
-      "answer": "Matching the Recruiter's formality level can create a more comfortable conversation."
+      "answer": "Matching the Recruiter's formality level can create a more comfortable conversation.",
+      "id": 166
     },
     {
       "question": "Be concise in your answers.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Clear and concise answers are more impactful and help keep the interview focused."
+      "answer": "Clear and concise answers are more impactful and help keep the interview focused.",
+      "id": 167
     },
     {
       "question": "Use the STAR method for behavioral questions.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "The STAR method (Situation, Task, Action, Result) helps structure your responses effectively."
+      "answer": "The STAR method (Situation, Task, Action, Result) helps structure your responses effectively.",
+      "id": 168
     },
     {
       "question": "Be prepared to discuss your weaknesses.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Discussing weaknesses shows self-awareness and a commitment to personal development."
+      "answer": "Discussing weaknesses shows self-awareness and a commitment to personal development.",
+      "id": 169
     },
     {
       "question": "Thank the Recruiter for their time.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Expressing gratitude leaves a positive impression and shows respect for the Recruiter's time."
+      "answer": "Expressing gratitude leaves a positive impression and shows respect for the Recruiter's time.",
+      "id": 170
     },
     {
       "question": "Avoid using filler words like 'um' and 'like.'",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Minimizing filler words makes you sound more articulate and confident."
+      "answer": "Minimizing filler words makes you sound more articulate and confident.",
+      "id": 171
     },
     {
       "question": "Use specific metrics to quantify your achievements.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Quantifying achievements adds credibility and demonstrates the impact of your contributions."
+      "answer": "Quantifying achievements adds credibility and demonstrates the impact of your contributions.",
+      "id": 172
     },
     {
       "question": "Avoid discussing salary and benefits too early.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Focusing on the role first establishes your interest in the job rather than just compensation."
+      "answer": "Focusing on the role first establishes your interest in the job rather than just compensation.",
+      "id": 173
     },
     {
       "question": "Use anecdotes to make your answers relatable.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Personal stories can make your responses more memorable and engaging for the Recruiter."
+      "answer": "Personal stories can make your responses more memorable and engaging for the Recruiter.",
+      "id": 174
     },
     {
       "question": "Be aware of your non-verbal cues.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Non-verbal communication can convey confidence or anxiety, so be mindful of your body language."
+      "answer": "Non-verbal communication can convey confidence or anxiety, so be mindful of your body language.",
+      "id": 175
     },
     {
       "question": "Practice a confident introduction.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "A strong introduction sets a positive tone and demonstrates confidence from the outset."
+      "answer": "A strong introduction sets a positive tone and demonstrates confidence from the outset.",
+      "id": 176
     },
     {
       "question": "Bring copies of your resume.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Having copies shows preparedness and ensures that both you and the Recruiter have the same information."
+      "answer": "Having copies shows preparedness and ensures that both you and the Recruiter have the same information.",
+      "id": 177
     },
     {
       "question": "Be mindful of your breathing during the interview.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Controlling your breathing can help reduce anxiety and maintain focus throughout the interview."
+      "answer": "Controlling your breathing can help reduce anxiety and maintain focus throughout the interview.",
+      "id": 178
     },
     {
       "question": "Highlight your adaptability to change.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Demonstrating adaptability is crucial in today’s fast-paced work environments and can set you apart."
+      "answer": "Demonstrating adaptability is crucial in today’s fast-paced work environments and can set you apart.",
+      "id": 179
     },
     {
       "question": "Prepare for unexpected questions.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Being ready for surprises shows you can think on your feet and handle pressure."
+      "answer": "Being ready for surprises shows you can think on your feet and handle pressure.",
+      "id": 180
     },
     {
       "question": "Use humor appropriately to lighten the mood.",
       "topic": "Advice",
       "favorite": true,
       "explanation": "n/a",
-      "answer": "A little humor can create rapport, but be cautious to ensure it’s appropriate for the context."
+      "answer": "A little humor can create rapport, but be cautious to ensure it’s appropriate for the context.",
+      "id": 181
     },
     {
       "question": "Be clear about your career goals.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Articulating your career aspirations shows ambition and helps the Recruiter understand your fit."
+      "answer": "Articulating your career aspirations shows ambition and helps the Recruiter understand your fit.",
+      "id": 182
     },
     {
       "question": "Follow up with a thank-you email after the interview.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "A thank-you note reinforces your interest in the role and keeps you top of mind for the Recruiter."
+      "answer": "A thank-you note reinforces your interest in the role and keeps you top of mind for the Recruiter.",
+      "id": 183
     },
     {
       "question": "Stay calm if you don’t know an answer.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Maintaining composure demonstrates confidence and poise under pressure."
+      "answer": "Maintaining composure demonstrates confidence and poise under pressure.",
+      "id": 184
     },
     {
       "question": "Prepare to discuss current trends in your industry.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Demonstrating awareness of industry trends shows you are knowledgeable and engaged in your field."
+      "answer": "Demonstrating awareness of industry trends shows you are knowledgeable and engaged in your field.",
+      "id": 185
     },
     {
       "question": "Be flexible with your availability for follow-up interviews.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Being accommodating shows your willingness to prioritize the interview process and can set you apart."
+      "answer": "Being accommodating shows your willingness to prioritize the interview process and can set you apart.",
+      "id": 186
     },
     {
       "question": "Highlight your teamwork skills.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Collaboration is key in many roles; showcasing teamwork skills demonstrates your ability to work well with others."
+      "answer": "Collaboration is key in many roles; showcasing teamwork skills demonstrates your ability to work well with others.",
+      "id": 187
     },
     {
       "question": "Stay aware of your facial expressions.",
       "topic": "Advice",
       "favorite": true,
       "explanation": "n/a",
-      "answer": "Your facial expressions can convey emotions; maintaining a friendly demeanor helps create a positive atmosphere."
+      "answer": "Your facial expressions can convey emotions; maintaining a friendly demeanor helps create a positive atmosphere.",
+      "id": 188
     },
     {
       "question": "Use specific jargon relevant to the industry when appropriate.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Using industry-specific language can demonstrate your expertise and familiarity with the field."
+      "answer": "Using industry-specific language can demonstrate your expertise and familiarity with the field.",
+      "id": 189
     },
     {
       "question": "Follow up on any questions you couldn't answer during the interview.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Addressing unanswered questions shows accountability and your commitment to providing complete information."
+      "answer": "Addressing unanswered questions shows accountability and your commitment to providing complete information.",
+      "id": 190
     },
     {
       "question": "Stay informed about the company's recent news.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Being knowledgeable about recent developments shows your interest and helps you engage more deeply."
+      "answer": "Being knowledgeable about recent developments shows your interest and helps you engage more deeply.",
+      "id": 191
     },
     {
       "question": "Be conscious of cultural differences in a global workplace.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Understanding cultural nuances can improve communication and show your ability to work in diverse teams."
+      "answer": "Understanding cultural nuances can improve communication and show your ability to work in diverse teams.",
+      "id": 192
     },
     {
       "question": "Use positive language to describe your experiences.",
       "topic": "Advice",
       "favorite": true,
       "explanation": "n/a",
-      "answer": "Positive language conveys confidence and a proactive attitude, making your answers more compelling."
+      "answer": "Positive language conveys confidence and a proactive attitude, making your answers more compelling.",
+      "id": 193
     },
     {
       "question": "Reflect on what you've learned from previous roles.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Demonstrating learning experiences shows growth and the ability to adapt from past challenges."
+      "answer": "Demonstrating learning experiences shows growth and the ability to adapt from past challenges.",
+      "id": 194
     },
     {
       "question": "Share what you can contribute to the company.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Articulating your potential contributions emphasizes your value and alignment with the company's goals."
+      "answer": "Articulating your potential contributions emphasizes your value and alignment with the company's goals.",
+      "id": 195
     },
     {
       "question": "Be ready to discuss your long-term career vision.",
       "topic": "Advice",
       "favorite": true,
       "explanation": "n/a",
-      "answer": "Sharing your career aspirations shows ambition and helps align your goals with the company's direction."
+      "answer": "Sharing your career aspirations shows ambition and helps align your goals with the company's direction.",
+      "id": 196
     },
     {
       "question": "Prepare to handle questions about gaps in your resume.",
       "topic": "Advice",
       "favorite": true,
       "explanation": "n/a",
-      "answer": "Being prepared to explain gaps shows transparency and can mitigate concerns the Recruiter may have."
+      "answer": "Being prepared to explain gaps shows transparency and can mitigate concerns the Recruiter may have.",
+      "id": 197
     },
     {
       "question": "Be courteous and respectful to everyone you meet.",
@@ -1551,210 +1749,240 @@
       "answer": "Treating everyone with respect can reflect your character and may influence the Recruiter's perception.",
       "example": "undefined",
       "topic": "\n            Keep It Up\n        ",
-      "favorite": false
+      "favorite": false,
+      "id": 198
     },
     {
       "question": "Stay flexible in your interview approach.",
       "topic": "Advice",
       "favorite": true,
       "explanation": "n/a",
-      "answer": "Flexibility demonstrates adaptability and shows you're open to different interview formats or styles."
+      "answer": "Flexibility demonstrates adaptability and shows you're open to different interview formats or styles.",
+      "id": 199
     },
     {
       "question": "Follow the Recruiter's cues for conversation pacing.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Adjusting to the Recruiter's pace fosters a comfortable conversation flow."
+      "answer": "Adjusting to the Recruiter's pace fosters a comfortable conversation flow.",
+      "id": 200
     },
     {
       "question": "Be enthusiastic about the company culture.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Expressing excitement about the company culture can show alignment with their values and environment."
+      "answer": "Expressing excitement about the company culture can show alignment with their values and environment.",
+      "id": 201
     },
     {
       "question": "Prepare for behavioral interview questions.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Understanding how to answer behavioral questions demonstrates self-awareness and preparedness."
+      "answer": "Understanding how to answer behavioral questions demonstrates self-awareness and preparedness.",
+      "id": 202
     },
     {
       "question": "Maintain eye contact during the interview.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Eye contact conveys confidence and helps establish a connection with the Recruiter."
+      "answer": "Eye contact conveys confidence and helps establish a connection with the Recruiter.",
+      "id": 203
     },
     {
       "question": "Use the STAR method to structure responses.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "The STAR method (Situation, Task, Action, Result) helps organize responses to showcase your experiences clearly."
+      "answer": "The STAR method (Situation, Task, Action, Result) helps organize responses to showcase your experiences clearly.",
+      "id": 204
     },
     {
       "question": "Be aware of your body language.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Positive body language can enhance your message and show engagement during the interview."
+      "answer": "Positive body language can enhance your message and show engagement during the interview.",
+      "id": 205
     },
     {
       "question": "Practice common interview questions.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Rehearsing answers prepares you for the interview and boosts your confidence."
+      "answer": "Rehearsing answers prepares you for the interview and boosts your confidence.",
+      "id": 206
     },
     {
       "question": "Have questions prepared for the Recruiter.",
       "topic": "Advice",
       "favorite": true,
       "explanation": "n/a",
-      "answer": "Preparing questions demonstrates your interest and allows you to evaluate the company fit."
+      "answer": "Preparing questions demonstrates your interest and allows you to evaluate the company fit.",
+      "id": 207
     },
     {
       "question": "Be honest about your skills and experiences.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Honesty builds trust and credibility, ensuring the Recruiter gets an accurate sense of your abilities."
+      "answer": "Honesty builds trust and credibility, ensuring the Recruiter gets an accurate sense of your abilities.",
+      "id": 208
     },
     {
       "question": "Consider your responses from the Recruiter's perspective.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Thinking from their perspective can help tailor your answers to address their concerns and interests."
+      "answer": "Thinking from their perspective can help tailor your answers to address their concerns and interests.",
+      "id": 209
     },
     {
       "question": "Keep your answers concise and relevant.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Concise answers are easier to follow and show you value the Recruiter's time."
+      "answer": "Concise answers are easier to follow and show you value the Recruiter's time.",
+      "id": 210
     },
     {
       "question": "Showcase your unique selling points.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Identifying and emphasizing what makes you unique can differentiate you from other candidates."
+      "answer": "Identifying and emphasizing what makes you unique can differentiate you from other candidates.",
+      "id": 211
     },
     {
       "question": "Practice active listening during the interview.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Active listening demonstrates engagement and allows you to respond thoughtfully."
+      "answer": "Active listening demonstrates engagement and allows you to respond thoughtfully.",
+      "id": 212
     },
     {
       "question": "Consider the impact of your online presence.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "A positive online presence can enhance your candidacy; be mindful of what is publicly available."
+      "answer": "A positive online presence can enhance your candidacy; be mindful of what is publicly available.",
+      "id": 213
     },
     {
       "question": "Express gratitude for the opportunity.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Thanking the Recruiter shows appreciation and leaves a good impression."
+      "answer": "Thanking the Recruiter shows appreciation and leaves a good impression.",
+      "id": 214
     },
     {
       "question": "Follow the interview’s structure.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Adhering to the interview format helps maintain clarity and flow."
+      "answer": "Adhering to the interview format helps maintain clarity and flow.",
+      "id": 215
     },
     {
       "question": "Stay positive about future opportunities.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Maintaining a positive outlook on potential roles can showcase your resilience and enthusiasm."
+      "answer": "Maintaining a positive outlook on potential roles can showcase your resilience and enthusiasm.",
+      "id": 216
     },
     {
       "question": "Avoid interrupting the Recruiter.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Allowing the Recruiter to finish their thoughts demonstrates respect and attentiveness."
+      "answer": "Allowing the Recruiter to finish their thoughts demonstrates respect and attentiveness.",
+      "id": 217
     },
     {
       "question": "Use visuals or examples when discussing achievements.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Using examples can make your accomplishments more relatable and tangible for the Recruiter."
+      "answer": "Using examples can make your accomplishments more relatable and tangible for the Recruiter.",
+      "id": 218
     },
     {
       "question": "Seek feedback on your interview performance.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Constructive feedback can help you improve for future interviews."
+      "answer": "Constructive feedback can help you improve for future interviews.",
+      "id": 219
     },
     {
       "question": "Tailor your responses to the company’s values.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Aligning your answers with the company's values can illustrate cultural fit."
+      "answer": "Aligning your answers with the company's values can illustrate cultural fit.",
+      "id": 220
     },
     {
       "question": "Stay positive even if the interview doesn’t go as planned.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "A positive mindset helps you learn from experiences and prepares you for future opportunities."
+      "answer": "A positive mindset helps you learn from experiences and prepares you for future opportunities.",
+      "id": 221
     },
     {
       "question": "Use your network for insights about the company.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Leveraging your network can provide valuable context and insights before the interview."
+      "answer": "Leveraging your network can provide valuable context and insights before the interview.",
+      "id": 222
     },
     {
       "question": "Consider your body language in virtual interviews.",
       "topic": "Advice",
       "favorite": true,
       "explanation": "n/a",
-      "answer": "Body language matters even online; maintaining a professional demeanor is essential."
+      "answer": "Body language matters even online; maintaining a professional demeanor is essential.",
+      "id": 223
     },
     {
       "question": "Prepare a brief personal story to share.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "A personal story can highlight your skills and experiences in a relatable way."
+      "answer": "A personal story can highlight your skills and experiences in a relatable way.",
+      "id": 224
     },
     {
       "question": "Practice your delivery with a friend or mentor.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Practicing with someone can provide feedback and help refine your presentation."
+      "answer": "Practicing with someone can provide feedback and help refine your presentation.",
+      "id": 225
     },
     {
       "question": "Be conscious of the interview time limit.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Being aware of time can help you manage your responses and stay concise."
+      "answer": "Being aware of time can help you manage your responses and stay concise.",
+      "id": 226
     },
     {
       "question": "Demonstrate enthusiasm for the role.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Showing excitement can convey your interest and help you connect with the Recruiter."
+      "answer": "Showing excitement can convey your interest and help you connect with the Recruiter.",
+      "id": 227
     },
     {
       "question": "How important is body language in a job interview?",
@@ -1762,7 +1990,8 @@
       "favorite": true,
       "explanation": "...",
       "example": "...",
-      "answer": "Body language is crucial in a job interview as it conveys confidence, enthusiasm, and professionalism. Maintaining eye contact, a firm handshake, and an open posture can positively impact the Recruiter's perception of you."
+      "answer": "Body language is crucial in a job interview as it conveys confidence, enthusiasm, and professionalism. Maintaining eye contact, a firm handshake, and an open posture can positively impact the Recruiter's perception of you.",
+      "id": 228
     },
     {
       "question": "What are some tips for improving communication skills for interviews?",
@@ -1770,7 +1999,8 @@
       "explanation": "...",
       "example": "...",
       "favorite": false,
-      "answer": "To improve communication skills, practice active listening, be clear and concise in your responses, and use positive language. Rehearse common interview questions and answers, and seek feedback from peers or mentors."
+      "answer": "To improve communication skills, practice active listening, be clear and concise in your responses, and use positive language. Rehearse common interview questions and answers, and seek feedback from peers or mentors.",
+      "id": 229
     },
     {
       "question": "How should I prepare for behavioral interview questions?",
@@ -1778,7 +2008,8 @@
       "example": "...",
       "favorite": false,
       "topic": "Advice",
-      "answer": "Prepare for behavioral interview questions by using the STAR method (Situation, Task, Action, Result). Reflect on past experiences, identify relevant examples, and practice articulating your responses clearly and concisely."
+      "answer": "Prepare for behavioral interview questions by using the STAR method (Situation, Task, Action, Result). Reflect on past experiences, identify relevant examples, and practice articulating your responses clearly and concisely.",
+      "id": 230
     },
     {
       "question": "What are some common body language mistakes to avoid in an interview?",
@@ -1786,7 +2017,8 @@
       "example": "...",
       "favorite": false,
       "topic": "Advice",
-      "answer": "Avoid common body language mistakes such as crossing your arms, fidgeting, avoiding eye contact, slouching, and giving weak handshakes. These behaviors can signal disinterest, nervousness, or lack of confidence."
+      "answer": "Avoid common body language mistakes such as crossing your arms, fidgeting, avoiding eye contact, slouching, and giving weak handshakes. These behaviors can signal disinterest, nervousness, or lack of confidence.",
+      "id": 231
     },
     {
       "question": "What are some effective ways to close an interview?",
@@ -1794,7 +2026,8 @@
       "example": "...",
       "favorite": false,
       "topic": "Advice",
-      "answer": "Close an interview by expressing gratitude for the opportunity, summarizing your interest in the role, and reiterating how your skills and experiences align with the job. Ask about the next steps in the hiring process and send a follow-up thank you email."
+      "answer": "Close an interview by expressing gratitude for the opportunity, summarizing your interest in the role, and reiterating how your skills and experiences align with the job. Ask about the next steps in the hiring process and send a follow-up thank you email.",
+      "id": 232
     },
     {
       "question": "How can I demonstrate problem-solving skills in an interview?",
@@ -1802,7 +2035,8 @@
       "example": "...",
       "favorite": false,
       "topic": "Advice",
-      "answer": "Demonstrate problem-solving skills by sharing specific examples where you identified a problem, developed a solution, and implemented it successfully. Highlight your critical thinking, creativity, and ability to adapt to challenges."
+      "answer": "Demonstrate problem-solving skills by sharing specific examples where you identified a problem, developed a solution, and implemented it successfully. Highlight your critical thinking, creativity, and ability to adapt to challenges.",
+      "id": 233
     },
     {
       "question": "What should I do if I make a mistake during an interview?",
@@ -1810,7 +2044,8 @@
       "favorite": false,
       "example": "...",
       "topic": "Advice",
-      "answer": "If you make a mistake during an interview, acknowledge it calmly and correct yourself. Apologize briefly if necessary, then move on confidently. Showing grace under pressure can leave a positive impression on the Recruiter."
+      "answer": "If you make a mistake during an interview, acknowledge it calmly and correct yourself. Apologize briefly if necessary, then move on confidently. Showing grace under pressure can leave a positive impression on the Recruiter.",
+      "id": 234
     },
     {
       "question": "How can I prepare for technical interview questions?",
@@ -1818,7 +2053,8 @@
       "favorite": false,
       "example": "...",
       "topic": "Advice",
-      "answer": "Prepare for technical questions by reviewing the key skills and knowledge required for the role. Practice problem-solving exercises, study relevant theories, and stay updated on industry trends. Mock interviews can also be beneficial."
+      "answer": "Prepare for technical questions by reviewing the key skills and knowledge required for the role. Practice problem-solving exercises, study relevant theories, and stay updated on industry trends. Mock interviews can also be beneficial.",
+      "id": 235
     },
     {
       "question": "What are some ways to show cultural fit in an interview?",
@@ -1826,7 +2062,8 @@
       "favorite": false,
       "example": "...",
       "topic": "Advice",
-      "answer": "Show cultural fit by researching the company's values and culture. Reflect these in your answers by sharing experiences and behaviors that align with them. Discuss how you’ve thrived in similar environments and express enthusiasm for their work culture."
+      "answer": "Show cultural fit by researching the company's values and culture. Reflect these in your answers by sharing experiences and behaviors that align with them. Discuss how you’ve thrived in similar environments and express enthusiasm for their work culture.",
+      "id": 236
     },
     {
       "question": "You’re making a strong impression!",
@@ -1834,7 +2071,8 @@
       "answer": "Focus on the positive feedback and signals you’re receiving.",
       "explanation": "...",
       "favorite": false,
-      "example": "..."
+      "example": "...",
+      "id": 237
     },
     {
       "question": "You’re on the right path!",
@@ -1842,7 +2080,8 @@
       "answer": "Acknowledge the progress you’ve made and stay on course.",
       "explanation": "...",
       "favorite": false,
-      "example": "..."
+      "example": "...",
+      "id": 238
     },
     {
       "question": "You are prepared for this!",
@@ -1850,7 +2089,8 @@
       "answer": "Trust in the hard work and effort you’ve put into preparing.",
       "explanation": "...",
       "favorite": false,
-      "example": "..."
+      "example": "...",
+      "id": 239
     },
     {
       "question": "Every answer you give is valuable!",
@@ -1858,7 +2098,8 @@
       "answer": "Every response you provide contributes to the interview process.",
       "explanation": "...",
       "favorite": false,
-      "example": "..."
+      "example": "...",
+      "id": 240
     },
     {
       "question": "You’re doing great!",
@@ -1866,7 +2107,8 @@
       "answer": "Acknowledge your progress and the positive steps you’re taking.",
       "explanation": "...",
       "favorite": false,
-      "example": "..."
+      "example": "...",
+      "id": 241
     },
     {
       "question": "You are confident and capable!",
@@ -1874,7 +2116,8 @@
       "answer": "Show confidence in your abilities and approach.",
       "explanation": "...",
       "favorite": false,
-      "example": "..."
+      "example": "...",
+      "id": 242
     },
     {
       "question": "Your approach is effective!",
@@ -1882,7 +2125,8 @@
       "answer": "Recognize the effectiveness of your strategies and methods.",
       "explanation": "...",
       "favorite": false,
-      "example": "..."
+      "example": "...",
+      "id": 243
     },
     {
       "question": "Your achievements speak volumes!",
@@ -1890,7 +2134,8 @@
       "answer": "Let your past successes demonstrate your capabilities.",
       "explanation": "...",
       "favorite": false,
-      "example": "..."
+      "example": "...",
+      "id": 244
     },
     {
       "question": "You’re making strides!",
@@ -1898,7 +2143,8 @@
       "answer": "Acknowledge the progress you’ve made in your journey.",
       "explanation": "...",
       "favorite": false,
-      "example": "..."
+      "example": "...",
+      "id": 245
     },
     {
       "question": "Your dedication is inspiring!",
@@ -1906,7 +2152,8 @@
       "answer": "Recognize the motivation and effort you put into your work.",
       "explanation": "...",
       "favorite": false,
-      "example": "..."
+      "example": "...",
+      "id": 246
     },
     {
       "question": "You’re capable of excellence!",
@@ -1914,7 +2161,8 @@
       "answer": "Believe in your capacity to achieve outstanding results.",
       "explanation": "...",
       "favorite": false,
-      "example": "..."
+      "example": "...",
+      "id": 247
     },
     {
       "question": "Your expertise is valuable!",
@@ -1922,7 +2170,8 @@
       "answer": "Recognize the worth of the skills and knowledge you bring.",
       "explanation": "...",
       "favorite": true,
-      "example": "..."
+      "example": "...",
+      "id": 248
     },
     {
       "question": "You’re ready to excel!",
@@ -1930,7 +2179,8 @@
       "answer": "Be confident in your readiness to succeed and excel.",
       "explanation": "...",
       "favorite": false,
-      "example": "..."
+      "example": "...",
+      "id": 249
     },
     {
       "question": "You’re making positive strides!",
@@ -1938,119 +2188,136 @@
       "answer": "Recognize the progress you’re making and continue forward.",
       "explanation": "...",
       "favorite": false,
-      "example": "..."
+      "example": "...",
+      "id": 250
     },
     {
       "question": "You are growing through every experience.",
       "topic": "Encouragement",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Even if this interview doesn’t lead to a job, it’s another step in refining your skills and getting closer to the right fit."
+      "answer": "Even if this interview doesn’t lead to a job, it’s another step in refining your skills and getting closer to the right fit.",
+      "id": 251
     },
     {
       "question": "You’re crafting the future you want.",
       "topic": "Encouragement",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Each application and interview is a step toward creating the career and life you envision for yourself."
+      "answer": "Each application and interview is a step toward creating the career and life you envision for yourself.",
+      "id": 252
     },
     {
       "question": "You can adapt to any situation.",
       "topic": "Encouragement",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "No matter what questions come up, you have the ability to adapt your answers to highlight your strengths."
+      "answer": "No matter what questions come up, you have the ability to adapt your answers to highlight your strengths.",
+      "id": 253
     },
     {
       "question": "Your preparation is going to pay off.",
       "topic": "Encouragement",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "All the work you’ve done to prepare for this is going to show. Trust your readiness and let it flow."
+      "answer": "All the work you’ve done to prepare for this is going to show. Trust your readiness and let it flow.",
+      "id": 254
     },
     {
       "question": "You’re allowed to take up space.",
       "topic": "Encouragement",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Don’t be afraid to stand tall in the room. You belong here, and your contributions are just as valuable as anyone else’s."
+      "answer": "Don’t be afraid to stand tall in the room. You belong here, and your contributions are just as valuable as anyone else’s.",
+      "id": 255
     },
     {
       "question": "You don’t need to have all the answers.",
       "topic": "Encouragement",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Interviews aren’t about knowing everything. They’re about showing you can learn, adapt, and grow."
+      "answer": "Interviews aren’t about knowing everything. They’re about showing you can learn, adapt, and grow.",
+      "id": 256
     },
     {
       "question": "Your calmness is your strength.",
       "topic": "Encouragement",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "In moments of pressure, your ability to stay composed will make all the difference. Let your calmness be your guide."
+      "answer": "In moments of pressure, your ability to stay composed will make all the difference. Let your calmness be your guide.",
+      "id": 257
     },
     {
       "question": "You’re always evolving.",
       "topic": "Encouragement",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "This moment is just one snapshot in your journey. You’re constantly growing and improving, and that will reflect in your work."
+      "answer": "This moment is just one snapshot in your journey. You’re constantly growing and improving, and that will reflect in your work.",
+      "id": 258
     },
     {
       "question": "Keep pushing through the discomfort.",
       "topic": "Encouragement",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "It might feel awkward or uncomfortable now, but that’s where growth happens. You’re expanding your comfort zone."
+      "answer": "It might feel awkward or uncomfortable now, but that’s where growth happens. You’re expanding your comfort zone.",
+      "id": 259
     },
     {
       "question": "You can always find a way through.",
       "topic": "Encouragement",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Even when things don’t go as planned, you have the creativity and resilience to find another way forward."
+      "answer": "Even when things don’t go as planned, you have the creativity and resilience to find another way forward.",
+      "id": 260
     },
     {
       "question": "You have the power to inspire others.",
       "topic": "Encouragement",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "By pushing through challenges and showing up as your authentic self, you inspire others to do the same."
+      "answer": "By pushing through challenges and showing up as your authentic self, you inspire others to do the same.",
+      "id": 261
     },
     {
       "question": "You can navigate through uncertainty.",
       "topic": "Encouragement",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Even when you’re unsure of what’s next, you have the ability to navigate through it and find your way."
+      "answer": "Even when you’re unsure of what’s next, you have the ability to navigate through it and find your way.",
+      "id": 262
     },
     {
       "question": "You’ve already overcome so much.",
       "topic": "Encouragement",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Think back to the challenges you’ve already faced and overcome. You have the strength to handle whatever comes next."
+      "answer": "Think back to the challenges you’ve already faced and overcome. You have the strength to handle whatever comes next.",
+      "id": 263
     },
     {
       "question": "You can create your own opportunities.",
       "topic": "Encouragement",
       "favorite": true,
       "explanation": "n/a",
-      "answer": "Don’t wait for opportunities to come to you—your initiative and creativity will open doors for you."
+      "answer": "Don’t wait for opportunities to come to you—your initiative and creativity will open doors for you.",
+      "id": 264
     },
     {
       "question": "You’re more than your job header.",
       "topic": "Encouragement",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Remember, your worth isn’t tied to any one role or job header. You are valuable no matter what."
+      "answer": "Remember, your worth isn’t tied to any one role or job header. You are valuable no matter what.",
+      "id": 265
     },
     {
       "question": "You’re already more than enough.",
       "topic": "Encouragement",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "You don’t have to prove yourself to anyone. You’re already enough as you are."
+      "answer": "You don’t have to prove yourself to anyone. You’re already enough as you are.",
+      "id": 266
     },
     {
       "question": "💸😜🥰🤤XOXO 😘🥰<div><br></div><div>💯💯💯</div>",
@@ -2058,7 +2325,8 @@
       "answer": "",
       "example": "",
       "topic": "\n            Candidate\n        ",
-      "favorite": true
+      "favorite": true,
+      "id": 267
     },
     {
       "question": ";P",
@@ -2066,7 +2334,8 @@
       "answer": "",
       "example": "",
       "favorite": true,
-      "topic": "Encouragement"
+      "topic": "Encouragement",
+      "id": 268
     },
     {
       "question": "You are doing all of this to move out, focus on that! 🩷",
@@ -2074,7 +2343,8 @@
       "answer": "Having your own place has always been your dream since you were a child.&nbsp;<div>No longer having to hear pasive agressive provocations like \"we're waiting for you\" when ghey are already half way through the meal.<br><div><br><div><br></div></div></div>",
       "example": "",
       "favorite": true,
-      "topic": "Encouragement"
+      "topic": "Encouragement",
+      "id": 269
     },
     {
       "question": "You are worthy of a life that makes you feel genuinely in love with the most beautiful parts of your soul",
@@ -2082,7 +2352,8 @@
       "answer": "You are worthy of love and kind people, making friends and finding the ones who make you feel appreciated, people who are soft and gentle and make you feel alive in and in love with life.",
       "example": "",
       "topic": "Encouragement",
-      "favorite": true
+      "favorite": true,
+      "id": 270
     },
     {
       "question": "Whatever your afraid of, it's not that deep!",
@@ -2090,7 +2361,8 @@
       "answer": "Look at the most successful football players for example! How much do you actually care about football? Nothing, right? Exactly!&nbsp;<div>Even if you think is gonna go in the most horrible way it could possible go, it's still not important at all.&nbsp;</div>",
       "example": "",
       "topic": "\n            Keep It Up\n        ",
-      "favorite": true
+      "favorite": true,
+      "id": 271
     },
     {
       "question": "If you actually think about it, the things that now make you insecure will dissaper fast...",
@@ -2098,7 +2370,17 @@
       "answer": "Either you notice it or not, you'll start gaining momentum with the things you do... You'll start doing one after the other, after the other, and so on... Eventually, what seemed impossible before will become normal real fast.<div><br></div><div>Also, the huge mayority of things that you are craving now, are in reality daily routine for everybody, and that will include you as well soon. Right now, all of the things that you want you can only picture them separately, but when you start working that line will blurry until it dissapear. Drinking beer, going to the beach and going to work will no longer be separated, but rather the same thing that you do after getting out of your shift. Keep focusing and moving forward, you got this! ⭐<br><div><br></div></div>",
       "example": "",
       "topic": "\n            Keep It Up\n        ",
-      "favorite": false
+      "favorite": false,
+      "id": 272
+    },
+    {
+      "id": 273,
+      "topic": "",
+      "favorite": false,
+      "question": "Why to become a Waiter?&nbsp;🤑💸🫰",
+      "explanation": "",
+      "answer": "",
+      "example": ""
     }
   ]
 }
