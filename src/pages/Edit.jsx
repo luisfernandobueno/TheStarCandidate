@@ -9,7 +9,10 @@ export default function Edit({
     fetch_url,
     refreshData,
     darkMode,
-    setDarkMode
+    setDarkMode,
+    data,
+    setData,
+    historyIndex, historyArr
 }) {
 
     /* const [topic, setTopic] = useState(
@@ -33,6 +36,15 @@ export default function Edit({
                 mode="edit"
                 fetch_url={fetch_url}
                 refreshData={refreshData}
+                data={data}
+            setData={setData}
+            historyIndex={
+                                historyIndex
+                            }
+
+                            historyArr={
+                                historyArr
+                            }
             />
             
 

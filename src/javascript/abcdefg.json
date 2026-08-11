@@ -10,22 +10,13 @@
       "favorite": false
     },
     {
-      "id": 1,
-      "question": "Can I end the interview with finger guns and a wink?",
-      "explanation": "The app says no. Your future self agrees.",
-      "answer": "Thank the interviewer professionally and leave on a positive note.",
-      "example": "'Thank you for your time. I really enjoyed our conversation and look forward to hearing from you.'",
-      "topic": "Candidate",
-      "favorite": false
-    },
-    {
       "id": 2,
-      "topic": "",
-      "favorite": false,
-      "question": "🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥",
+      "question": "💸vvvvvvvvvvvvv💸💸💸💸💸💸💸💸💸💸💸💸",
       "explanation": "",
       "answer": "",
-      "example": ""
+      "example": "",
+      "topic": "Encouragement",
+      "favorite": false
     }
   ]
 }

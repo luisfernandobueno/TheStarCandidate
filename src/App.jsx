@@ -11,7 +11,7 @@ import Edit from "./pages/Edit";
 import Resumee from "./pages/Resumee";
 
 // const fetch_url = "https://api.npoint.io/facb5749d433f9be2b92";
-// const fetch_url = "https://thestarcandidate.onrender.com";
+//const fetch_url = "https://getpantry.cloud/apiv1/pantry/2a537c44-2c08-4a2a-8699-db932d92f65c/basket/Mockup";
 const fetch_url = "http://192.168.1.45:3000";
 
 function App() {
@@ -83,7 +83,7 @@ function App() {
                 const questions =
                     json.questions || [];
 
-
+                console.log("questions json: ", questions)
                 setData(questions);
 
 
@@ -455,17 +455,98 @@ function App() {
        DELETE
     ============================================================ */
 
-    async function deleteQuestion(id) {
 
-        try {
+async function deleteQuestion(id) {
 
-            const response =
-                await fetch(
-                    `${fetch_url}/${id}`,
-                    {
-                        method: "DELETE"
-                    }
-                );
+    try {
+
+        /* ========================================================
+           1. REMOVE THE QUESTION LOCALLY FROM DATA
+           ======================================================== */
+
+        const updatedData = data.filter(
+            (item) => item.id !== id
+        );
+
+
+        console.log(
+            "Data after local delete:",
+            updatedData
+        );
+
+
+        /* ========================================================
+           2. REMOVE THE QUESTION FROM HISTORY
+           
+           History may contain the question being deleted even
+           if it is not currently displayed.
+           ======================================================== */
+
+        const updatedHistory = historyArr.filter(
+            (item) => item.id !== id
+        );
+
+
+        console.log(
+            "History after removing deleted question:",
+            updatedHistory
+        );
+
+
+        /* ========================================================
+           3. DETERMINE WHETHER THE CURRENT QUESTION WAS DELETED
+           ======================================================== */
+
+        const currentQuestion =
+            historyArr[historyIndex];
+
+
+        const deletingCurrentQuestion =
+            currentQuestion?.id === id;
+
+
+        /* ========================================================
+           4. UPDATE DATA STATE LOCALLY
+           ======================================================== */
+
+        setData(updatedData);
+
+
+        /* ========================================================
+           5. HANDLE EMPTY DATABASE
+           ======================================================== */
+
+        if (updatedData.length === 0) {
+
+            setSelectedQuestion(null);
+
+            setHistoryArr([]);
+
+            setHistoryIndex(0);
+
+            setIsFavorite(false);
+
+
+            /*
+             * The local state is already correct.
+             * Now persist the empty dataset.
+             */
+
+            const response = await fetch(
+                fetch_url,
+                {
+                    method: "POST",
+
+                    headers: {
+                        "Content-Type":
+                            "application/json"
+                    },
+
+                    body: JSON.stringify({
+                        questions: []
+                    })
+                }
+            );
 
 
             if (!response.ok) {
@@ -477,110 +558,289 @@ function App() {
             }
 
 
+            console.log(
+                "All questions deleted successfully."
+            );
+
+            return;
+
+        }
+
+
+        /* ========================================================
+           6. IF THE CURRENT QUESTION WAS NOT DELETED
+           
+           We simply keep the current question and the remaining
+           history.
+
+           The history index must be adjusted because removing an
+           earlier history item can shift its position.
+           ======================================================== */
+
+        if (!deletingCurrentQuestion) {
+
             /*
-             * Get the updated database after deleting.
+             * Find the current question inside the new history.
              */
 
-            const res =
-                await fetch(fetch_url);
+            const newIndex =
+                updatedHistory.findIndex(
+                    (item) =>
+                        item.id === currentQuestion?.id
+                );
 
 
-            if (!res.ok) {
+            /*
+             * If for some reason the current question isn't in
+             * history anymore, fall back to the first item.
+             */
 
-                throw new Error(
-                    "Could not fetch updated data"
+            const safeIndex =
+                newIndex >= 0
+                    ? newIndex
+                    : 0;
+
+
+            const newCurrentQuestion =
+                updatedHistory[safeIndex];
+
+
+            setHistoryArr(
+                updatedHistory
+            );
+
+            setHistoryIndex(
+                safeIndex
+            );
+
+            setSelectedQuestion(
+                newCurrentQuestion
+            );
+
+            setIsFavorite(
+                Boolean(
+                    newCurrentQuestion?.favorite
+                )
+            );
+
+        }
+
+
+        /* ========================================================
+           7. CURRENT QUESTION WAS DELETED
+           
+           We need to select another question.
+
+           Prefer a question from the remaining history if one
+           exists. Otherwise select a random question from data.
+           ======================================================== */
+
+        else {
+
+            let newQuestion = null;
+
+
+            /*
+             * If there are still questions in history, use one
+             * of those.
+             */
+
+            if (updatedHistory.length > 0) {
+
+                /*
+                 * The deleted question's position in the old
+                 * history.
+                 */
+
+                const oldIndex =
+                    historyIndex;
+
+
+                /*
+                 * After removing the deleted question, the item
+                 * that occupied the same position is now at this
+                 * index.
+                 *
+                 * If there isn't one, use the previous item.
+                 */
+
+                const newIndex =
+                    Math.min(
+                        oldIndex,
+                        updatedHistory.length - 1
+                    );
+
+
+                newQuestion =
+                    updatedHistory[newIndex];
+
+
+                setHistoryIndex(
+                    newIndex
                 );
 
             }
 
 
-            const json =
-                await res.json();
-
-
-            const updatedData =
-                json.questions || [];
-
-
-            setData(updatedData);
-
-
             /*
-             * Database is now empty.
+             * If there is no remaining history, choose a random
+             * question from the updated data.
              */
 
-            if (updatedData.length === 0) {
+            else {
 
-                setSelectedQuestion(null);
+                const randomIndex =
+                    Math.floor(
+                        Math.random() *
+                        updatedData.length
+                    );
 
-                setHistoryArr([]);
+
+                newQuestion =
+                    updatedData[randomIndex];
+
+
+                /*
+                 * Start a new history with this question.
+                 */
+
+                setHistoryArr([
+                    newQuestion
+                ]);
 
                 setHistoryIndex(0);
-
-                setIsFavorite(false);
-
-                return;
 
             }
 
 
             /*
-             * Automatically select another question.
+             * Display the newly selected question.
              */
-
-            const random =
-                updatedData[
-                    Math.floor(
-                        Math.random() *
-                        updatedData.length
-                    )
-                ];
-
-
-            /*
-             * Put the newly-selected question
-             * at the very beginning of history.
-             */
-
-            const newHistory = [
-                random
-            ];
-
 
             setSelectedQuestion(
-                random
+                newQuestion
             );
-
-            setHistoryArr(
-                newHistory
-            );
-
-            setHistoryIndex(0);
 
             setIsFavorite(
-                Boolean(random.favorite)
+                Boolean(
+                    newQuestion?.favorite
+                )
             );
 
 
             /*
-             * Log the actual new history array.
+             * If we selected an existing history item above,
+             * make sure the filtered history is stored.
              */
 
+            if (updatedHistory.length > 0) {
+
+                setHistoryArr(
+                    updatedHistory
+                );
+
+            }
+
+
             console.log(
-                "History after delete:",
-                newHistory
-            );
-
-        } catch (error) {
-
-            console.error(
-                "Could not delete question:",
-                error
+                "New selected question after delete:",
+                newQuestion
             );
 
         }
 
+
+        /* ========================================================
+           8. POST THE ENTIRE UPDATED DATASET
+           
+           The frontend stores:
+
+           [
+               {...},
+               {...}
+           ]
+
+           The API expects:
+
+           {
+               "questions": [
+                   {...},
+                   {...}
+               ]
+           }
+           ======================================================== */
+
+        const response = await fetch(
+            fetch_url,
+            {
+                method: "POST",
+
+                headers: {
+                    "Content-Type":
+                        "application/json"
+                },
+
+                body: JSON.stringify({
+                    questions: updatedData
+                })
+
+            }
+        );
+
+
+        /* ========================================================
+           9. CHECK SERVER RESPONSE
+           ======================================================== */
+
+        if (!response.ok) {
+
+            let errorMessage =
+                `HTTP ${response.status}`;
+
+            try {
+
+                const errorData =
+                    await response.json();
+
+                if (errorData?.error) {
+
+                    errorMessage =
+                        errorData.error;
+
+                }
+
+            } catch {
+
+                /*
+                 * Server did not return JSON.
+                 */
+
+            }
+
+
+            throw new Error(
+                `Delete failed: ${errorMessage}`
+            );
+
+        }
+
+
+        console.log(
+            "Question deleted and complete dataset saved."
+        );
+
+
+    } catch (error) {
+
+        console.error(
+            "Could not delete question:",
+            error
+        );
+
     }
+
+}
+
 
 
     /* ============================================================
@@ -767,6 +1027,14 @@ function App() {
                             }
 
                             question={{}}
+
+                            historyIndex={
+                                historyIndex
+                            }
+
+                            historyArr={
+                                historyArr
+                            }
                         />
 
                     </Route>
@@ -805,6 +1073,14 @@ function App() {
 
                             refreshData={
                                 refreshData
+                            }
+
+                            historyIndex={
+                                historyIndex
+                            }
+
+                            historyArr={
+                                historyArr
                             }
                         />
 

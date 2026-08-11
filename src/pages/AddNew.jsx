@@ -11,7 +11,8 @@ export default function AddNew({
     setData,
     refreshData,
     darkMode,
-    setDarkMode
+    setDarkMode,
+    historyIndex, historyArr
 }) {
 
     const [topic, setTopic] = useState("Encouragement");
@@ -31,6 +32,13 @@ export default function AddNew({
             data={data}
             setData={setData}
             refreshData={refreshData}
+            historyIndex={
+                                historyIndex
+                            }
+
+                            historyArr={
+                                historyArr
+                            }
         />
         
       

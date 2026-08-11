@@ -1,6 +1,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useHistory } from "react-router-dom";
+
 import CategoriesSelector from "./CategoriesSelector";
 
 
@@ -8,27 +9,46 @@ export default function RichTextEditor({
     question = {},
     mode,
     fetch_url,
-    refreshData
+    data = [],
+    setData,
+    historyIndex,
+    historyArr
 }) {
+
+    const history = useHistory();
+
+
+    /* ============================================================
+       TOPIC
+    ============================================================ */
 
     const [topic, setTopic] = useState(
         question?.topic || "Encouragement"
     );
 
-    const history = useHistory();
+
+    /* ============================================================
+       EDITOR REFS
+    ============================================================ */
 
     const questionRef = useRef(null);
     const explanationRef = useRef(null);
     const answerRef = useRef(null);
     const exampleRef = useRef(null);
 
+
+    /* ============================================================
+       TOOLBAR STATE
+    ============================================================ */
+
     const [activeHighlight, setActiveHighlight] = useState(null);
+
     const [, forceUpdate] = useState(0);
 
 
     /* ============================================================
-       LOAD QUESTION DATA
-       ============================================================ */
+       LOAD QUESTION INTO EDITORS
+    ============================================================ */
 
     useEffect(() => {
 
@@ -52,21 +72,29 @@ export default function RichTextEditor({
                 question?.example || "";
         }
 
+        setTopic(
+            question?.topic || "Encouragement"
+        );
+
     }, [question]);
 
 
     /* ============================================================
        UPDATE TOOLBAR
-       ============================================================ */
+    ============================================================ */
 
     function updateToolbar() {
-        forceUpdate((value) => value + 1);
+
+        forceUpdate(
+            (value) => value + 1
+        );
+
     }
 
 
     /* ============================================================
        TEXT FORMATTING
-       ============================================================ */
+    ============================================================ */
 
     function formatText(command) {
 
@@ -77,12 +105,13 @@ export default function RichTextEditor({
         );
 
         updateToolbar();
+
     }
 
 
     /* ============================================================
        HIGHLIGHT
-       ============================================================ */
+    ============================================================ */
 
     function highlight(color) {
 
@@ -95,12 +124,13 @@ export default function RichTextEditor({
         setActiveHighlight(color);
 
         updateToolbar();
+
     }
 
 
     /* ============================================================
        REMOVE HIGHLIGHT
-       ============================================================ */
+    ============================================================ */
 
     function removeHighlight() {
 
@@ -113,12 +143,13 @@ export default function RichTextEditor({
         setActiveHighlight(null);
 
         updateToolbar();
+
     }
 
 
     /* ============================================================
        LISTEN FOR SELECTION CHANGES
-       ============================================================ */
+    ============================================================ */
 
     useEffect(() => {
 
@@ -161,292 +192,257 @@ export default function RichTextEditor({
 
 
     /* ============================================================
-       SUBMIT CREATE / EDIT
-       ============================================================ */
+       SUBMIT
+       
+       IMPORTANT:
 
-    async function handleSubmit() {
+       Nothing is sent to the API until this function runs.
 
-        try {
+       CREATE:
+       1. Create the new object locally.
+       2. Add it to data.
+       3. Add it to history.
+       4. Make it the current history item.
+       5. POST the complete dataset.
 
-            /* ----------------------------------------------------
-               GET CURRENT HTML FROM EDITORS
-            ---------------------------------------------------- */
+       EDIT:
+       1. Create the edited object locally.
+       2. Replace it inside data.
+       3. Replace it inside history.
+       4. Keep the current history position.
+       5. POST the complete dataset.
+    ============================================================ */
 
-            const editedData = {
+async function handleSubmit() {
 
-                question:
-                    questionRef.current?.innerHTML || "",
+    try {
 
-                explanation:
-                    explanationRef.current?.innerHTML || "",
+        const editedFields = {
 
-                answer:
-                    answerRef.current?.innerHTML || "",
+            question:
+                questionRef.current?.innerHTML || "",
 
-                example:
-                    exampleRef.current?.innerHTML || ""
+            explanation:
+                explanationRef.current?.innerHTML || "",
+
+            answer:
+                answerRef.current?.innerHTML || "",
+
+            example:
+                exampleRef.current?.innerHTML || "",
+
+            topic
+
+        };
+
+
+        /* ========================================================
+           CREATE A COPY OF DATA
+        ======================================================== */
+
+        let updatedData = [...data];
+
+
+        /* ========================================================
+           CREATE
+        ======================================================== */
+
+        if (mode === "create") {
+
+            const highestId = updatedData.reduce(
+                (highest, item) => {
+
+                    const currentId =
+                        Number(item?.id) || 0;
+
+                    return Math.max(
+                        highest,
+                        currentId
+                    );
+
+                },
+                0
+            );
+
+
+            const newQuestion = {
+
+                id: highestId + 1,
+
+                ...editedFields,
+
+                favorite: false
 
             };
 
 
-            let response;
+            updatedData = [
+                ...updatedData,
+                newQuestion
+            ];
+
+        }
 
 
-            /* ====================================================
-               CREATE NEW QUESTION
-               ==================================================== */
+        /* ========================================================
+           EDIT
+        ======================================================== */
 
-            if (mode === "create") {
+        else {
 
-                console.log(
-                    "Creating new question:",
-                    editedData
-                );
-
-
-                response = await fetch(
-                    fetch_url,
-                    {
-                        method: "POST",
-
-                        headers: {
-                            "Content-Type":
-                                "application/json"
-                        },
-
-                        body: JSON.stringify(
-                            editedData
-                        )
-                    }
-                );
-
-            }
-
-
-            /* ====================================================
-               EDIT EXISTING QUESTION
-               ==================================================== */
-
-            else {
-
-                /* ------------------------------------------------
-                   Make sure the question being edited has an ID.
-                ------------------------------------------------ */
-
-                if (
-                    question?.id === undefined ||
-                    question?.id === null
-                ) {
-
-                    console.error(
-                        "Cannot edit question because it has no id:",
-                        question
-                    );
-
-                    throw new Error(
-                        "The question being edited has no id."
-                    );
-                }
-
-
-                /* ------------------------------------------------
-                   Keep the existing properties and replace only
-                   the editable fields.
-                ------------------------------------------------ */
-
-                const updatedQuestion = {
-
-                    ...question,
-
-                    ...editedData,
-
-                    id: question.id,
-
-                    topic: question.topic,
-
-                    favorite: question.favorite
-
-                };
-
-
-                /* ------------------------------------------------
-                   Build:
-
-                   PUT /endpoint/id
-                ------------------------------------------------ */
-
-                const updateUrl =
-                    `${fetch_url}/${encodeURIComponent(
-                        question.id
-                    )}`;
-
-
-                console.log(
-                    "Editing question:",
-                    updatedQuestion
-                );
-
-                console.log(
-                    "PUT URL:",
-                    updateUrl
-                );
-
-
-                response = await fetch(
-                    updateUrl,
-                    {
-                        method: "PUT",
-
-                        headers: {
-                            "Content-Type":
-                                "application/json"
-                        },
-
-                        body: JSON.stringify(
-                            updatedQuestion
-                        )
-                    }
-                );
-
-            }
-
-
-            /* ====================================================
-               CHECK SERVER RESPONSE
-               ==================================================== */
-
-            if (!response.ok) {
-
-                let errorMessage =
-                    `HTTP ${response.status}`;
-
-                try {
-
-                    const errorData =
-                        await response.json();
-
-                    console.error(
-                        "Server error:",
-                        errorData
-                    );
-
-                    if (errorData?.error) {
-                        errorMessage =
-                            errorData.error;
-                    }
-
-                } catch {
-
-                    /*
-                     The server did not return JSON.
-                     */
-
-                }
-
+            if (
+                question?.id === undefined ||
+                question?.id === null
+            ) {
 
                 throw new Error(
-                    `Submit failed: ${errorMessage}`
-                );
-            }
-
-
-            /* ====================================================
-               READ SERVER RESPONSE
-               ==================================================== */
-
-            let result = null;
-
-            try {
-
-                result = await response.json();
-
-            } catch {
-
-                /*
-                 Some successful requests may return
-                 an empty response body.
-                 */
-
-                result = null;
-            }
-
-
-            console.log(
-                "Server response:",
-                result
-            );
-
-
-            /* ====================================================
-               DETERMINE UPDATED DATA
-               ==================================================== */
-
-            let returnedQuestion = null;
-
-
-            if (result?.question) {
-
-                returnedQuestion =
-                    result.question;
-
-            }
-
-            else if (result?.id !== undefined) {
-
-                returnedQuestion = result;
-
-            }
-
-            else if (mode === "create") {
-
-                returnedQuestion =
-                    result;
-
-            }
-
-            else {
-
-                returnedQuestion =
-                    updatedQuestion;
-
-            }
-
-
-            /* ====================================================
-               REFRESH FRONTEND DATA
-               ==================================================== */
-
-            if (typeof refreshData === "function") {
-
-                await refreshData(
-                    returnedQuestion
+                    "The question being edited has no id."
                 );
 
             }
 
 
-            /* ====================================================
-               RETURN TO HOME
-               ==================================================== */
+            updatedData = updatedData.map(
+                (item) => {
 
-            history.push("/");
+                    if (
+                        item.id !== question.id
+                    ) {
+
+                        return item;
+
+                    }
 
 
-        } catch (error) {
+                    return {
 
-            console.error(
-                "Submit error:",
-                error
+                        ...item,
+
+                        ...editedFields,
+
+                        // Preserve original ID.
+                        id: item.id,
+
+                        // Preserve original favorite.
+                        favorite:
+                            item.favorite ?? false
+
+                    };
+
+                }
             );
 
         }
 
+
+        /* ========================================================
+           UPDATE FRONTEND DATA
+           
+           This updates the parent data immediately.
+        ======================================================== */
+
+        setData(updatedData);
+
+
+        /* ========================================================
+           POST THE COMPLETE DATASET
+           
+           Frontend:
+           
+           [
+               {...},
+               {...}
+           ]
+
+           API:
+           
+           {
+               questions: [...]
+           }
+        ======================================================== */
+
+        const response = await fetch(
+            fetch_url,
+            {
+
+                method: "POST",
+
+                headers: {
+                    "Content-Type":
+                        "application/json"
+                },
+
+                body: JSON.stringify({
+                    questions: updatedData
+                })
+
+            }
+        );
+
+
+        /* ========================================================
+           CHECK RESPONSE
+        ======================================================== */
+
+        if (!response.ok) {
+
+            let errorMessage =
+                `HTTP ${response.status}`;
+
+
+            try {
+
+                const errorData =
+                    await response.json();
+
+                if (errorData?.error) {
+
+                    errorMessage =
+                        errorData.error;
+
+                }
+
+            } catch {
+
+                // Server did not return JSON.
+
+            }
+
+
+            throw new Error(
+                `Submit failed: ${errorMessage}`
+            );
+
+        }
+
+
+        /* ========================================================
+           SUCCESS
+        ======================================================== */
+
+        console.log(
+            "Data successfully submitted."
+        );
+
+
+        history.push("/");
+
+
+    } catch (error) {
+
+        console.error(
+            "Submit error:",
+            error
+        );
+
     }
+
+}
 
 
     /* ============================================================
        COMPONENT
-       ============================================================ */
+    ============================================================ */
 
     return (
 
@@ -473,7 +469,6 @@ export default function RichTextEditor({
                     p-3
                 "
             >
-
 
                 {/* BOLD */}
 
@@ -595,9 +590,11 @@ export default function RichTextEditor({
                         rounded-full
                         bg-yellow-300
                         border
-                        ${activeHighlight === "#ffff00"
-                            ? "ring-2 ring-black"
-                            : ""
+                        ${
+                            activeHighlight ===
+                            "#ffff00"
+                                ? "ring-2 ring-black"
+                                : ""
                         }
                     `}
                 />
@@ -619,9 +616,11 @@ export default function RichTextEditor({
                         rounded-full
                         bg-green-300
                         border
-                        ${activeHighlight === "#90EE90"
-                            ? "ring-2 ring-black"
-                            : ""
+                        ${
+                            activeHighlight ===
+                            "#90EE90"
+                                ? "ring-2 ring-black"
+                                : ""
                         }
                     `}
                 />
@@ -643,9 +642,11 @@ export default function RichTextEditor({
                         rounded-full
                         bg-sky-300
                         border
-                        ${activeHighlight === "#87CEFA"
-                            ? "ring-2 ring-black"
-                            : ""
+                        ${
+                            activeHighlight ===
+                            "#87CEFA"
+                                ? "ring-2 ring-black"
+                                : ""
                         }
                     `}
                 />
@@ -668,7 +669,6 @@ export default function RichTextEditor({
                 >
                     Eraser
                 </button>
-
 
             </div>
 
@@ -713,10 +713,15 @@ export default function RichTextEditor({
             </div>
 
 
+            {/* ====================================================
+                CATEGORY SELECTOR
+            ==================================================== */}
+
             <CategoriesSelector
                 topic={topic}
                 setTopic={setTopic}
             />
+
 
             {/* ====================================================
                 BUTTONS
@@ -730,6 +735,8 @@ export default function RichTextEditor({
                     flex
                 "
             >
+
+                {/* CANCEL */}
 
                 <button
                     type="button"
@@ -745,6 +752,8 @@ export default function RichTextEditor({
                     Cancel
                 </button>
 
+
+                {/* SUBMIT */}
 
                 <button
                     type="button"
@@ -766,12 +775,13 @@ export default function RichTextEditor({
         </section>
 
     );
+
 }
 
 
 /* ================================================================
    EDITOR COMPONENT
-   ================================================================ */
+================================================================ */
 
 function Editor({
     title,
@@ -805,4 +815,5 @@ function Editor({
         </div>
 
     );
+
 }
