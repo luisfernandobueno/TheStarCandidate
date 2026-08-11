@@ -846,8 +846,16 @@ async function deleteQuestion(id) {
     /* ============================================================
        APP
     ============================================================ */
-
     return (
+
+        <><h1>Hello World</h1></>
+    );
+
+}
+
+export default App;
+
+
 
         <Router>
 
@@ -1129,9 +1137,3 @@ async function deleteQuestion(id) {
             </div>
 
         </Router>
-
-    );
-
-}
-
-export default App;
