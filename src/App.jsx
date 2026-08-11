@@ -11,8 +11,8 @@ import Edit from "./pages/Edit";
 import Resumee from "./pages/Resumee";
 
 // const fetch_url = "https://api.npoint.io/facb5749d433f9be2b92";
-//const fetch_url = "https://getpantry.cloud/apiv1/pantry/2a537c44-2c08-4a2a-8699-db932d92f65c/basket/Mockup";
-const fetch_url = "http://192.168.1.45:3000";
+const fetch_url = "https://getpantry.cloud/apiv1/pantry/2a537c44-2c08-4a2a-8699-db932d92f65c/basket/Mockup";
+//const fetch_url = "http://192.168.1.45:3000";
 
 function App() {
 

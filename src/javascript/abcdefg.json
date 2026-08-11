@@ -1,8 +1,8 @@
 {
   "questions": [
     {
-      "id": 0,
-      "question": "<span style=\"background-color: rgb(255, 255, 0);\"><i><b><u><strike>Is bringing my pet dinosaur to the interview a good idea? 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥 😏😏😏😏😏</strike></u></b></i></span>",
+      "id": 2,
+      "question": "Is bringing my pet dinosaur to the interview a good idea?",
       "explanation": "Probably not, unless the company specifically requested prehistoric transportation.",
       "answer": "Leave your dinosaur safely at home and attend the interview by yourself.",
       "example": "The recruiter will appreciate your qualifications more than your velociraptor.",
@@ -10,12 +10,111 @@
       "favorite": false
     },
     {
-      "id": 2,
-      "question": "💸vvvvvvvvvvvvv💸💸💸💸💸💸💸💸💸💸💸💸",
-      "explanation": "",
-      "answer": "",
-      "example": "",
+      "id": 3,
+      "question": "How many cups of coffee are too many before an interview?",
+      "explanation": "Enough that your handshake becomes a vibration test.",
+      "answer": "Stick to your normal amount and stay hydrated.",
+      "example": "One coffee: confident. Seven coffees: speed-running your introduction.",
+      "topic": "Advice",
+      "favorite": true
+    },
+    {
+      "id": 4,
+      "question": "The recruiter laughed at my joke. Am I hired?",
+      "explanation": "Not necessarily, but it's a good sign the conversation is comfortable.",
+      "answer": "Keep focusing on your answers rather than reading into every reaction.",
+      "example": "A laugh earns a smile—not an employment contract.",
+      "topic": "Recruiter",
+      "favorite": false
+    },
+    {
+      "id": 5,
+      "question": "What if I forget absolutely everything the moment the interview starts?",
+      "explanation": "Your brain occasionally enjoys dramatic entrances.",
+      "answer": "Take a deep breath, pause for a second, and answer one question at a time.",
+      "example": "Even saying 'That's a great question, let me think for a moment' is perfectly fine.",
       "topic": "Encouragement",
+      "favorite": true
+    },
+    {
+      "id": 7,
+      "question": "Can I answer every question with 'It depends'?",
+      "explanation": "Technically yes. Successfully? Probably not.",
+      "answer": "Provide a balanced answer and explain why it depends.",
+      "example": "'It depends on the project, but my usual approach is...'",
+      "topic": "Advice",
+      "favorite": false
+    },
+    {
+      "id": 8,
+      "question": "The interviewer has a cooler keyboard than mine. Should I compliment it?",
+      "explanation": "A genuine compliment is fine if it fits naturally.",
+      "answer": "Keep compliments brief and move back to the interview.",
+      "example": "'Nice mechanical keyboard! Anyway, regarding my experience...'",
+      "topic": "Recruiter",
+      "favorite": false
+    },
+    {
+      "id": 9,
+      "question": "What if my Wi-Fi decides to resign before I do?",
+      "explanation": "Technology occasionally has its own career plans.",
+      "answer": "Reconnect as quickly as possible and apologize briefly.",
+      "example": "'Sorry about the connection issue. Thanks for waiting.'",
+      "topic": "Advice",
+      "favorite": false
+    },
+    {
+      "id": 10,
+      "question": "Can confidence be faked until it becomes real?",
+      "explanation": "Confidence often grows through practice and preparation.",
+      "answer": "Act calmly, prepare well, and let experience build genuine confidence.",
+      "example": "Each interview makes the next one a little easier.",
+      "topic": "Encouragement",
+      "favorite": true
+    },
+    {
+      "id": 11,
+      "question": "Should I wear a superhero cape to demonstrate leadership?",
+      "explanation": "Leadership usually doesn't require special fabric.",
+      "answer": "Dress appropriately and let your experience speak for itself.",
+      "example": "Save the cape for Halloween.",
+      "topic": "Candidate",
+      "favorite": false
+    },
+    {
+      "id": 12,
+      "question": "The recruiter asked about my weaknesses. Can I say 'Chocolate cake'?",
+      "explanation": "Funny, but not exactly what they meant.",
+      "answer": "Choose a genuine professional weakness and explain how you're improving it.",
+      "example": "I'm working on improving my public speaking through regular practice.",
+      "topic": "Recruiter",
+      "favorite": false
+    },
+    {
+      "id": 13,
+      "question": "What if I don't know the answer to a technical question?",
+      "explanation": "Nobody knows everything.",
+      "answer": "Be honest, explain your thought process, and describe how you'd find the solution.",
+      "example": "'I haven't used that technology yet, but here's how I'd approach learning it.'",
+      "topic": "Advice",
+      "favorite": false
+    },
+    {
+      "id": 14,
+      "question": "Does every interview make me a better candidate?",
+      "explanation": "Even the awkward ones teach valuable lessons.",
+      "answer": "Yes. Reflect on what went well and what can be improved.",
+      "example": "After every interview, write down three things you learned.",
+      "topic": "Encouragement",
+      "favorite": false
+    },
+    {
+      "id": 15,
+      "question": "Can I end the interview with finger guns and a wink?&nbsp;💸💸💸💸💸💸💸💸💸💸💸💸🔥🔥🔥🔥🔥🔥",
+      "explanation": "The app says no. Your future self agrees.",
+      "answer": "Thank the interviewer professionally and leave on a positive note.",
+      "example": "'Thank you for your time. I really enjoyed our conversation and look forward to hearing from you.'",
+      "topic": "Candidate",
       "favorite": false
     }
   ]
