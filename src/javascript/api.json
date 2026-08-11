@@ -131,8 +131,8 @@
       "topic": "Recruiter",
       "favorite": false,
       "explanation": "They want to see if you understand the role and its requirements.",
-      "answer": "Key skills include strong communication, time management, and problem-solving abilities. Depending on the role, specific technical skills like proficiency in web development tools or a focus on customer service are also critical.",
-      "example": "...",
+      "answer": "<i>Basically, read the post, what their looking for, the hard and soft skills and just mention that! 🤙</i>",
+      "example": "Key skills include strong communication, time management, and problem-solving abilities. Depending on the role, specific technical skills like proficiency in web development tools or a focus on customer service are also critical.",
       "id": 14
     },
     {
@@ -460,9 +460,9 @@
       "id": 50
     },
     {
-      "question": "Why a ✨ waiter ✨?&nbsp;",
+      "question": "Why to become ✨ a waiter ✨?&nbsp;",
       "explanation": "",
-      "answer": "<b><u>Tips:</u></b><div>• Not having to ask for money to take the bus.</div><div>• Start buying the things i may need right away, like clothing.</div><div>• An environment where you mostly develop soft skills, specially the social ones.</div><div>• Access to delicious food on a daily basis, eating good all the time<br><br></div>",
+      "answer": "<div>• Not having to ask for money to take the bus from the start.</div><div>• Start buying the things i may need right away, like clothing.</div><div>• An environment where you mostly <b>develop soft skills, specially the social ones.</b></div><div>• Access to delicious food on a daily basis, eating good all the time<br>• Barely socializing with coworkers. Which means, them not asking too many personal questions, especially about the gap, and most of the talking is gonna be about the work itself.</div>",
       "example": "<br>",
       "favorite": false,
       "topic": "Encouragement",
@@ -507,7 +507,7 @@
     {
       "question": "How do you ensure accuracy in your work?",
       "topic": "Recruiter",
-      "favorite": true,
+      "favorite": false,
       "explanation": "This question explores your attention to detail and methods for maintaining high-quality work. Your answer should demonstrate specific strategies or techniques you use to ensure accuracy.",
       "answer": "Ensuring accuracy in my work is paramount to me, especially in roles that involve handling sensitive information or financial transactions. One method I use is double-checking my work meticulously. For instance, when processing customer orders or financial transactions, I always review each detail to ensure accuracy before finalizing them. This habit helps me catch any potential errors early on and ensures that the final output is precise and reliable. \n \n Additionally, I utilize tools like checklists or software features that assist in validating data. These tools not only streamline the process but also serve as a safeguard against human error. By systematically following these procedures, I can confidently deliver work that meets high standards of accuracy and quality. \n \n For example, in my previous role, my attention to detail and rigorous checking process resulted in a significant reduction in processing errors by 20%, which improved overall customer satisfaction and operational efficiency.",
       "example": "For example, in my previous role, my attention to detail and rigorous checking process resulted in a significant reduction in processing errors by 20%, which improved overall customer satisfaction and operational efficiency.",
@@ -563,7 +563,7 @@
       "explanation": "This question assesses your attention to detail and ability to manage complex tasks.",
       "answer": "In my previous role as a customer service representative, I was tasked with updating and organizing the customer database. This project required meticulous attention to detail, as even a small error could lead to significant issues, such as miscommunication or loss of important customer information. \n \n To ensure accuracy, I started by cross-referencing the existing data with recent customer interactions to verify the information. I created a detailed checklist to track the progress and ensure that no steps were overlooked. Additionally, I set up regular reviews with my team to catch any discrepancies early on and correct them promptly. \n \n One specific instance that stands out was when I noticed that a series of entries had inconsistent phone numbers. I took the initiative to contact those customers directly to verify their information. This not only corrected the errors but also helped in building a stronger rapport with our customers, who appreciated the proactive approach. \n \n By the end of the project, we had a highly accurate and organized customer database. This project not only improved our efficiency in handling customer inquiries but also enhanced the overall customer experience by ensuring that we had reliable information readily available.",
       "topic": "Recruiter",
-      "favorite": true,
+      "favorite": false,
       "example": "One specific instance that stands out was when I noticed that a series of entries had inconsistent phone numbers. I took the initiative to contact those customers directly to verify their information. This not only corrected the errors but also helped in building a stronger rapport with our customers, who appreciated the proactive approach.",
       "id": 62
     },
@@ -590,7 +590,7 @@
       "explanation": "This question assesses your ability to manage competing demands and make effective decisions.",
       "answer": "Managing conflicting priorities effectively is crucial in my approach to work. In a previous role, I frequently encountered situations where multiple urgent tasks demanded immediate attention. To navigate this challenge, I developed a systematic approach: \n \n Firstly, I prioritize tasks based on deadlines and impact on overall goals. This involves assessing which tasks are time-sensitive and critical to organizational objectives. \n \n Secondly, I maintain open communication with stakeholders and team members to ensure alignment on priorities. Regular check-ins and updates help in adjusting schedules and reallocating resources as needed. \n \n Thirdly, I leverage time management techniques such as the Eisenhower Matrix to categorize tasks by urgency and importance. This method allows me to focus on high-priority tasks while delegating or scheduling lower-priority items accordingly. \n \n Lastly, I remain adaptable and flexible, ready to adjust priorities as circumstances change. By staying organized and proactive, I ensure that I meet deadlines and deliver high-quality results even under pressure.",
       "topic": "Recruiter",
-      "favorite": true,
+      "favorite": false,
       "example": "...",
       "id": 65
     },
@@ -599,7 +599,7 @@
       "explanation": "This question evaluates your customer service skills and ability to maintain professionalism in challenging situations.",
       "answer": "In my previous role in customer service, I encountered a situation where a client expressed dissatisfaction with our product due to a misunderstanding in its functionality. The client insisted on a full refund immediately, which was against our company policy. \n \n To address this, I remained calm and empathetic, actively listening to the client's concerns to uncover the root cause of their dissatisfaction. I apologized sincerely for the inconvenience caused and took the time to explain our product's features and benefits in detail, emphasizing how it aligned with their original needs. \n \n Despite the policy constraints, I proposed a compromise where we offered a partial refund along with additional support, including personalized training and troubleshooting sessions with our technical team. This approach aimed to resolve their issues effectively while demonstrating our commitment to their satisfaction. \n \n Through transparent communication and collaborative problem-solving, I managed to turn the situation around. The client appreciated our willingness to listen and work together towards a solution that met their needs. As a result, they decided to continue using our product, reflecting a positive outcome from the challenging interaction.",
       "topic": "Recruiter",
-      "favorite": false,
+      "favorite": true,
       "example": "...",
       "id": 66
     },
@@ -801,22 +801,13 @@
       "id": 88
     },
     {
-      "question": "What would you do if you won the lottery?",
-      "topic": "Recruiter",
-      "favorite": false,
-      "explanation": "The Recruiter is assessing your priorities and how grounded you are.",
-      "answer": "I would definitely take the opportunity to travel and explore new cultures, especially by learning languages. I’d also invest in learning to fly, something I’ve always wanted to do. Beyond that, I’d focus on giving back, either through volunteering or supporting causes I believe in.",
-      "example": "...",
-      "id": 89
-    },
-    {
       "question": "What is something you learned recently that excited you?",
       "topic": "Recruiter",
       "favorite": false,
       "explanation": "This is aimed at understanding your approach to learning and curiosity.",
       "answer": "I’ve recently been diving into web development and improving my CSS skills, which has been both challenging and exciting. It’s rewarding to see my designs become more professional and functional.",
       "example": "...",
-      "id": 90
+      "id": 89
     },
     {
       "question": "What's the most recent book you read?",
@@ -825,7 +816,7 @@
       "explanation": "This question provides insight into your interests and intellectual curiosity.",
       "answer": "I’ve been exploring personal development books, particularly around psychology and mindfulness, which are topics that resonate with me. I recently read a book on meditation and the power of focus.",
       "example": "...",
-      "id": 91
+      "id": 90
     },
     {
       "question": "What is your most-used app on your phone?",
@@ -834,7 +825,7 @@
       "explanation": "This gives insight into your daily habits and interests.",
       "answer": "Probably language learning apps like Duolingo. I’m passionate about improving my skills in Italian and Portuguese, and I use it daily to make progress.",
       "example": "...",
-      "id": 92
+      "id": 91
     },
     {
       "question": "If you could switch careers, what would you do?",
@@ -843,7 +834,7 @@
       "explanation": "This question assesses your flexibility and hidden aspirations.",
       "answer": "I’ve always been fascinated by aviation. If I could switch careers, I’d love to become a pilot and explore the world from above.",
       "example": "...",
-      "id": 93
+      "id": 92
     },
     {
       "question": "What's one thing people don’t know about you?",
@@ -852,7 +843,7 @@
       "explanation": "This question helps the Recruiter learn something unique about you.",
       "answer": "I’ve been practicing mindfulness and meditation for a while now, which has really helped me stay grounded and improve my focus.",
       "example": "...",
-      "id": 94
+      "id": 93
     },
     {
       "question": "What would your perfect day look like?",
@@ -861,7 +852,7 @@
       "explanation": "The Recruiter wants to understand your ideal work-life balance.",
       "answer": "My perfect day would involve some time spent learning or creating, like working on web development projects or learning a new language. I’d also make time for exercise and personal reflection, perhaps through meditation.",
       "example": "...",
-      "id": 95
+      "id": 94
     },
     {
       "question": "What is your proudest achievement?",
@@ -870,16 +861,16 @@
       "explanation": "This helps the Recruiter see what you value most in your personal and professional life.",
       "answer": "One of my proudest achievements is learning English on my own to a C1 level. It took a lot of dedication, and it’s opened up so many opportunities for me personally and professionally.",
       "example": "...",
-      "id": 96
+      "id": 95
     },
     {
       "question": "How do you handle stress?",
       "topic": "Recruiter",
-      "favorite": false,
+      "favorite": true,
       "explanation": "The Recruiter wants to understand your coping mechanisms.",
       "answer": "I practice mindfulness and meditation regularly, which helps me stay centered during stressful times. I also break down challenges into smaller, manageable steps, which reduces overwhelm.",
       "example": "...",
-      "id": 97
+      "id": 96
     },
     {
       "question": "What do you do to relax after a long day?",
@@ -888,16 +879,7 @@
       "explanation": "This helps the Recruiter see how you maintain work-life balance.",
       "answer": "I enjoy spending time reading or meditating. Sometimes I’ll practice a little language learning or work on personal projects like programming, which I find relaxing in its own way.",
       "example": "...",
-      "id": 98
-    },
-    {
-      "question": "If you could have dinner with anyone, who would it be and why?",
-      "topic": "Recruiter",
-      "favorite": false,
-      "explanation": "This question explores who inspires you.",
-      "answer": "I think it would be amazing to have dinner with someone like Elon Musk, who has a visionary mindset and thinks about the future in bold and innovative ways.",
-      "example": "...",
-      "id": 99
+      "id": 97
     },
     {
       "question": "If you were a color, which one would you be and why?",
@@ -906,7 +888,7 @@
       "explanation": "This question is a creative way to learn about your personality.",
       "answer": "I’d be blue—calm, reflective, and adaptable. Blue is a color that brings a sense of tranquility and focus, much like how I approach challenges.",
       "example": "...",
-      "id": 100
+      "id": 98
     },
     {
       "question": "What’s your favorite hobby outside of work?",
@@ -915,7 +897,7 @@
       "explanation": "The Recruiter wants to know more about your personal interests and how you spend your free time.",
       "answer": "I enjoy a variety of hobbies, but I’m especially passionate about programming and learning new languages. Both keep me curious and engaged in my personal development.",
       "example": "...",
-      "id": 101
+      "id": 99
     },
     {
       "question": "What's your go-to karaoke song?",
@@ -924,16 +906,7 @@
       "explanation": "This question is meant to add some levity and see your fun side.",
       "answer": "I’m not a big karaoke person, but if I had to choose, it would be something easy-going and fun, maybe 'Take On Me' by A-ha.",
       "example": "...",
-      "id": 102
-    },
-    {
-      "question": "What's your favorite movie or TV show?",
-      "topic": "Recruiter",
-      "favorite": false,
-      "explanation": "This helps the Recruiter understand your tastes in entertainment.",
-      "answer": "I enjoy animated shows with deep storylines, like 'Avatar: The Last Airbender' or 'Gravity Falls.' They balance great storytelling with lessons about personal growth.",
-      "example": "...",
-      "id": 103
+      "id": 100
     },
     {
       "question": "What's your least favorite chore?",
@@ -942,7 +915,7 @@
       "explanation": "The Recruiter is looking for a lighthearted answer that also reveals how you manage unpleasant tasks.",
       "answer": "I don’t mind most chores, but if I had to choose, maybe cleaning windows. It’s time-consuming and never seems to be perfect, but I still get it done.",
       "example": "...",
-      "id": 104
+      "id": 101
     },
     {
       "question": "If you could only eat one type of cuisine for the rest of your life, what would it be?",
@@ -951,7 +924,7 @@
       "explanation": "This is a fun way to learn about your tastes and preferences.",
       "answer": "I’d go with Italian cuisine. It’s simple, comforting, and there’s so much variety with pasta, pizza, and fresh ingredients.",
       "example": "...",
-      "id": 105
+      "id": 102
     },
     {
       "question": "What’s the best gift you’ve ever received?",
@@ -960,7 +933,7 @@
       "explanation": "This question explores what you value and cherish.",
       "answer": "One of the best gifts I’ve received is a book on mindfulness. It sparked my interest in meditation and personal development, which has had a lasting impact on my life.",
       "example": "...",
-      "id": 106
+      "id": 103
     },
     {
       "question": "What is something you are really good at?",
@@ -969,16 +942,7 @@
       "explanation": "The Recruiter wants to know what you consider your strengths.",
       "answer": "I’m really good at staying organized and keeping things running smoothly. Whether it’s planning my day or managing a project, I’m efficient and detail-oriented.",
       "example": "...",
-      "id": 107
-    },
-    {
-      "question": "What’s your guilty pleasure?",
-      "topic": "Recruiter",
-      "favorite": false,
-      "explanation": "This gives the Recruiter insight into how you unwind or indulge.",
-      "answer": "I don’t believe in feeling guilty about things you enjoy, but if I had to pick, it would probably be watching animated shows aimed at younger audiences, like 'Gravity Falls.'",
-      "example": "...",
-      "id": 108
+      "id": 104
     },
     {
       "question": "What’s the best piece of advice you've ever received?",
@@ -987,7 +951,7 @@
       "explanation": "The Recruiter wants to understand what values and lessons guide you.",
       "answer": "The best advice I’ve received is to focus on progress, not perfection. It’s helped me stay motivated and appreciate the journey rather than stressing about the outcome.",
       "example": "...",
-      "id": 109
+      "id": 105
     },
     {
       "question": "You have more to offer than you think.",
@@ -996,7 +960,7 @@
       "example": "undefined",
       "favorite": false,
       "topic": "Encouragement",
-      "id": 110
+      "id": 106
     },
     {
       "question": "I'm curious to know what aspects of my résumé caught your attention and led to this interview. Understanding this could help me elaborate more on those points or address any specific areas of interest that you might have.",
@@ -1005,7 +969,7 @@
       "favorite": true,
       "answer": "it's not considered rude to ask this question; in fact, it can be seen as a positive move. it demonstrates your interest in understanding what specifically made you stand out as a candidate and shows that you are eager to align your strengths with the company's needs. \n \n ",
       "example": "...",
-      "id": 111
+      "id": 107
     },
     {
       "question": "How does the company support work-life balance?",
@@ -1014,7 +978,7 @@
       "explanation": "...",
       "favorite": false,
       "example": "...",
-      "id": 112
+      "id": 108
     },
     {
       "question": "Can you tell me more about the team I would be working with?",
@@ -1023,16 +987,16 @@
       "explanation": "n/a",
       "answer": "Understanding the team dynamic is important because working with supportive, collaborative colleagues is key to your job satisfaction and success.",
       "example": "...",
-      "id": 113
+      "id": 109
     },
     {
       "question": "What does success look like for this role in the first 6 months to a year?",
       "topic": "Candidate",
-      "favorite": false,
+      "favorite": true,
       "explanation": "n/a",
       "answer": "This gives you a clear picture of the expectations and goals, ensuring you're aligned with what the company considers successful performance.",
       "example": "...",
-      "id": 114
+      "id": 110
     },
     {
       "question": "What are the biggest challenges someone in this position might face?",
@@ -1041,7 +1005,7 @@
       "explanation": "n/a",
       "answer": "This helps you prepare for potential obstacles and demonstrates that you're forward-thinking and willing to take on challenges.",
       "example": "...",
-      "id": 115
+      "id": 111
     },
     {
       "question": "What are the company’s long-term goals, and how does this role contribute to them?",
@@ -1050,7 +1014,7 @@
       "explanation": "n/a",
       "answer": "Understanding the company's vision helps you see how your role fits into the bigger picture, showing your interest in contributing to its success.",
       "example": "...",
-      "id": 116
+      "id": 112
     },
     {
       "question": "What kind of training or onboarding process is in place for new employees?",
@@ -1059,7 +1023,7 @@
       "explanation": "n/a",
       "answer": "This is key to understanding how the company supports new hires and whether they provide the necessary tools for you to excel from the start.",
       "example": "...",
-      "id": 117
+      "id": 113
     },
     {
       "question": "How does the company encourage teamwork and collaboration?",
@@ -1068,7 +1032,7 @@
       "explanation": "n/a",
       "answer": "Teamwork is essential in most roles, and understanding how collaboration is fostered helps you assess if the work environment suits your preferred way of working.",
       "example": "...",
-      "id": 118
+      "id": 114
     },
     {
       "question": "What are the next steps in the hiring process?",
@@ -1077,7 +1041,7 @@
       "explanation": "n/a",
       "answer": "This shows you're eager to move forward and also provides clarity on the timeline so you know what to expect after the interview.",
       "example": "...",
-      "id": 119
+      "id": 115
     },
     {
       "question": "How do you see the company evolving in the next few years?",
@@ -1086,7 +1050,7 @@
       "explanation": "n/a",
       "answer": "It’s important to know the company’s direction to determine if it aligns with your career goals and whether you’ll have opportunities to grow along with it.",
       "example": "...",
-      "id": 120
+      "id": 116
     },
     {
       "question": "Can you tell me about the opportunities for cross-departmental collaboration?",
@@ -1095,7 +1059,7 @@
       "explanation": "n/a",
       "answer": "This helps you understand if there are opportunities to expand your skills by working with other teams, which can be a key factor in your development.",
       "example": "...",
-      "id": 121
+      "id": 117
     },
     {
       "question": "What is the company's approach to innovation and new ideas?",
@@ -1104,7 +1068,7 @@
       "explanation": "n/a",
       "answer": "Knowing if the company values and encourages innovation can be important if you're looking for an environment where your creativity and input are appreciated.",
       "example": "...",
-      "id": 122
+      "id": 118
     },
     {
       "question": "How does the company handle conflict resolution among employees?",
@@ -1113,7 +1077,7 @@
       "explanation": "n/a",
       "answer": "This question helps you gauge how the company addresses workplace issues, ensuring that conflicts are resolved fairly and efficiently.",
       "example": "...",
-      "id": 123
+      "id": 119
     },
     {
       "question": "Can you tell me about the opportunities for cross-departmental collaboration?",
@@ -1122,7 +1086,7 @@
       "example": "...",
       "topic": "Candidate",
       "favorite": false,
-      "id": 124
+      "id": 120
     },
     {
       "question": "Can you tell me about the management's approach to mentorship?",
@@ -1131,7 +1095,7 @@
       "explanation": "n/a",
       "answer": "Mentorship can be crucial to career development, and asking about it shows you're interested in learning from experienced colleagues.",
       "example": "...",
-      "id": 125
+      "id": 121
     },
     {
       "question": "What are the company's biggest challenges currently?",
@@ -1140,7 +1104,7 @@
       "explanation": "n/a",
       "answer": "This gives you insight into the broader business environment and potential issues you may be helping to solve, showing your proactive mindset.",
       "example": "...",
-      "id": 126
+      "id": 122
     },
     {
       "question": "How do you see this role evolving over time?",
@@ -1149,16 +1113,16 @@
       "explanation": "n/a",
       "answer": "This question helps you assess long-term growth potential and whether the company sees this role as vital to future plans.",
       "example": "...",
-      "id": 127
+      "id": 123
     },
     {
       "question": "How are employee ideas for improvements typically received and acted upon?",
       "topic": "Candidate",
-      "favorite": false,
+      "favorite": true,
       "explanation": "n/a",
       "answer": "Knowing if the company is open to employee suggestions shows whether they value innovation and whether you’ll have a voice in improvements.",
       "example": "...",
-      "id": 128
+      "id": 124
     },
     {
       "question": "What are the biggest priorities for the department over the next six months?",
@@ -1167,7 +1131,7 @@
       "explanation": "n/a",
       "answer": "Understanding immediate priorities helps you see where your focus will be and what the company considers most important for your role.",
       "example": "...",
-      "id": 129
+      "id": 125
     },
     {
       "question": "How does the company ensure that employees are engaged and motivated?",
@@ -1176,16 +1140,7 @@
       "explanation": "n/a",
       "answer": "Employee engagement is key to job satisfaction, so this question helps you determine if the company invests in maintaining a positive work environment.",
       "example": "...",
-      "id": 130
-    },
-    {
-      "question": "What challenges did the company face during the pandemic, and how were they addressed?",
-      "topic": "Candidate",
-      "favorite": false,
-      "explanation": "n/a",
-      "answer": "This question helps you assess how adaptable and resilient the company is during unforeseen challenges, which is crucial for long-term job security.",
-      "example": "...",
-      "id": 131
+      "id": 126
     },
     {
       "question": "How are decisions made regarding promotions or internal career moves?",
@@ -1194,7 +1149,7 @@
       "explanation": "n/a",
       "answer": "Understanding the promotion process gives you an idea of how meritocratic the company is and what steps you need to take to advance.",
       "example": "...",
-      "id": 132
+      "id": 127
     },
     {
       "question": "What initiatives does the company have for employee well-being?",
@@ -1203,7 +1158,7 @@
       "explanation": "n/a",
       "answer": "Employee well-being is a priority for a healthy work-life balance, and asking this shows you care about how the company supports mental and physical health.",
       "example": "...",
-      "id": 133
+      "id": 128
     },
     {
       "question": "How does the company approach failure and mistakes?",
@@ -1212,7 +1167,7 @@
       "explanation": "n/a",
       "answer": "Knowing how the company reacts to failure tells you whether they focus on learning and growth or blame, which is crucial for your development.",
       "example": "...",
-      "id": 134
+      "id": 129
     },
     {
       "question": "Can you tell me about the company's onboarding process for new hires?",
@@ -1221,7 +1176,7 @@
       "explanation": "n/a",
       "answer": "Understanding the onboarding process is crucial to knowing if you'll receive the necessary support and training to succeed in your role.",
       "example": "...",
-      "id": 135
+      "id": 130
     },
     {
       "question": "What key performance indicators (KPIs) are typically used to measure success in this role?",
@@ -1230,7 +1185,7 @@
       "explanation": "n/a",
       "answer": "KPIs provide a clear understanding of how your success will be measured, helping you focus on the most important aspects of your performance.",
       "example": "...",
-      "id": 136
+      "id": 131
     },
     {
       "question": "What has been the company's biggest accomplishment in the last few years?",
@@ -1239,7 +1194,7 @@
       "explanation": "n/a",
       "answer": "Learning about major accomplishments gives you a sense of what the company values and highlights its areas of expertise or competitive advantage.",
       "example": "...",
-      "id": 137
+      "id": 132
     },
     {
       "question": "How does the company approach career development for employees?",
@@ -1248,16 +1203,7 @@
       "explanation": "n/a",
       "answer": "Career development is essential for your growth, and this question helps you understand if the company will support your long-term goals.",
       "example": "...",
-      "id": 138
-    },
-    {
-      "question": "How does the company handle internal communication between departments?",
-      "topic": "Candidate",
-      "favorite": false,
-      "explanation": "n/a",
-      "answer": "This is crucial for understanding whether communication within the company is efficient and transparent, which can impact your ability to work effectively.",
-      "example": "...",
-      "id": 139
+      "id": 133
     },
     {
       "question": "What are some of the ways the company celebrates success?",
@@ -1266,7 +1212,7 @@
       "explanation": "n/a",
       "answer": "Knowing how the company celebrates achievements shows whether they value recognition and how they maintain morale and motivation among employees.",
       "example": "...",
-      "id": 140
+      "id": 134
     },
     {
       "question": "How does the company invest in the latest technology or tools to stay competitive?",
@@ -1275,7 +1221,7 @@
       "explanation": "n/a",
       "answer": "This question helps you understand if the company is forward-thinking and provides employees with the necessary tools to stay productive and innovative.",
       "example": "...",
-      "id": 141
+      "id": 135
     },
     {
       "question": "What are the key challenges someone in this position might face?",
@@ -1284,16 +1230,16 @@
       "favorite": false,
       "explanation": "...",
       "example": "...",
-      "id": 142
+      "id": 136
     },
     {
       "question": "How is performance typically measured and reviewed?",
       "topic": "Candidate",
       "answer": "Learning about the criteria and process for evaluating job performance.",
-      "favorite": false,
+      "favorite": true,
       "explanation": "...",
       "example": "...",
-      "id": 143
+      "id": 137
     },
     {
       "question": "Can you describe the team I would be working with?",
@@ -1302,7 +1248,7 @@
       "favorite": false,
       "explanation": "...",
       "example": "...",
-      "id": 144
+      "id": 138
     },
     {
       "question": "How would you describe the company culture?",
@@ -1311,7 +1257,7 @@
       "favorite": false,
       "explanation": "...",
       "example": "...",
-      "id": 145
+      "id": 139
     },
     {
       "question": "Can you tell me more about the company's mission and values?",
@@ -1320,7 +1266,7 @@
       "explanation": "...",
       "favorite": false,
       "example": "...",
-      "id": 146
+      "id": 140
     },
     {
       "question": "What do you enjoy most about working here?",
@@ -1329,7 +1275,7 @@
       "explanation": "...",
       "favorite": false,
       "example": "...",
-      "id": 147
+      "id": 141
     },
     {
       "question": "Can you describe any current or upcoming projects the team is working on?",
@@ -1338,7 +1284,7 @@
       "explanation": "...",
       "favorite": false,
       "example": "...",
-      "id": 148
+      "id": 142
     },
     {
       "question": "What are the primary goals for the department this year?",
@@ -1347,7 +1293,7 @@
       "favorite": false,
       "explanation": "...",
       "example": "...",
-      "id": 149
+      "id": 143
     },
     {
       "question": "What is the company’s approach to diversity and inclusion?",
@@ -1356,7 +1302,7 @@
       "explanation": "...",
       "favorite": false,
       "example": "...",
-      "id": 150
+      "id": 144
     },
     {
       "question": "How does the company celebrate achievements and milestones?",
@@ -1365,7 +1311,7 @@
       "explanation": "...",
       "favorite": false,
       "example": "...",
-      "id": 151
+      "id": 145
     },
     {
       "question": "What kind of onboarding and training programs are available?",
@@ -1374,7 +1320,7 @@
       "explanation": "...",
       "favorite": false,
       "example": "...",
-      "id": 152
+      "id": 146
     },
     {
       "question": "How would you describe the management style here?",
@@ -1383,7 +1329,7 @@
       "explanation": "...",
       "favorite": false,
       "example": "...",
-      "id": 153
+      "id": 147
     },
     {
       "question": "Can you describe the ideal candidate for this role?",
@@ -1392,7 +1338,7 @@
       "explanation": "...",
       "favorite": false,
       "example": "...",
-      "id": 154
+      "id": 148
     },
     {
       "question": "How does the company support career growth and development?",
@@ -1401,7 +1347,7 @@
       "explanation": "...",
       "favorite": false,
       "example": "...",
-      "id": 155
+      "id": 149
     },
     {
       "question": "What is the company’s approach to remote work or flexible working arrangements?",
@@ -1410,7 +1356,7 @@
       "explanation": "...",
       "favorite": false,
       "example": "...",
-      "id": 156
+      "id": 150
     },
     {
       "question": "What can you tell me about the company's long-term vision and goals?",
@@ -1419,16 +1365,7 @@
       "explanation": "...",
       "favorite": false,
       "example": "...",
-      "id": 157
-    },
-    {
-      "question": "How do you support employees in achieving a healthy work-life balance?",
-      "topic": "Candidate",
-      "answer": "Learning about the company’s initiatives and support for maintaining work-life balance.",
-      "explanation": "...",
-      "favorite": false,
-      "example": "...",
-      "id": 158
+      "id": 151
     },
     {
       "question": "What is the typical duration of the hiring process?",
@@ -1437,7 +1374,7 @@
       "explanation": "...",
       "favorite": false,
       "example": "...",
-      "id": 159
+      "id": 152
     },
     {
       "question": "Practice your answers to common interview questions.",
@@ -1445,7 +1382,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Preparation helps you articulate your thoughts clearly, reducing anxiety during the interview.",
-      "id": 160
+      "id": 153
     },
     {
       "question": "Arrive at least 10 minutes early.",
@@ -1453,7 +1390,7 @@
       "favorite": true,
       "explanation": "n/a",
       "answer": "Being early demonstrates punctuality and gives you time to relax before the interview.",
-      "id": 161
+      "id": 154
     },
     {
       "question": "Stay positive, even when discussing past challenges.",
@@ -1461,7 +1398,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "A positive attitude showcases your resilience and ability to learn from past experiences.",
-      "id": 162
+      "id": 155
     },
     {
       "question": "Use appropriate body language to convey confidence.",
@@ -1469,7 +1406,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Open body language, like uncrossed arms, shows that you are approachable and engaged.",
-      "id": 163
+      "id": 156
     },
     {
       "question": "Be mindful of your tone of voice.",
@@ -1477,7 +1414,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "A confident tone conveys authority and self-assurance, while a hesitant tone can undermine your message.",
-      "id": 164
+      "id": 157
     },
     {
       "question": "Tailor your resume and cover letter to the job.",
@@ -1485,7 +1422,7 @@
       "favorite": true,
       "explanation": "n/a",
       "answer": "Customization shows that you’ve done your homework and are genuinely interested in the position.",
-      "id": 165
+      "id": 158
     },
     {
       "question": "Follow the Recruiter's lead on formality.",
@@ -1493,7 +1430,7 @@
       "favorite": true,
       "explanation": "n/a",
       "answer": "Matching the Recruiter's formality level can create a more comfortable conversation.",
-      "id": 166
+      "id": 159
     },
     {
       "question": "Be concise in your answers.",
@@ -1501,7 +1438,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Clear and concise answers are more impactful and help keep the interview focused.",
-      "id": 167
+      "id": 160
     },
     {
       "question": "Use the STAR method for behavioral questions.",
@@ -1509,7 +1446,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "The STAR method (Situation, Task, Action, Result) helps structure your responses effectively.",
-      "id": 168
+      "id": 161
     },
     {
       "question": "Be prepared to discuss your weaknesses.",
@@ -1517,7 +1454,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Discussing weaknesses shows self-awareness and a commitment to personal development.",
-      "id": 169
+      "id": 162
     },
     {
       "question": "Thank the Recruiter for their time.",
@@ -1525,7 +1462,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Expressing gratitude leaves a positive impression and shows respect for the Recruiter's time.",
-      "id": 170
+      "id": 163
     },
     {
       "question": "Avoid using filler words like 'um' and 'like.'",
@@ -1533,7 +1470,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Minimizing filler words makes you sound more articulate and confident.",
-      "id": 171
+      "id": 164
     },
     {
       "question": "Use specific metrics to quantify your achievements.",
@@ -1541,7 +1478,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Quantifying achievements adds credibility and demonstrates the impact of your contributions.",
-      "id": 172
+      "id": 165
     },
     {
       "question": "Avoid discussing salary and benefits too early.",
@@ -1549,7 +1486,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Focusing on the role first establishes your interest in the job rather than just compensation.",
-      "id": 173
+      "id": 166
     },
     {
       "question": "Use anecdotes to make your answers relatable.",
@@ -1557,7 +1494,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Personal stories can make your responses more memorable and engaging for the Recruiter.",
-      "id": 174
+      "id": 167
     },
     {
       "question": "Be aware of your non-verbal cues.",
@@ -1565,7 +1502,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Non-verbal communication can convey confidence or anxiety, so be mindful of your body language.",
-      "id": 175
+      "id": 168
     },
     {
       "question": "Practice a confident introduction.",
@@ -1573,7 +1510,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "A strong introduction sets a positive tone and demonstrates confidence from the outset.",
-      "id": 176
+      "id": 169
     },
     {
       "question": "Bring copies of your resume.",
@@ -1581,7 +1518,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Having copies shows preparedness and ensures that both you and the Recruiter have the same information.",
-      "id": 177
+      "id": 170
     },
     {
       "question": "Be mindful of your breathing during the interview.",
@@ -1589,7 +1526,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Controlling your breathing can help reduce anxiety and maintain focus throughout the interview.",
-      "id": 178
+      "id": 171
     },
     {
       "question": "Highlight your adaptability to change.",
@@ -1597,7 +1534,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Demonstrating adaptability is crucial in today’s fast-paced work environments and can set you apart.",
-      "id": 179
+      "id": 172
     },
     {
       "question": "Prepare for unexpected questions.",
@@ -1605,7 +1542,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Being ready for surprises shows you can think on your feet and handle pressure.",
-      "id": 180
+      "id": 173
     },
     {
       "question": "Use humor appropriately to lighten the mood.",
@@ -1613,7 +1550,7 @@
       "favorite": true,
       "explanation": "n/a",
       "answer": "A little humor can create rapport, but be cautious to ensure it’s appropriate for the context.",
-      "id": 181
+      "id": 174
     },
     {
       "question": "Be clear about your career goals.",
@@ -1621,7 +1558,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Articulating your career aspirations shows ambition and helps the Recruiter understand your fit.",
-      "id": 182
+      "id": 175
     },
     {
       "question": "Follow up with a thank-you email after the interview.",
@@ -1629,7 +1566,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "A thank-you note reinforces your interest in the role and keeps you top of mind for the Recruiter.",
-      "id": 183
+      "id": 176
     },
     {
       "question": "Stay calm if you don’t know an answer.",
@@ -1637,15 +1574,15 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Maintaining composure demonstrates confidence and poise under pressure.",
-      "id": 184
+      "id": 177
     },
     {
       "question": "Prepare to discuss current trends in your industry.",
       "topic": "Advice",
-      "favorite": false,
+      "favorite": true,
       "explanation": "n/a",
       "answer": "Demonstrating awareness of industry trends shows you are knowledgeable and engaged in your field.",
-      "id": 185
+      "id": 178
     },
     {
       "question": "Be flexible with your availability for follow-up interviews.",
@@ -1653,7 +1590,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Being accommodating shows your willingness to prioritize the interview process and can set you apart.",
-      "id": 186
+      "id": 179
     },
     {
       "question": "Highlight your teamwork skills.",
@@ -1661,7 +1598,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Collaboration is key in many roles; showcasing teamwork skills demonstrates your ability to work well with others.",
-      "id": 187
+      "id": 180
     },
     {
       "question": "Stay aware of your facial expressions.",
@@ -1669,7 +1606,7 @@
       "favorite": true,
       "explanation": "n/a",
       "answer": "Your facial expressions can convey emotions; maintaining a friendly demeanor helps create a positive atmosphere.",
-      "id": 188
+      "id": 181
     },
     {
       "question": "Use specific jargon relevant to the industry when appropriate.",
@@ -1677,7 +1614,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Using industry-specific language can demonstrate your expertise and familiarity with the field.",
-      "id": 189
+      "id": 182
     },
     {
       "question": "Follow up on any questions you couldn't answer during the interview.",
@@ -1685,15 +1622,16 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Addressing unanswered questions shows accountability and your commitment to providing complete information.",
-      "id": 190
+      "id": 183
     },
     {
       "question": "Stay informed about the company's recent news.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Being knowledgeable about recent developments shows your interest and helps you engage more deeply.",
-      "id": 191
+      "answer": "Being knowledgeable about recent developments <b><i>shows your interest and helps you engage more deeply</i></b>.<div><br></div><div>Remember the interview for Kepler...</div>",
+      "id": 184,
+      "example": ""
     },
     {
       "question": "Be conscious of cultural differences in a global workplace.",
@@ -1701,7 +1639,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Understanding cultural nuances can improve communication and show your ability to work in diverse teams.",
-      "id": 192
+      "id": 185
     },
     {
       "question": "Use positive language to describe your experiences.",
@@ -1709,7 +1647,7 @@
       "favorite": true,
       "explanation": "n/a",
       "answer": "Positive language conveys confidence and a proactive attitude, making your answers more compelling.",
-      "id": 193
+      "id": 186
     },
     {
       "question": "Reflect on what you've learned from previous roles.",
@@ -1717,7 +1655,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Demonstrating learning experiences shows growth and the ability to adapt from past challenges.",
-      "id": 194
+      "id": 187
     },
     {
       "question": "Share what you can contribute to the company.",
@@ -1725,7 +1663,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Articulating your potential contributions emphasizes your value and alignment with the company's goals.",
-      "id": 195
+      "id": 188
     },
     {
       "question": "Be ready to discuss your long-term career vision.",
@@ -1733,15 +1671,16 @@
       "favorite": true,
       "explanation": "n/a",
       "answer": "Sharing your career aspirations shows ambition and helps align your goals with the company's direction.",
-      "id": 196
+      "id": 189
     },
     {
       "question": "Prepare to handle questions about gaps in your resume.",
       "topic": "Advice",
       "favorite": true,
       "explanation": "n/a",
-      "answer": "Being prepared to explain gaps shows transparency and can mitigate concerns the Recruiter may have.",
-      "id": 197
+      "answer": "<div>Being prepared to explain gaps shows transparency and can mitigate concerns the Recruiter may have.</div><div><br></div><div><b><u>Make sure to prepare tremendously for this, they will definitely ask you about it!</u></b></div>",
+      "id": 190,
+      "example": ""
     },
     {
       "question": "Be courteous and respectful to everyone you meet.",
@@ -1750,23 +1689,23 @@
       "example": "undefined",
       "topic": "\n            Keep It Up\n        ",
       "favorite": false,
-      "id": 198
+      "id": 191
     },
     {
       "question": "Stay flexible in your interview approach.",
       "topic": "Advice",
-      "favorite": true,
+      "favorite": false,
       "explanation": "n/a",
       "answer": "Flexibility demonstrates adaptability and shows you're open to different interview formats or styles.",
-      "id": 199
+      "id": 192
     },
     {
       "question": "Follow the Recruiter's cues for conversation pacing.",
       "topic": "Advice",
-      "favorite": false,
+      "favorite": true,
       "explanation": "n/a",
       "answer": "Adjusting to the Recruiter's pace fosters a comfortable conversation flow.",
-      "id": 200
+      "id": 193
     },
     {
       "question": "Be enthusiastic about the company culture.",
@@ -1774,7 +1713,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Expressing excitement about the company culture can show alignment with their values and environment.",
-      "id": 201
+      "id": 194
     },
     {
       "question": "Prepare for behavioral interview questions.",
@@ -1782,7 +1721,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Understanding how to answer behavioral questions demonstrates self-awareness and preparedness.",
-      "id": 202
+      "id": 195
     },
     {
       "question": "Maintain eye contact during the interview.",
@@ -1790,15 +1729,15 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Eye contact conveys confidence and helps establish a connection with the Recruiter.",
-      "id": 203
+      "id": 196
     },
     {
       "question": "Use the STAR method to structure responses.",
       "topic": "Advice",
-      "favorite": false,
+      "favorite": true,
       "explanation": "n/a",
       "answer": "The STAR method (Situation, Task, Action, Result) helps organize responses to showcase your experiences clearly.",
-      "id": 204
+      "id": 197
     },
     {
       "question": "Be aware of your body language.",
@@ -1806,7 +1745,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Positive body language can enhance your message and show engagement during the interview.",
-      "id": 205
+      "id": 198
     },
     {
       "question": "Practice common interview questions.",
@@ -1814,7 +1753,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Rehearsing answers prepares you for the interview and boosts your confidence.",
-      "id": 206
+      "id": 199
     },
     {
       "question": "Have questions prepared for the Recruiter.",
@@ -1822,7 +1761,7 @@
       "favorite": true,
       "explanation": "n/a",
       "answer": "Preparing questions demonstrates your interest and allows you to evaluate the company fit.",
-      "id": 207
+      "id": 200
     },
     {
       "question": "Be honest about your skills and experiences.",
@@ -1830,7 +1769,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Honesty builds trust and credibility, ensuring the Recruiter gets an accurate sense of your abilities.",
-      "id": 208
+      "id": 201
     },
     {
       "question": "Consider your responses from the Recruiter's perspective.",
@@ -1838,7 +1777,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Thinking from their perspective can help tailor your answers to address their concerns and interests.",
-      "id": 209
+      "id": 202
     },
     {
       "question": "Keep your answers concise and relevant.",
@@ -1846,15 +1785,16 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Concise answers are easier to follow and show you value the Recruiter's time.",
-      "id": 210
+      "id": 203
     },
     {
-      "question": "Showcase your unique selling points.",
+      "question": "Showcase your unique selling points.&nbsp;🌙",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
       "answer": "Identifying and emphasizing what makes you unique can differentiate you from other candidates.",
-      "id": 211
+      "id": 204,
+      "example": ""
     },
     {
       "question": "Practice active listening during the interview.",
@@ -1862,7 +1802,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Active listening demonstrates engagement and allows you to respond thoughtfully.",
-      "id": 212
+      "id": 205
     },
     {
       "question": "Consider the impact of your online presence.",
@@ -1870,7 +1810,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "A positive online presence can enhance your candidacy; be mindful of what is publicly available.",
-      "id": 213
+      "id": 206
     },
     {
       "question": "Express gratitude for the opportunity.",
@@ -1878,7 +1818,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Thanking the Recruiter shows appreciation and leaves a good impression.",
-      "id": 214
+      "id": 207
     },
     {
       "question": "Follow the interview’s structure.",
@@ -1886,7 +1826,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Adhering to the interview format helps maintain clarity and flow.",
-      "id": 215
+      "id": 208
     },
     {
       "question": "Stay positive about future opportunities.",
@@ -1894,7 +1834,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Maintaining a positive outlook on potential roles can showcase your resilience and enthusiasm.",
-      "id": 216
+      "id": 209
     },
     {
       "question": "Avoid interrupting the Recruiter.",
@@ -1902,7 +1842,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Allowing the Recruiter to finish their thoughts demonstrates respect and attentiveness.",
-      "id": 217
+      "id": 210
     },
     {
       "question": "Use visuals or examples when discussing achievements.",
@@ -1910,7 +1850,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Using examples can make your accomplishments more relatable and tangible for the Recruiter.",
-      "id": 218
+      "id": 211
     },
     {
       "question": "Seek feedback on your interview performance.",
@@ -1918,7 +1858,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Constructive feedback can help you improve for future interviews.",
-      "id": 219
+      "id": 212
     },
     {
       "question": "Tailor your responses to the company’s values.",
@@ -1926,7 +1866,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Aligning your answers with the company's values can illustrate cultural fit.",
-      "id": 220
+      "id": 213
     },
     {
       "question": "Stay positive even if the interview doesn’t go as planned.",
@@ -1934,15 +1874,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "A positive mindset helps you learn from experiences and prepares you for future opportunities.",
-      "id": 221
-    },
-    {
-      "question": "Use your network for insights about the company.",
-      "topic": "Advice",
-      "favorite": false,
-      "explanation": "n/a",
-      "answer": "Leveraging your network can provide valuable context and insights before the interview.",
-      "id": 222
+      "id": 214
     },
     {
       "question": "Consider your body language in virtual interviews.",
@@ -1950,15 +1882,16 @@
       "favorite": true,
       "explanation": "n/a",
       "answer": "Body language matters even online; maintaining a professional demeanor is essential.",
-      "id": 223
+      "id": 215
     },
     {
       "question": "Prepare a brief personal story to share.",
       "topic": "Advice",
-      "favorite": false,
+      "favorite": true,
       "explanation": "n/a",
       "answer": "A personal story can highlight your skills and experiences in a relatable way.",
-      "id": 224
+      "id": 216,
+      "example": ""
     },
     {
       "question": "Practice your delivery with a friend or mentor.",
@@ -1966,7 +1899,8 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Practicing with someone can provide feedback and help refine your presentation.",
-      "id": 225
+      "id": 217,
+      "example": ""
     },
     {
       "question": "Be conscious of the interview time limit.",
@@ -1974,24 +1908,16 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Being aware of time can help you manage your responses and stay concise.",
-      "id": 226
+      "id": 218
     },
     {
       "question": "Demonstrate enthusiasm for the role.",
       "topic": "Advice",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Showing excitement can convey your interest and help you connect with the Recruiter.",
-      "id": 227
-    },
-    {
-      "question": "How important is body language in a job interview?",
-      "topic": "Advice",
-      "favorite": true,
-      "explanation": "...",
-      "example": "...",
-      "answer": "Body language is crucial in a job interview as it conveys confidence, enthusiasm, and professionalism. Maintaining eye contact, a firm handshake, and an open posture can positively impact the Recruiter's perception of you.",
-      "id": 228
+      "answer": "Read the post and focus on what your're genuinely most interested about.&nbsp;<div><br></div><div>Showing excitement can convey your interest and help you connect with the Recruiter.</div>",
+      "id": 219,
+      "example": ""
     },
     {
       "question": "What are some tips for improving communication skills for interviews?",
@@ -2000,7 +1926,7 @@
       "example": "...",
       "favorite": false,
       "answer": "To improve communication skills, practice active listening, be clear and concise in your responses, and use positive language. Rehearse common interview questions and answers, and seek feedback from peers or mentors.",
-      "id": 229
+      "id": 220
     },
     {
       "question": "How should I prepare for behavioral interview questions?",
@@ -2009,7 +1935,7 @@
       "favorite": false,
       "topic": "Advice",
       "answer": "Prepare for behavioral interview questions by using the STAR method (Situation, Task, Action, Result). Reflect on past experiences, identify relevant examples, and practice articulating your responses clearly and concisely.",
-      "id": 230
+      "id": 221
     },
     {
       "question": "What are some common body language mistakes to avoid in an interview?",
@@ -2018,7 +1944,7 @@
       "favorite": false,
       "topic": "Advice",
       "answer": "Avoid common body language mistakes such as crossing your arms, fidgeting, avoiding eye contact, slouching, and giving weak handshakes. These behaviors can signal disinterest, nervousness, or lack of confidence.",
-      "id": 231
+      "id": 222
     },
     {
       "question": "What are some effective ways to close an interview?",
@@ -2027,7 +1953,7 @@
       "favorite": false,
       "topic": "Advice",
       "answer": "Close an interview by expressing gratitude for the opportunity, summarizing your interest in the role, and reiterating how your skills and experiences align with the job. Ask about the next steps in the hiring process and send a follow-up thank you email.",
-      "id": 232
+      "id": 223
     },
     {
       "question": "How can I demonstrate problem-solving skills in an interview?",
@@ -2036,7 +1962,7 @@
       "favorite": false,
       "topic": "Advice",
       "answer": "Demonstrate problem-solving skills by sharing specific examples where you identified a problem, developed a solution, and implemented it successfully. Highlight your critical thinking, creativity, and ability to adapt to challenges.",
-      "id": 233
+      "id": 224
     },
     {
       "question": "What should I do if I make a mistake during an interview?",
@@ -2045,7 +1971,7 @@
       "example": "...",
       "topic": "Advice",
       "answer": "If you make a mistake during an interview, acknowledge it calmly and correct yourself. Apologize briefly if necessary, then move on confidently. Showing grace under pressure can leave a positive impression on the Recruiter.",
-      "id": 234
+      "id": 225
     },
     {
       "question": "How can I prepare for technical interview questions?",
@@ -2054,7 +1980,7 @@
       "example": "...",
       "topic": "Advice",
       "answer": "Prepare for technical questions by reviewing the key skills and knowledge required for the role. Practice problem-solving exercises, study relevant theories, and stay updated on industry trends. Mock interviews can also be beneficial.",
-      "id": 235
+      "id": 226
     },
     {
       "question": "What are some ways to show cultural fit in an interview?",
@@ -2062,8 +1988,8 @@
       "favorite": false,
       "example": "...",
       "topic": "Advice",
-      "answer": "Show cultural fit by researching the company's values and culture. Reflect these in your answers by sharing experiences and behaviors that align with them. Discuss how you’ve thrived in similar environments and express enthusiasm for their work culture.",
-      "id": 236
+      "answer": "Show cultural fit by researching the <b><u>company's values and culture. </u></b>Reflect these in your answers by <b><u>sharing experiences and behaviors that align with them</u></b>. Discuss how you’ve thrived in similar environments and express enthusiasm for their work culture.",
+      "id": 227
     },
     {
       "question": "You’re making a strong impression!",
@@ -2072,16 +1998,7 @@
       "explanation": "...",
       "favorite": false,
       "example": "...",
-      "id": 237
-    },
-    {
-      "question": "You’re on the right path!",
-      "topic": "Encouragement",
-      "answer": "Acknowledge the progress you’ve made and stay on course.",
-      "explanation": "...",
-      "favorite": false,
-      "example": "...",
-      "id": 238
+      "id": 228
     },
     {
       "question": "You are prepared for this!",
@@ -2090,16 +2007,16 @@
       "explanation": "...",
       "favorite": false,
       "example": "...",
-      "id": 239
+      "id": 229
     },
     {
       "question": "Every answer you give is valuable!",
       "topic": "Encouragement",
       "answer": "Every response you provide contributes to the interview process.",
       "explanation": "...",
-      "favorite": false,
+      "favorite": true,
       "example": "...",
-      "id": 240
+      "id": 230
     },
     {
       "question": "You’re doing great!",
@@ -2108,7 +2025,7 @@
       "explanation": "...",
       "favorite": false,
       "example": "...",
-      "id": 241
+      "id": 231
     },
     {
       "question": "You are confident and capable!",
@@ -2117,16 +2034,7 @@
       "explanation": "...",
       "favorite": false,
       "example": "...",
-      "id": 242
-    },
-    {
-      "question": "Your approach is effective!",
-      "topic": "Encouragement",
-      "answer": "Recognize the effectiveness of your strategies and methods.",
-      "explanation": "...",
-      "favorite": false,
-      "example": "...",
-      "id": 243
+      "id": 232
     },
     {
       "question": "Your achievements speak volumes!",
@@ -2135,7 +2043,7 @@
       "explanation": "...",
       "favorite": false,
       "example": "...",
-      "id": 244
+      "id": 233
     },
     {
       "question": "You’re making strides!",
@@ -2144,16 +2052,7 @@
       "explanation": "...",
       "favorite": false,
       "example": "...",
-      "id": 245
-    },
-    {
-      "question": "Your dedication is inspiring!",
-      "topic": "Encouragement",
-      "answer": "Recognize the motivation and effort you put into your work.",
-      "explanation": "...",
-      "favorite": false,
-      "example": "...",
-      "id": 246
+      "id": 234
     },
     {
       "question": "You’re capable of excellence!",
@@ -2162,7 +2061,7 @@
       "explanation": "...",
       "favorite": false,
       "example": "...",
-      "id": 247
+      "id": 235
     },
     {
       "question": "Your expertise is valuable!",
@@ -2171,16 +2070,7 @@
       "explanation": "...",
       "favorite": true,
       "example": "...",
-      "id": 248
-    },
-    {
-      "question": "You’re ready to excel!",
-      "topic": "Encouragement",
-      "answer": "Be confident in your readiness to succeed and excel.",
-      "explanation": "...",
-      "favorite": false,
-      "example": "...",
-      "id": 249
+      "id": 236
     },
     {
       "question": "You’re making positive strides!",
@@ -2189,7 +2079,7 @@
       "explanation": "...",
       "favorite": false,
       "example": "...",
-      "id": 250
+      "id": 237
     },
     {
       "question": "You are growing through every experience.",
@@ -2197,15 +2087,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Even if this interview doesn’t lead to a job, it’s another step in refining your skills and getting closer to the right fit.",
-      "id": 251
-    },
-    {
-      "question": "You’re crafting the future you want.",
-      "topic": "Encouragement",
-      "favorite": false,
-      "explanation": "n/a",
-      "answer": "Each application and interview is a step toward creating the career and life you envision for yourself.",
-      "id": 252
+      "id": 238
     },
     {
       "question": "You can adapt to any situation.",
@@ -2213,31 +2095,34 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "No matter what questions come up, you have the ability to adapt your answers to highlight your strengths.",
-      "id": 253
+      "id": 239
     },
     {
       "question": "Your preparation is going to pay off.",
       "topic": "Encouragement",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "All the work you’ve done to prepare for this is going to show. Trust your readiness and let it flow.",
-      "id": 254
+      "answer": "Keep focusing on using this app, all the work you’ve done to prepare for this is going to show.&nbsp;",
+      "id": 240,
+      "example": ""
     },
     {
       "question": "You’re allowed to take up space.",
       "topic": "Encouragement",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Don’t be afraid to stand tall in the room. You belong here, and your contributions are just as valuable as anyone else’s.",
-      "id": 255
+      "answer": "<b><i>If they contacted you is because they are interested already in what you bring to the table</i>.&nbsp;</b><div><br></div><div>Don’t be afraid to stand tall in the room. You belong here, and your contributions are just as valuable as anyone else’s.&nbsp;</div>",
+      "id": 241,
+      "example": ""
     },
     {
       "question": "You don’t need to have all the answers.",
       "topic": "Encouragement",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Interviews aren’t about knowing everything. They’re about showing you can learn, adapt, and grow.",
-      "id": 256
+      "answer": "Just start and figure out the rest as you go. Interviews aren’t about knowing everything, they’re about showing you can learn, adapt, and grow.",
+      "id": 242,
+      "example": ""
     },
     {
       "question": "Your calmness is your strength.",
@@ -2245,7 +2130,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "In moments of pressure, your ability to stay composed will make all the difference. Let your calmness be your guide.",
-      "id": 257
+      "id": 243
     },
     {
       "question": "You’re always evolving.",
@@ -2253,7 +2138,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "This moment is just one snapshot in your journey. You’re constantly growing and improving, and that will reflect in your work.",
-      "id": 258
+      "id": 244
     },
     {
       "question": "Keep pushing through the discomfort.",
@@ -2261,7 +2146,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "It might feel awkward or uncomfortable now, but that’s where growth happens. You’re expanding your comfort zone.",
-      "id": 259
+      "id": 245
     },
     {
       "question": "You can always find a way through.",
@@ -2269,15 +2154,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Even when things don’t go as planned, you have the creativity and resilience to find another way forward.",
-      "id": 260
-    },
-    {
-      "question": "You have the power to inspire others.",
-      "topic": "Encouragement",
-      "favorite": false,
-      "explanation": "n/a",
-      "answer": "By pushing through challenges and showing up as your authentic self, you inspire others to do the same.",
-      "id": 261
+      "id": 246
     },
     {
       "question": "You can navigate through uncertainty.",
@@ -2285,15 +2162,16 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Even when you’re unsure of what’s next, you have the ability to navigate through it and find your way.",
-      "id": 262
+      "id": 247
     },
     {
       "question": "You’ve already overcome so much.",
       "topic": "Encouragement",
       "favorite": false,
       "explanation": "n/a",
-      "answer": "Think back to the challenges you’ve already faced and overcome. You have the strength to handle whatever comes next.",
-      "id": 263
+      "answer": "Think back to the challenges you’ve already faced and overcome. You almost died dude, you can handle this shit! You have the strength to handle whatever comes next.",
+      "id": 248,
+      "example": ""
     },
     {
       "question": "You can create your own opportunities.",
@@ -2301,7 +2179,7 @@
       "favorite": true,
       "explanation": "n/a",
       "answer": "Don’t wait for opportunities to come to you—your initiative and creativity will open doors for you.",
-      "id": 264
+      "id": 249
     },
     {
       "question": "You’re more than your job header.",
@@ -2309,33 +2187,7 @@
       "favorite": false,
       "explanation": "n/a",
       "answer": "Remember, your worth isn’t tied to any one role or job header. You are valuable no matter what.",
-      "id": 265
-    },
-    {
-      "question": "You’re already more than enough.",
-      "topic": "Encouragement",
-      "favorite": false,
-      "explanation": "n/a",
-      "answer": "You don’t have to prove yourself to anyone. You’re already enough as you are.",
-      "id": 266
-    },
-    {
-      "question": "💸😜🥰🤤XOXO 😘🥰<div><br></div><div>💯💯💯</div>",
-      "explanation": "",
-      "answer": "",
-      "example": "",
-      "topic": "\n            Candidate\n        ",
-      "favorite": true,
-      "id": 267
-    },
-    {
-      "question": ";P",
-      "explanation": "",
-      "answer": "",
-      "example": "",
-      "favorite": true,
-      "topic": "Encouragement",
-      "id": 268
+      "id": 250
     },
     {
       "question": "You are doing all of this to move out, focus on that! 🩷",
@@ -2344,7 +2196,7 @@
       "example": "",
       "favorite": true,
       "topic": "Encouragement",
-      "id": 269
+      "id": 251
     },
     {
       "question": "You are worthy of a life that makes you feel genuinely in love with the most beautiful parts of your soul",
@@ -2353,7 +2205,7 @@
       "example": "",
       "topic": "Encouragement",
       "favorite": true,
-      "id": 270
+      "id": 252
     },
     {
       "question": "Whatever your afraid of, it's not that deep!",
@@ -2362,7 +2214,7 @@
       "example": "",
       "topic": "\n            Keep It Up\n        ",
       "favorite": true,
-      "id": 271
+      "id": 253
     },
     {
       "question": "If you actually think about it, the things that now make you insecure will dissaper fast...",
@@ -2371,13 +2223,40 @@
       "example": "",
       "topic": "\n            Keep It Up\n        ",
       "favorite": false,
-      "id": 272
+      "id": 254
     },
     {
-      "id": 273,
+      "id": 255,
       "topic": "",
       "favorite": false,
       "question": "Why to become a Waiter?&nbsp;🤑💸🫰",
+      "explanation": "",
+      "answer": "",
+      "example": ""
+    },
+    {
+      "id": 256,
+      "topic": "",
+      "favorite": false,
+      "question": "Tell me about yourself...",
+      "explanation": "",
+      "answer": "",
+      "example": ""
+    },
+    {
+      "id": 257,
+      "topic": "",
+      "favorite": false,
+      "question": "From all your projects, what's your favorite and why?",
+      "explanation": "",
+      "answer": "",
+      "example": ""
+    },
+    {
+      "id": 258,
+      "topic": "",
+      "favorite": false,
+      "question": "🌙🌙🌙🌙🌙🌙🌙🌙🌙🌙🌙🌙🌙🌙🌙🌙🌙",
       "explanation": "",
       "answer": "",
       "example": ""

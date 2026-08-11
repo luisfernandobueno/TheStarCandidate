@@ -1,38 +1,40 @@
 import Header from "../components/Header";
 import Card from "../components/Card";
 
-import {
-
-    favoriteState
-} from "../javascript/script";
-
-
-
 const Home = ({
     firstQuestion,
+
     darkMode,
     setDarkMode,
+
     data,
     setData,
+
     url,
+
     open,
     onClose,
+
     isFavorite,
     setIsFavorite,
-    deleteQuestion
+
+    deleteQuestion,
+
+    handleBack,
+    handleNext,
+
+    historyIndex,
+    historyArr,
+
+    setSelectedQuestion
 }) => {
-    window.speechSynthesis.cancel();
 
     const questionSearched = JSON.parse(
         localStorage.getItem("questionSearched")
     );
 
-
-
     return (
         <>
-
-
             <Header
                 header="Home"
                 darkMode={darkMode}
@@ -41,18 +43,35 @@ const Home = ({
 
             <Card
                 url={url}
+
                 data={data}
-                info={questionSearched || firstQuestion}
+                setData={setData}
+
+                info={
+                    questionSearched ||
+                    firstQuestion
+                }
+
                 darkMode={darkMode}
+
                 open={open}
                 onClose={onClose}
+
                 isFavorite={isFavorite}
                 setIsFavorite={setIsFavorite}
+
                 deleteQuestion={deleteQuestion}
+
+                handleBack={handleBack}
+                handleNext={handleNext}
+
+                historyIndex={historyIndex}
+                historyArr={historyArr}
+
+                setSelectedQuestion={
+                    setSelectedQuestion
+                }
             />
-
-
-
         </>
     );
 };

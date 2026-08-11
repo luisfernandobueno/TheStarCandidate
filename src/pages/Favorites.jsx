@@ -27,7 +27,7 @@ const Favorites = ({ darkMode, setDarkMode, fetch_url }) => {
         console.log("data brought from fetch get on online api:", questions)
         console.log("personal api, json file in javascript folder:", api)
     const favoritesCount = questions.filter(item => item.favorite).length
-    
+    console.log("favoritesCount - ", favoritesCount)
     const filteredQuestions = questions.filter(
         item =>
             item.favorite &&

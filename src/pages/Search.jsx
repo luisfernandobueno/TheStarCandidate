@@ -39,7 +39,7 @@ const Search = ({ darkMode, setDarkMode, fetch_url  }) => {
             JSON.stringify(question)
         );
 
-        console.clear();
+        /* console.clear(); */
         history.push("/");
     }
 

@@ -25,39 +25,53 @@ const Header = ({ header, darkMode, setDarkMode }) => {
     const navItems = [
         {
             name: "Home",
-            icon: "🏠",
+            icon: <span className="material-symbols-outlined">
+                home
+            </span>,
             path: "/",
         },
         {
             name: "Search",
-            icon: "🔍",
+            icon: <span className="material-symbols-outlined">
+                search
+            </span>,
             path: "/search",
         },
         {
             name: "Edit",
-            icon: "✏️",
+            icon: <span className="material-symbols-outlined">
+                edit
+            </span>,
             path: "/edit",
         },
         {
             name: "Add New",
-            icon: "➕",
+            icon: <span className="material-symbols-outlined">
+                add_circle
+            </span>,
             path: "/add-new",
         },
         {
             name: "Quiz",
-            icon: "📝",
+            icon: <span className="material-symbols-outlined">
+                cards_stack
+            </span>,
             path: "/quiz",
         },
 
         {
             name: "Favorites",
-            icon: "❤️",
+            icon: <span className="material-symbols-outlined">
+                favorite
+            </span>,
             path: "/favorites",
         },
 
         {
             name: "Resumee",
-            icon: "👤",
+            icon: <span className="material-symbols-outlined">
+                contact_page
+            </span>,
             path: "/resumee",
         },
     ];
@@ -68,6 +82,7 @@ const Header = ({ header, darkMode, setDarkMode }) => {
 
             <aside
                 className={`
+                    scoll-content
         fixed
         top-0
         left-0
@@ -122,9 +137,26 @@ const Header = ({ header, darkMode, setDarkMode }) => {
 
                     <div
                         onClick={() => setDarkMode(!darkMode)}
-                        className="flex w-full items-center border rounded-lg p-3 text-2xl transition-colors hover:bg-gray-200 dark:hover:bg-gray-700"
+                        className="flex w-full  items-center border rounded-lg p-3  text-md transition-colors hover:bg-gray-200 dark:hover:bg-gray-700"
                     >
-                        {darkMode ? "🌞 Switch Theme" : "🌙 Switch Theme"}
+                        
+                        {darkMode ? (
+                            <>
+                                <span className="material-symbols-outlined  pr-3">
+                                    wb_sunny
+                                </span>
+                                Switch Theme
+                            </>
+                        ) : (
+                            <>
+                                <span className="material-symbols-outlined pr-3">
+                                    moon_stars
+                                </span>
+                                Switch Theme
+                            </>
+                        )}
+                       
+
                     </div>
 
                 </div>
@@ -140,7 +172,7 @@ const Header = ({ header, darkMode, setDarkMode }) => {
 
                     <div className="flex w-12 justify-start lg:hidden">
                         <button
-                            className="text-2xl dark:text-white"
+                            className="text-2xl dark:text-white text-black"
                             onClick={() => setSidebarOpen(true)}
                         >
                             ☰
@@ -178,7 +210,7 @@ const Header = ({ header, darkMode, setDarkMode }) => {
                 </header>
 
 
-                
+
 
             </section>
         </>

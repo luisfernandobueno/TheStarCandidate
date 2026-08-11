@@ -11,24 +11,6 @@
     },
     {
       "id": 1,
-      "question": "The interviewer has a cooler keyboard than mine. Should I compliment it?",
-      "explanation": "A genuine compliment is fine if it fits naturally.",
-      "answer": "Keep compliments brief and move back to the interview.",
-      "example": "'Nice mechanical keyboard! Anyway, regarding my experience...'",
-      "topic": "Recruiter",
-      "favorite": false
-    },
-    {
-      "id": 2,
-      "question": "Does every interview make me a better candidate? 💸",
-      "explanation": "Even the awkward ones teach valuable lessons.",
-      "answer": "Yes. Reflect on what went well and what can be improved.",
-      "example": "After every interview, write down three things you learned.",
-      "topic": "Encouragement",
-      "favorite": false
-    },
-    {
-      "id": 3,
       "question": "Can I end the interview with finger guns and a wink?",
       "explanation": "The app says no. Your future self agrees.",
       "answer": "Thank the interviewer professionally and leave on a positive note.",
@@ -37,7 +19,7 @@
       "favorite": false
     },
     {
-      "id": 4,
+      "id": 2,
       "topic": "",
       "favorite": false,
       "question": "🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥",

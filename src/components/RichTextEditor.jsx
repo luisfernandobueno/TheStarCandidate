@@ -1,6 +1,8 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useHistory } from "react-router-dom";
+import CategoriesSelector from "./CategoriesSelector";
+
 
 export default function RichTextEditor({
     question = {},
@@ -8,6 +10,10 @@ export default function RichTextEditor({
     fetch_url,
     refreshData
 }) {
+
+    const [topic, setTopic] = useState(
+        question?.topic || "Encouragement"
+    );
 
     const history = useHistory();
 
@@ -589,10 +595,9 @@ export default function RichTextEditor({
                         rounded-full
                         bg-yellow-300
                         border
-                        ${
-                            activeHighlight === "#ffff00"
-                                ? "ring-2 ring-black"
-                                : ""
+                        ${activeHighlight === "#ffff00"
+                            ? "ring-2 ring-black"
+                            : ""
                         }
                     `}
                 />
@@ -614,10 +619,9 @@ export default function RichTextEditor({
                         rounded-full
                         bg-green-300
                         border
-                        ${
-                            activeHighlight === "#90EE90"
-                                ? "ring-2 ring-black"
-                                : ""
+                        ${activeHighlight === "#90EE90"
+                            ? "ring-2 ring-black"
+                            : ""
                         }
                     `}
                 />
@@ -639,10 +643,9 @@ export default function RichTextEditor({
                         rounded-full
                         bg-sky-300
                         border
-                        ${
-                            activeHighlight === "#87CEFA"
-                                ? "ring-2 ring-black"
-                                : ""
+                        ${activeHighlight === "#87CEFA"
+                            ? "ring-2 ring-black"
+                            : ""
                         }
                     `}
                 />
@@ -709,6 +712,11 @@ export default function RichTextEditor({
 
             </div>
 
+
+            <CategoriesSelector
+                topic={topic}
+                setTopic={setTopic}
+            />
 
             {/* ====================================================
                 BUTTONS
