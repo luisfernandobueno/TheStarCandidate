@@ -1,5 +1,6 @@
 {
-  "name": "thestartcandidate",
+  "name": "TheStarCandidate",
+  "homepage": "https://luisfernandobueno.github.io/TheStarCandidate/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@lexical/react": "^0.48.0",
@@ -48,6 +51,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/luisfernandobueno/TheStarCandidate/issues"
-  },
-  "homepage": "https://github.com/luisfernandobueno/TheStarCandidate#readme"
+  }
 }
