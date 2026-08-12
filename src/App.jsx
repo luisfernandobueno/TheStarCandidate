@@ -1,6 +1,5 @@
-
 import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Favorites from "./pages/Favorites";
@@ -760,7 +759,7 @@ async function deleteQuestion(id) {
 
 return (
 
-    <Router basename="/TheStarCandidate">
+    <Router>
 
         <div
             className={`
