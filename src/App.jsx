@@ -10,8 +10,9 @@ import Edit from "./pages/Edit";
 import Resumee from "./pages/Resumee";
 
 // const fetch_url = "https://api.npoint.io/facb5749d433f9be2b92";
+//const fetch_url = "https://getpantry.cloud/apiv1/pantry/2a537c44-2c08-4a2a-8699-db932d92f65c/basket/Mockup";
 const fetch_url =
-"https://getpantry.cloud/apiv1/pantry/2a537c44-2c08-4a2a-8699-db932d92f65c/basket/Mockup";
+"https://getpantry.cloud/apiv1/pantry/2a537c44-2c08-4a2a-8699-db932d92f65c/basket/API";
 // const fetch_url = "http://192.168.1.45:3000";
 
 function App() {
@@ -81,8 +82,13 @@ useEffect(() => {
 
         .then((json) => {
 
-            const questions =
-                json.questions || [];
+            let questions =
+                (json.questions || []).map(
+                    (question, index) => ({
+                        ...question,
+                        id: index
+                    })
+                );
 
             console.log(
                 "questions json: ",

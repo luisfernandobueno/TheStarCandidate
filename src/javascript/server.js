@@ -11,11 +11,11 @@ const port = process.env.PORT || 3000;
 // ============================================================
 // GETPANTRY URL & // JSON FILE
 
-const JSON_PATH = "./src/javascript/abcdefg.json";
-//const JSON_PATH = "./src/javascript/api.json";
+//const JSON_PATH = "./src/javascript/abcdefg.json";
+const JSON_PATH = "./src/javascript/api.json";
 
 // Change this whenever you want to use another Pantry URL.
-const getPantryUrl = "https://getpantry.cloud/apiv1/pantry/2a537c44-2c08-4a2a-8699-db932d92f65c/basket/Mockup";
+const getPantryUrl = "https://getpantry.cloud/apiv1/pantry/2a537c44-2c08-4a2a-8699-db932d92f65c/basket/API";
 
 // ============================================================
 // ============================================================
