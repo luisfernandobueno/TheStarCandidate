@@ -848,12 +848,6 @@ async function deleteQuestion(id) {
     ============================================================ */
     return (
 
-        <><h1>Hello World</h1></>
-    );
-
-}
-
-export default App;
 
 
 
@@ -1137,3 +1131,10 @@ export default App;
             </div>
 
         </Router>
+
+
+    );
+
+}
+
+export default App;
