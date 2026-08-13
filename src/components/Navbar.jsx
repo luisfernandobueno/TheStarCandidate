@@ -7,7 +7,8 @@ const Navbar = ({
     handleBack,
     handleNext,
     historyIndex,
-    historyArray,
+    historyArr,
+    setHistoryArr,
     favorite,
     setIsFavorite,
     info,
@@ -32,16 +33,30 @@ async function toggleFavorite() {
         return;
     }
 
+    const newFavorite = !info.favorite;
+
     const updatedQuestions = data.map((question) =>
         question.id === info.id
             ? {
                   ...question,
-                  favorite: !question.favorite
+                  favorite: newFavorite
               }
             : question
     );
 
-    const newFavorite = !info.favorite;
+    const updatedHistory = historyArr.map((question) =>
+        question.id === info.id
+            ? {
+                  ...question,
+                  favorite: newFavorite
+              }
+            : question
+    );
+
+    const updatedCurrentQuestion = {
+        ...info,
+        favorite: newFavorite
+    };
 
     try {
 
@@ -66,24 +81,15 @@ async function toggleFavorite() {
             );
         }
 
-        // Update the main data array.
         setData(updatedQuestions);
 
-        // Update the current question in history.
-        historyArray[historyIndex].favorite = newFavorite;
+        setHistoryArr(updatedHistory);
 
-        // Force the current question to update.
-        setSelectedQuestion({
-            ...historyArray[historyIndex]
-        });
-
-        // Update the favorite icon.
-        setIsFavorite(newFavorite);
-
-        console.log(
-            "Favorite updated:",
-            newFavorite
+        setSelectedQuestion(
+            updatedCurrentQuestion
         );
+
+        setIsFavorite(newFavorite);
 
     } catch (error) {
 
@@ -93,9 +99,6 @@ async function toggleFavorite() {
         );
 
     }
-
-    console.log(historyIndex);
-    console.log(info.id);
 }
 
 

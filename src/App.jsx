@@ -785,72 +785,33 @@ function App() {
                     <Route exact path="/">
 
                         <Home
+    firstQuestion={selectedQuestion}
 
-                            firstQuestion={
-                                selectedQuestion
-                            }
+    darkMode={darkMode}
+    setDarkMode={setDarkMode}
 
-                            darkMode={
-                                darkMode
-                            }
+    historyIndex={historyIndex}
+    historyArr={historyArr}
+    setHistoryArr={setHistoryArr}
 
-                            setDarkMode={
-                                setDarkMode
-                            }
+    data={data}
+    setData={setData}
 
-                            historyIndex={
-                                historyIndex
-                            }
+    url={fetch_url}
 
-                            historyArr={
-                                historyArr
-                            }
+    open={open}
+    onClose={setOpen}
 
-                            data={
-                                data
-                            }
+    isFavorite={isFavorite}
+    setIsFavorite={setIsFavorite}
 
-                            setData={
-                                setData
-                            }
+    deleteQuestion={deleteQuestion}
 
-                            url={
-                                fetch_url
-                            }
+    handleBack={handleBack}
+    handleNext={handleNext}
 
-                            open={
-                                open
-                            }
-
-                            onClose={
-                                setOpen
-                            }
-
-                            isFavorite={
-                                isFavorite
-                            }
-
-                            setIsFavorite={
-                                setIsFavorite
-                            }
-
-                            deleteQuestion={
-                                deleteQuestion
-                            }
-
-                            handleBack={
-                                handleBack
-                            }
-
-                            handleNext={
-                                handleNext
-                            }
-
-                            setSelectedQuestion={
-                                setSelectedQuestion
-                            }
-
-                        />
+    setSelectedQuestion={setSelectedQuestion}
+/>
 
                     </Route>
 
@@ -940,19 +901,19 @@ function App() {
                     <Route path="/edit">
 
                         <Edit
-    darkMode={darkMode}
-    setDarkMode={setDarkMode}
-    question={selectedQuestion}
-    fetch_url={fetch_url}
-    data={data}
-    setData={setData}
-    refreshData={refreshData}
-    historyIndex={historyIndex}
-    historyArr={historyArr}
-    setHistoryArr={setHistoryArr}
-    setHistoryIndex={setHistoryIndex}
-    setSelectedQuestion={setSelectedQuestion}
-/>
+                            darkMode={darkMode}
+                            setDarkMode={setDarkMode}
+                            question={selectedQuestion}
+                            fetch_url={fetch_url}
+                            data={data}
+                            setData={setData}
+                            refreshData={refreshData}
+                            historyIndex={historyIndex}
+                            historyArr={historyArr}
+                            setHistoryArr={setHistoryArr}
+                            setHistoryIndex={setHistoryIndex}
+                            setSelectedQuestion={setSelectedQuestion}
+                        />
                     </Route>
 
 

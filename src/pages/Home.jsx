@@ -1,6 +1,5 @@
 import Header from "../components/Header";
 import Card from "../components/Card";
-
 const Home = ({
     firstQuestion,
 
@@ -25,6 +24,7 @@ const Home = ({
 
     historyIndex,
     historyArr,
+    setHistoryArr,
 
     setSelectedQuestion
 }) => {
@@ -42,36 +42,35 @@ const Home = ({
             />
 
             <Card
-                url={url}
+    url={url}
 
-                data={data}
-                setData={setData}
+    data={data}
+    setData={setData}
 
-                info={
-                    questionSearched ||
-                    firstQuestion
-                }
+    info={
+        questionSearched ||
+        firstQuestion
+    }
 
-                darkMode={darkMode}
+    darkMode={darkMode}
 
-                open={open}
-                onClose={onClose}
+    open={open}
+    onClose={onClose}
 
-                isFavorite={isFavorite}
-                setIsFavorite={setIsFavorite}
+    isFavorite={isFavorite}
+    setIsFavorite={setIsFavorite}
 
-                deleteQuestion={deleteQuestion}
+    deleteQuestion={deleteQuestion}
 
-                handleBack={handleBack}
-                handleNext={handleNext}
+    handleBack={handleBack}
+    handleNext={handleNext}
 
-                historyIndex={historyIndex}
-                historyArr={historyArr}
+    historyIndex={historyIndex}
+    historyArr={historyArr}
+    setHistoryArr={setHistoryArr}
 
-                setSelectedQuestion={
-                    setSelectedQuestion
-                }
-            />
+    setSelectedQuestion={setSelectedQuestion}
+/>
         </>
     );
 };

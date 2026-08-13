@@ -25,6 +25,7 @@ const Card = ({
 
     historyIndex,
     historyArr,
+    setHistoryArr,
 
     setSelectedQuestion
 }) => {
@@ -183,27 +184,26 @@ const Card = ({
                 ===================================================== */}
 
                 <Navbar
-                    setSelectedQuestion={
-                        setSelectedQuestion
-                    }
+    setSelectedQuestion={setSelectedQuestion}
 
-                    darkMode={darkMode}
+    darkMode={darkMode}
 
-                    handleBack={handleBack}
-                    handleNext={handleNext}
+    handleBack={handleBack}
+    handleNext={handleNext}
 
-                    historyIndex={historyIndex}
-                    historyArr={historyArr}
+    historyIndex={historyIndex}
+    historyArr={historyArr}
+    setHistoryArr={setHistoryArr}
 
-                    favorite={isFavorite}
-                    setIsFavorite={setIsFavorite}
+    favorite={isFavorite}
+    setIsFavorite={setIsFavorite}
 
-                    info={info}
-                    fetch_url={url}
-                    
-                    data={data}
-                    setData={setData}
-                />
+    info={info}
+    fetch_url={url}
+
+    data={data}
+    setData={setData}
+/>
 
             </section>
 
