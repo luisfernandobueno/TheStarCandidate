@@ -7,10 +7,13 @@ const Navbar = ({
     handleBack,
     handleNext,
     historyIndex,
+    historyArray,
     favorite,
     setIsFavorite,
     info,
-    fetch_url
+    fetch_url,
+    data,
+    setData
 }) => {
 
     const location = useLocation();
@@ -23,62 +26,77 @@ const Navbar = ({
     ============================================================ */
 
     //console.log(fetch_url)
-    async function toggleFavorite() {
+async function toggleFavorite() {
 
-        if (!info) {
-            return;
-        }
-
-        // Get the new favorite value.
-        const newFavorite = !favorite;
-
-        // Create a copy of the current question.
-        const updatedQuestion = {
-            ...info,
-            favorite: newFavorite
-        };
-
-        try {
-
-            // Update the question in the backend first.
-            const response = await fetch(
-                `${fetch_url}/${info.id}`,
-                {
-                    method: "PUT",
-
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-
-                    body: JSON.stringify(updatedQuestion)
-                }
-            );
-
-            if (!response.ok) {
-                throw new Error(
-                    "Failed to update favorite"
-                );
-            }
-
-            // Only change the UI after the backend succeeds.
-            setIsFavorite(newFavorite);
-
-            console.log(
-                "Favorite updated:",
-                newFavorite
-            );
-
-        } catch (error) {
-
-            console.error(
-                "Error updating favorite:",
-                error
-            );
-
-        }
-
-        console.log(info.id)
+    if (!info) {
+        return;
     }
+
+    const updatedQuestions = data.map((question) =>
+        question.id === info.id
+            ? {
+                  ...question,
+                  favorite: !question.favorite
+              }
+            : question
+    );
+
+    const newFavorite = !info.favorite;
+
+    try {
+
+        const response = await fetch(
+            fetch_url,
+            {
+                method: "POST",
+
+                headers: {
+                    "Content-Type": "application/json"
+                },
+
+                body: JSON.stringify({
+                    questions: updatedQuestions
+                })
+            }
+        );
+
+        if (!response.ok) {
+            throw new Error(
+                "Failed to update favorite"
+            );
+        }
+
+        // Update the main data array.
+        setData(updatedQuestions);
+
+        // Update the current question in history.
+        historyArray[historyIndex].favorite = newFavorite;
+
+        // Force the current question to update.
+        setSelectedQuestion({
+            ...historyArray[historyIndex]
+        });
+
+        // Update the favorite icon.
+        setIsFavorite(newFavorite);
+
+        console.log(
+            "Favorite updated:",
+            newFavorite
+        );
+
+    } catch (error) {
+
+        console.error(
+            "Error updating favorite:",
+            error
+        );
+
+    }
+
+    console.log(historyIndex);
+    console.log(info.id);
+}
 
 
 

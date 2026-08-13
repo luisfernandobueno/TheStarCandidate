@@ -1,8 +1,5 @@
 import RichTextEditor from "../components/RichTextEditor";
 import Header from "../components/Header";
-import CategoriesSelector from "../components/CategoriesSelector";
-import { useState } from "react";
-
 
 export default function AddNew({
     question,
@@ -12,37 +9,34 @@ export default function AddNew({
     refreshData,
     darkMode,
     setDarkMode,
-    historyIndex, historyArr
+    historyIndex,
+    historyArr,
+    setHistoryArr,
+    setHistoryIndex,
+    setSelectedQuestion
 }) {
 
-    const [topic, setTopic] = useState("Encouragement");
     return (
         <>
-        <Header
+            <Header
                 header="Add New"
                 darkMode={darkMode}
                 setDarkMode={setDarkMode}
             />
-            {/* <CategoriesSelector
-      setTopic={setTopic}/> */}
-        <RichTextEditor
-            question={question}
-            mode="create"
-            fetch_url={fetch_url}
-            data={data}
-            setData={setData}
-            refreshData={refreshData}
-            historyIndex={
-                                historyIndex
-                            }
 
-                            historyArr={
-                                historyArr
-                            }
-        />
-        
-      
+            <RichTextEditor
+    question={question}
+    mode="create"
+    fetch_url={fetch_url}
+    data={data}
+    setData={setData}
+    refreshData={refreshData}
+    historyIndex={historyIndex}
+    historyArr={historyArr}
+    setHistoryArr={setHistoryArr}
+    setHistoryIndex={setHistoryIndex}
+    setSelectedQuestion={setSelectedQuestion}
+/>
         </>
     );
-
 }

@@ -12,7 +12,10 @@ export default function RichTextEditor({
     data = [],
     setData,
     historyIndex,
-    historyArr
+    historyArr,
+    setHistoryArr,
+    setHistoryIndex,
+    setSelectedQuestion
 }) {
 
     const history = useHistory();
@@ -236,11 +239,9 @@ async function handleSubmit() {
         };
 
 
-        /* ========================================================
-           CREATE A COPY OF DATA
-        ======================================================== */
-
         let updatedData = [...data];
+
+        let submittedQuestion;
 
 
         /* ========================================================
@@ -265,7 +266,7 @@ async function handleSubmit() {
             );
 
 
-            const newQuestion = {
+            submittedQuestion = {
 
                 id: highestId + 1,
 
@@ -278,7 +279,7 @@ async function handleSubmit() {
 
             updatedData = [
                 ...updatedData,
-                newQuestion
+                submittedQuestion
             ];
 
         }
@@ -314,20 +315,21 @@ async function handleSubmit() {
                     }
 
 
-                    return {
+                    submittedQuestion = {
 
                         ...item,
 
                         ...editedFields,
 
-                        // Preserve original ID.
                         id: item.id,
 
-                        // Preserve original favorite.
                         favorite:
                             item.favorite ?? false
 
                     };
+
+
+                    return submittedQuestion;
 
                 }
             );
@@ -336,29 +338,76 @@ async function handleSubmit() {
 
 
         /* ========================================================
-           UPDATE FRONTEND DATA
-           
-           This updates the parent data immediately.
+           UPDATE MAIN DATA
         ======================================================== */
 
         setData(updatedData);
 
 
         /* ========================================================
-           POST THE COMPLETE DATASET
-           
-           Frontend:
-           
-           [
-               {...},
-               {...}
-           ]
+           UPDATE CURRENT QUESTION
+           THIS IS WHAT HOME WAS MISSING
+        ======================================================== */
 
-           API:
-           
-           {
-               questions: [...]
-           }
+        setSelectedQuestion(
+            submittedQuestion
+        );
+
+
+        /* ========================================================
+           UPDATE HISTORY
+        ======================================================== */
+
+        if (mode === "create") {
+
+            const newHistory = [
+                ...historyArr,
+                submittedQuestion
+            ];
+
+
+            setHistoryArr(
+                newHistory
+            );
+
+
+            setHistoryIndex(
+                newHistory.length - 1
+            );
+
+        }
+
+        else {
+
+            const updatedHistory =
+                historyArr.map(
+                    (item) => {
+
+                        if (
+                            item.id ===
+                            submittedQuestion.id
+                        ) {
+
+                            return submittedQuestion;
+
+                        }
+
+
+                        return item;
+
+                    }
+                );
+
+
+            setHistoryArr(
+                updatedHistory
+            );
+
+        }
+
+
+        /* ========================================================
+           SAVE COMPLETE DATASET
         ======================================================== */
 
         const response = await fetch(
@@ -379,10 +428,6 @@ async function handleSubmit() {
             }
         );
 
-
-        /* ========================================================
-           CHECK RESPONSE
-        ======================================================== */
 
         if (!response.ok) {
 
@@ -416,14 +461,15 @@ async function handleSubmit() {
         }
 
 
-        /* ========================================================
-           SUCCESS
-        ======================================================== */
-
         console.log(
-            "Data successfully submitted."
+            "Data successfully submitted:",
+            submittedQuestion
         );
 
+
+        /* ========================================================
+           RETURN HOME
+        ======================================================== */
 
         history.push("/");
 

@@ -49,7 +49,7 @@ export default function Quiz({ questions }) {
         return (
             // START SCREEN
 
-<section className="flex flex-col items-end justify-center gap-4 lg:min-h-[calc(100vh-64px)]">
+            <section className="flex flex-col items-end justify-center gap-4 lg:min-h-[calc(100vh-64px)]">
 
                 <h2 className="text-3xl font-bold text-sky-500">
                     Start Quiz
@@ -90,12 +90,13 @@ export default function Quiz({ questions }) {
         return (
             // FINISHED SCREEN
 
-<section className="flex flex-col items-end justify-center gap-4 lg:min-h-[calc(100vh-64px)]">
+            <section className="flex flex-col items-end justify-center gap-4 lg:min-h-[calc(100vh-64px)]">
 
                 <h2 className="text-sky-500 text-2xl font-bold">
                     Quiz Finished!
                 </h2>
 
+                <meter min="0" max={quizQuestions.length} value={score}></meter>
                 <p className="mt-2">
                     Score: {score} / {quizQuestions.length}
                 </p>
@@ -116,10 +117,13 @@ export default function Quiz({ questions }) {
     return (
         // QUIZ SCREEN
 
-<section className="flex flex-col items-end justify-center gap-4 lg:min-h-[calc(100vh-64px)]">
+        <section className="flex flex-col items-end justify-center gap-4 lg:min-h-[calc(100vh-64px)]">
 
             <div className="flex-1 flex flex-col justify-center items-center text-center px-4">
-
+                <progress
+  value={currentQuestion + 1}
+  max={quizQuestions.length}
+></progress>
                 <h2>
                     Question {currentQuestion + 1} / {quizQuestions.length}
                 </h2>

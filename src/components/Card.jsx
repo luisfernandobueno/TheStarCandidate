@@ -193,6 +193,7 @@ const Card = ({
                     handleNext={handleNext}
 
                     historyIndex={historyIndex}
+                    historyArr={historyArr}
 
                     favorite={isFavorite}
                     setIsFavorite={setIsFavorite}
@@ -200,6 +201,8 @@ const Card = ({
                     info={info}
                     fetch_url={url}
                     
+                    data={data}
+                    setData={setData}
                 />
 
             </section>

@@ -10,504 +10,680 @@ import Edit from "./pages/Edit";
 import Resumee from "./pages/Resumee";
 
 // const fetch_url = "https://api.npoint.io/facb5749d433f9be2b92";
-//const fetch_url = "https://getpantry.cloud/apiv1/pantry/2a537c44-2c08-4a2a-8699-db932d92f65c/basket/Mockup";
-const fetch_url =
-"https://getpantry.cloud/apiv1/pantry/2a537c44-2c08-4a2a-8699-db932d92f65c/basket/API";
+const fetch_url = "https://getpantry.cloud/apiv1/pantry/2a537c44-2c08-4a2a-8699-db932d92f65c/basket/Mockup";
+//const fetch_url = "https://getpantry.cloud/apiv1/pantry/2a537c44-2c08-4a2a-8699-db932d92f65c/basket/API";
 // const fetch_url = "http://192.168.1.45:3000";
 
 function App() {
 
 
-/* ============================================================
-   DATA
-============================================================ */
+    /* ============================================================
+       DATA
+    ============================================================ */
 
-const [data, setData] = useState([]);
+    const [data, setData] = useState([]);
 
-const [selectedQuestion, setSelectedQuestion] =
-    useState(null);
-
-
-/* ============================================================
-   HISTORY
-============================================================ */
-
-const [historyArr, setHistoryArr] =
-    useState([]);
-
-const [historyIndex, setHistoryIndex] =
-    useState(0);
+    const [selectedQuestion, setSelectedQuestion] =
+        useState(null);
 
 
-/* ============================================================
-   THEME
-============================================================ */
+    /* ============================================================
+       HISTORY
+    ============================================================ */
 
-const [darkMode, setDarkMode] = useState(() => {
+    const [historyArr, setHistoryArr] =
+        useState([]);
 
-    return (
-        JSON.parse(
-            localStorage.getItem("darkMode")
-        ) || false
-    );
-
-});
+    const [historyIndex, setHistoryIndex] =
+        useState(0);
 
 
-/* ============================================================
-   MODAL
-============================================================ */
+    /* ============================================================
+       THEME
+    ============================================================ */
 
-const [open, setOpen] =
-    useState(false);
+    const [darkMode, setDarkMode] = useState(() => {
+
+        return (
+            JSON.parse(
+                localStorage.getItem("darkMode")
+            ) || false
+        );
+
+    });
 
 
-/* ============================================================
-   FAVORITE
-============================================================ */
+    /* ============================================================
+       MODAL
+    ============================================================ */
 
-const [isFavorite, setIsFavorite] =
-    useState(false);
+    const [open, setOpen] =
+        useState(false);
 
 
-/* ============================================================
-   INITIAL FETCH
-============================================================ */
+    /* ============================================================
+       FAVORITE
+    ============================================================ */
 
-useEffect(() => {
+    const [isFavorite, setIsFavorite] =
+        useState(false);
 
-    fetch(fetch_url)
 
-        .then((res) => res.json())
+    /* ============================================================
+       INITIAL FETCH
+    ============================================================ */
 
-        .then((json) => {
+    useEffect(() => {
 
-            let questions =
-                (json.questions || []).map(
-                    (question, index) => ({
-                        ...question,
-                        id: index
-                    })
+        fetch(fetch_url)
+
+            .then((res) => res.json())
+
+            .then((json) => {
+
+                let questions =
+                    (json.questions || []).map(
+                        (question, index) => ({
+                            ...question,
+                            id: index
+                        })
+                    );
+
+                console.log(
+                    "questions json: ",
+                    questions
                 );
 
-            console.log(
-                "questions json: ",
-                questions
-            );
-
-            setData(questions);
+                setData(questions);
 
 
-            if (questions.length > 0) {
+                if (questions.length > 0) {
 
-                /* =================================================
-                   SELECT INITIAL QUESTION
-                ================================================= */
+                    /* =================================================
+                       SELECT INITIAL QUESTION
+                    ================================================= */
 
-                const random =
-                    questions[
+                    const random =
+                        questions[
                         Math.floor(
                             Math.random() *
                             questions.length
                         )
+                        ];
+
+
+                    /* =================================================
+                       CREATE HISTORY IMMEDIATELY
+                    ================================================= */
+
+                    const initialHistory = [
+                        random
                     ];
 
 
-                /* =================================================
-                   CREATE HISTORY IMMEDIATELY
-                ================================================= */
+                    /* =================================================
+                       SET INITIAL STATE
+                    ================================================= */
 
-                const initialHistory = [
-                    random
-                ];
+                    setSelectedQuestion(random);
 
+                    setHistoryArr(initialHistory);
 
-                /* =================================================
-                   SET INITIAL STATE
-                ================================================= */
+                    setHistoryIndex(0);
 
-                setSelectedQuestion(random);
+                    setIsFavorite(
+                        Boolean(random.favorite)
+                    );
 
-                setHistoryArr(initialHistory);
+                }
 
-                setHistoryIndex(0);
+            })
 
-                setIsFavorite(
-                    Boolean(random.favorite)
-                );
+            .catch(console.error);
 
-            }
-
-        })
-
-        .catch(console.error);
-
-}, []);
+    }, []);
 
 
-/* ============================================================
-   THEME
-============================================================ */
+    /* ============================================================
+       THEME
+    ============================================================ */
 
-useEffect(() => {
+    useEffect(() => {
 
-    localStorage.setItem(
-        "darkMode",
-        JSON.stringify(darkMode)
-    );
-
-
-    if (darkMode) {
-
-        document.documentElement.classList.add(
-            "dark"
+        localStorage.setItem(
+            "darkMode",
+            JSON.stringify(darkMode)
         );
 
-    } else {
 
-        document.documentElement.classList.remove(
-            "dark"
-        );
+        if (darkMode) {
 
-    }
+            document.documentElement.classList.add(
+                "dark"
+            );
 
-}, [darkMode]);
+        } else {
 
-
-/* ============================================================
-   RANDOM QUESTION
-============================================================ */
-
-function getRandomQuestion() {
-
-    if (!data.length) {
-        return null;
-    }
-
-    const index =
-        Math.floor(
-            Math.random() * data.length
-        );
-
-    return data[index];
-
-}
-
-
-/* ============================================================
-   NEXT
-============================================================ */
-
-function handleNext() {
-
-    if (!data.length) {
-        return;
-    }
-
-
-    /*
-     * If there is already a question ahead in history,
-     * move forward through the existing history.
-     */
-
-    if (
-        historyIndex <
-        historyArr.length - 1
-    ) {
-
-        const nextIndex =
-            historyIndex + 1;
-
-
-        const nextQuestion =
-            historyArr[nextIndex];
-
-
-        setHistoryIndex(nextIndex);
-
-        setSelectedQuestion(
-            nextQuestion
-        );
-
-        setIsFavorite(
-            Boolean(nextQuestion.favorite)
-        );
-
-        return;
-
-    }
-
-
-    /*
-     * Otherwise create a new random question.
-     */
-
-    const newQuestion =
-        getRandomQuestion();
-
-
-    if (!newQuestion) {
-        return;
-    }
-
-
-    const newHistory = [
-        ...historyArr,
-        newQuestion
-    ];
-
-
-    setHistoryArr(newHistory);
-
-    setHistoryIndex(
-        newHistory.length - 1
-    );
-
-    setSelectedQuestion(
-        newQuestion
-    );
-
-    setIsFavorite(
-        Boolean(newQuestion.favorite)
-    );
-
-}
-
-
-/* ============================================================
-   BACK
-============================================================ */
-
-function handleBack() {
-
-    if (historyIndex <= 0) {
-        return;
-    }
-
-
-    const newIndex =
-        historyIndex - 1;
-
-
-    const previousQuestion =
-        historyArr[newIndex];
-
-
-    setHistoryIndex(newIndex);
-
-    setSelectedQuestion(
-        previousQuestion
-    );
-
-    setIsFavorite(
-        Boolean(previousQuestion.favorite)
-    );
-
-}
-
-
-/* ============================================================
-   REFRESH DATA
-   Used after ADD / EDIT / DELETE
-============================================================ */
-
-async function refreshData(
-    questionToShow = null
-) {
-
-    try {
-
-        const res =
-            await fetch(fetch_url);
-
-
-        if (!res.ok) {
-
-            throw new Error(
-                "Failed to refresh data"
+            document.documentElement.classList.remove(
+                "dark"
             );
 
         }
 
-
-        const json =
-            await res.json();
+    }, [darkMode]);
 
 
-        const updatedData =
-            json.questions || [];
+    /* ============================================================
+       RANDOM QUESTION
+    ============================================================ */
+
+    function getRandomQuestion() {
+
+        if (!data.length) {
+            return null;
+        }
+
+        const index =
+            Math.floor(
+                Math.random() * data.length
+            );
+
+        return data[index];
+
+    }
 
 
-        setData(updatedData);
+    /* ============================================================
+       NEXT
+    ============================================================ */
+
+    function handleNext() {
+
+        if (!data.length) {
+            return;
+        }
 
 
         /*
-         * Nothing left in the database.
+         * If there is already a question ahead in history,
+         * move forward through the existing history.
          */
 
-        if (updatedData.length === 0) {
+        if (
+            historyIndex <
+            historyArr.length - 1
+        ) {
 
-            setSelectedQuestion(null);
+            const nextIndex =
+                historyIndex + 1;
 
-            setHistoryArr([]);
 
-            setHistoryIndex(0);
+            const nextQuestion =
+                historyArr[nextIndex];
 
-            setIsFavorite(false);
+
+            setHistoryIndex(nextIndex);
+
+            setSelectedQuestion(
+                nextQuestion
+            );
+
+            setIsFavorite(
+                Boolean(nextQuestion.favorite)
+            );
 
             return;
 
         }
 
 
-        let question = null;
-
-
         /*
-         * If a specific question was supplied,
-         * try to find that same question again.
+         * Otherwise create a new random question.
          */
 
-        if (questionToShow) {
+        const newQuestion =
+            getRandomQuestion();
 
-            question =
-                updatedData.find(
-                    (q) =>
-                        q.id ===
-                        questionToShow.id
-                );
 
+        if (!newQuestion) {
+            return;
         }
 
-
-        /*
-         * If it wasn't found, use the first question.
-         */
-
-        if (!question) {
-
-            question =
-                updatedData[0];
-
-        }
-
-
-        /*
-         * Create the new history first.
-         */
 
         const newHistory = [
-            question
+            ...historyArr,
+            newQuestion
         ];
 
 
-        /*
-         * Update all related state.
-         */
+        setHistoryArr(newHistory);
+
+        setHistoryIndex(
+            newHistory.length - 1
+        );
 
         setSelectedQuestion(
-            question
+            newQuestion
         );
-
-        setHistoryArr(
-            newHistory
-        );
-
-        setHistoryIndex(0);
 
         setIsFavorite(
-            Boolean(question.favorite)
-        );
-
-
-        console.log(
-            "History after refresh:",
-            newHistory
-        );
-
-    } catch (error) {
-
-        console.error(
-            "Could not refresh data:",
-            error
+            Boolean(newQuestion.favorite)
         );
 
     }
 
-}
+
+    /* ============================================================
+       BACK
+    ============================================================ */
+
+    function handleBack() {
+
+        if (historyIndex <= 0) {
+            return;
+        }
 
 
-/* ============================================================
-   DELETE
-============================================================ */
+        const newIndex =
+            historyIndex - 1;
 
-async function deleteQuestion(id) {
 
-    try {
+        const previousQuestion =
+            historyArr[newIndex];
 
-        /* ========================================================
-           1. REMOVE THE QUESTION LOCALLY FROM DATA
-        ======================================================== */
 
-        const updatedData = data.filter(
-            (item) => item.id !== id
+        setHistoryIndex(newIndex);
+
+        setSelectedQuestion(
+            previousQuestion
         );
 
-
-        console.log(
-            "Data after local delete:",
-            updatedData
+        setIsFavorite(
+            Boolean(previousQuestion.favorite)
         );
 
-
-        /* ========================================================
-           2. REMOVE THE QUESTION FROM HISTORY
-        ======================================================== */
-
-        const updatedHistory = historyArr.filter(
-            (item) => item.id !== id
-        );
+    }
 
 
-        console.log(
-            "History after removing deleted question:",
-            updatedHistory
-        );
+    /* ============================================================
+       REFRESH DATA
+       Used after ADD / EDIT / DELETE
+    ============================================================ */
+
+    async function refreshData(
+        questionToShow = null
+    ) {
+
+        try {
+
+            const res =
+                await fetch(fetch_url);
 
 
-        /* ========================================================
-           3. DETERMINE WHETHER THE CURRENT QUESTION WAS DELETED
-        ======================================================== */
+            if (!res.ok) {
 
-        const currentQuestion =
-            historyArr[historyIndex];
+                throw new Error(
+                    "Failed to refresh data"
+                );
 
-
-        const deletingCurrentQuestion =
-            currentQuestion?.id === id;
+            }
 
 
-        /* ========================================================
-           4. UPDATE DATA STATE LOCALLY
-        ======================================================== */
-
-        setData(updatedData);
+            const json =
+                await res.json();
 
 
-        /* ========================================================
-           5. HANDLE EMPTY DATABASE
-        ======================================================== */
+            const updatedData =
+                json.questions || [];
 
-        if (updatedData.length === 0) {
 
-            setSelectedQuestion(null);
+            setData(updatedData);
 
-            setHistoryArr([]);
+
+            /*
+             * Nothing left in the database.
+             */
+
+            if (updatedData.length === 0) {
+
+                setSelectedQuestion(null);
+
+                setHistoryArr([]);
+
+                setHistoryIndex(0);
+
+                setIsFavorite(false);
+
+                return;
+
+            }
+
+
+            let question = null;
+
+
+            /*
+             * If a specific question was supplied,
+             * try to find that same question again.
+             */
+
+            if (questionToShow) {
+
+                question =
+                    updatedData.find(
+                        (q) =>
+                            q.id ===
+                            questionToShow.id
+                    );
+
+            }
+
+
+            /*
+             * If it wasn't found, use the first question.
+             */
+
+            if (!question) {
+
+                question =
+                    updatedData[0];
+
+            }
+
+
+            /*
+             * Create the new history first.
+             */
+
+            const newHistory = [
+                question
+            ];
+
+
+            /*
+             * Update all related state.
+             */
+
+            setSelectedQuestion(
+                question
+            );
+
+            setHistoryArr(
+                newHistory
+            );
 
             setHistoryIndex(0);
 
-            setIsFavorite(false);
+            setIsFavorite(
+                Boolean(question.favorite)
+            );
 
+
+            console.log(
+                "History after refresh:",
+                newHistory
+            );
+
+        } catch (error) {
+
+            console.error(
+                "Could not refresh data:",
+                error
+            );
+
+        }
+
+    }
+
+
+    /* ============================================================
+       DELETE
+    ============================================================ */
+
+    async function deleteQuestion(id) {
+
+        try {
+
+            /* ========================================================
+               1. REMOVE THE QUESTION LOCALLY FROM DATA
+            ======================================================== */
+
+            const updatedData = data.filter(
+                (item) => item.id !== id
+            );
+
+
+            console.log(
+                "Data after local delete:",
+                updatedData
+            );
+
+
+            /* ========================================================
+               2. REMOVE THE QUESTION FROM HISTORY
+            ======================================================== */
+
+            const updatedHistory = historyArr.filter(
+                (item) => item.id !== id
+            );
+
+
+            console.log(
+                "History after removing deleted question:",
+                updatedHistory
+            );
+
+
+            /* ========================================================
+               3. DETERMINE WHETHER THE CURRENT QUESTION WAS DELETED
+            ======================================================== */
+
+            const currentQuestion =
+                historyArr[historyIndex];
+
+
+            const deletingCurrentQuestion =
+                currentQuestion?.id === id;
+
+
+            /* ========================================================
+               4. UPDATE DATA STATE LOCALLY
+            ======================================================== */
+
+            setData(updatedData);
+
+
+            /* ========================================================
+               5. HANDLE EMPTY DATABASE
+            ======================================================== */
+
+            if (updatedData.length === 0) {
+
+                setSelectedQuestion(null);
+
+                setHistoryArr([]);
+
+                setHistoryIndex(0);
+
+                setIsFavorite(false);
+
+
+                const response = await fetch(
+                    fetch_url,
+                    {
+                        method: "POST",
+
+                        headers: {
+                            "Content-Type":
+                                "application/json"
+                        },
+
+                        body: JSON.stringify({
+                            questions: []
+                        })
+                    }
+                );
+
+
+                if (!response.ok) {
+
+                    throw new Error(
+                        "Delete failed"
+                    );
+
+                }
+
+
+                console.log(
+                    "All questions deleted successfully."
+                );
+
+                return;
+
+            }
+
+
+            /* ========================================================
+               6. CURRENT QUESTION WAS NOT DELETED
+            ======================================================== */
+
+            if (!deletingCurrentQuestion) {
+
+                const newIndex =
+                    updatedHistory.findIndex(
+                        (item) =>
+                            item.id ===
+                            currentQuestion?.id
+                    );
+
+
+                const safeIndex =
+                    newIndex >= 0
+                        ? newIndex
+                        : 0;
+
+
+                const newCurrentQuestion =
+                    updatedHistory[safeIndex];
+
+
+                setHistoryArr(
+                    updatedHistory
+                );
+
+                setHistoryIndex(
+                    safeIndex
+                );
+
+                setSelectedQuestion(
+                    newCurrentQuestion
+                );
+
+                setIsFavorite(
+                    Boolean(
+                        newCurrentQuestion?.favorite
+                    )
+                );
+
+            }
+
+
+            /* ========================================================
+               7. CURRENT QUESTION WAS DELETED
+            ======================================================== */
+
+            else {
+
+                let newQuestion = null;
+
+
+                /*
+                 * If there are still questions in history,
+                 * use one of those.
+                 */
+
+                if (updatedHistory.length > 0) {
+
+                    const oldIndex =
+                        historyIndex;
+
+
+                    const newIndex =
+                        Math.min(
+                            oldIndex,
+                            updatedHistory.length - 1
+                        );
+
+
+                    newQuestion =
+                        updatedHistory[newIndex];
+
+
+                    setHistoryIndex(
+                        newIndex
+                    );
+
+                }
+
+
+                /*
+                 * If there is no remaining history,
+                 * choose a random question.
+                 */
+
+                else {
+
+                    const randomIndex =
+                        Math.floor(
+                            Math.random() *
+                            updatedData.length
+                        );
+
+
+                    newQuestion =
+                        updatedData[randomIndex];
+
+
+                    setHistoryArr([
+                        newQuestion
+                    ]);
+
+                    setHistoryIndex(0);
+
+                }
+
+
+                setSelectedQuestion(
+                    newQuestion
+                );
+
+                setIsFavorite(
+                    Boolean(
+                        newQuestion?.favorite
+                    )
+                );
+
+
+                if (updatedHistory.length > 0) {
+
+                    setHistoryArr(
+                        updatedHistory
+                    );
+
+                }
+
+
+                console.log(
+                    "New selected question after delete:",
+                    newQuestion
+                );
+
+            }
+
+
+            /* ========================================================
+               8. POST THE ENTIRE UPDATED DATASET
+            ======================================================== */
 
             const response = await fetch(
                 fetch_url,
@@ -520,533 +696,310 @@ async function deleteQuestion(id) {
                     },
 
                     body: JSON.stringify({
-                        questions: []
+                        questions: updatedData
                     })
+
                 }
             );
 
+
+            /* ========================================================
+               9. CHECK SERVER RESPONSE
+            ======================================================== */
 
             if (!response.ok) {
 
-                throw new Error(
-                    "Delete failed"
-                );
+                let errorMessage =
+                    `HTTP ${response.status}`;
 
-            }
 
+                try {
 
-            console.log(
-                "All questions deleted successfully."
-            );
+                    const errorData =
+                        await response.json();
 
-            return;
+                    if (errorData?.error) {
 
-        }
+                        errorMessage =
+                            errorData.error;
 
+                    }
 
-        /* ========================================================
-           6. CURRENT QUESTION WAS NOT DELETED
-        ======================================================== */
+                } catch {
 
-        if (!deletingCurrentQuestion) {
-
-            const newIndex =
-                updatedHistory.findIndex(
-                    (item) =>
-                        item.id ===
-                        currentQuestion?.id
-                );
-
-
-            const safeIndex =
-                newIndex >= 0
-                    ? newIndex
-                    : 0;
-
-
-            const newCurrentQuestion =
-                updatedHistory[safeIndex];
-
-
-            setHistoryArr(
-                updatedHistory
-            );
-
-            setHistoryIndex(
-                safeIndex
-            );
-
-            setSelectedQuestion(
-                newCurrentQuestion
-            );
-
-            setIsFavorite(
-                Boolean(
-                    newCurrentQuestion?.favorite
-                )
-            );
-
-        }
-
-
-        /* ========================================================
-           7. CURRENT QUESTION WAS DELETED
-        ======================================================== */
-
-        else {
-
-            let newQuestion = null;
-
-
-            /*
-             * If there are still questions in history,
-             * use one of those.
-             */
-
-            if (updatedHistory.length > 0) {
-
-                const oldIndex =
-                    historyIndex;
-
-
-                const newIndex =
-                    Math.min(
-                        oldIndex,
-                        updatedHistory.length - 1
-                    );
-
-
-                newQuestion =
-                    updatedHistory[newIndex];
-
-
-                setHistoryIndex(
-                    newIndex
-                );
-
-            }
-
-
-            /*
-             * If there is no remaining history,
-             * choose a random question.
-             */
-
-            else {
-
-                const randomIndex =
-                    Math.floor(
-                        Math.random() *
-                        updatedData.length
-                    );
-
-
-                newQuestion =
-                    updatedData[randomIndex];
-
-
-                setHistoryArr([
-                    newQuestion
-                ]);
-
-                setHistoryIndex(0);
-
-            }
-
-
-            setSelectedQuestion(
-                newQuestion
-            );
-
-            setIsFavorite(
-                Boolean(
-                    newQuestion?.favorite
-                )
-            );
-
-
-            if (updatedHistory.length > 0) {
-
-                setHistoryArr(
-                    updatedHistory
-                );
-
-            }
-
-
-            console.log(
-                "New selected question after delete:",
-                newQuestion
-            );
-
-        }
-
-
-        /* ========================================================
-           8. POST THE ENTIRE UPDATED DATASET
-        ======================================================== */
-
-        const response = await fetch(
-            fetch_url,
-            {
-                method: "POST",
-
-                headers: {
-                    "Content-Type":
-                        "application/json"
-                },
-
-                body: JSON.stringify({
-                    questions: updatedData
-                })
-
-            }
-        );
-
-
-        /* ========================================================
-           9. CHECK SERVER RESPONSE
-        ======================================================== */
-
-        if (!response.ok) {
-
-            let errorMessage =
-                `HTTP ${response.status}`;
-
-
-            try {
-
-                const errorData =
-                    await response.json();
-
-                if (errorData?.error) {
-
-                    errorMessage =
-                        errorData.error;
+                    /*
+                     * Server did not return JSON.
+                     */
 
                 }
 
-            } catch {
 
-                /*
-                 * Server did not return JSON.
-                 */
+                throw new Error(
+                    `Delete failed: ${errorMessage}`
+                );
 
             }
 
 
-            throw new Error(
-                `Delete failed: ${errorMessage}`
+            console.log(
+                "Question deleted and complete dataset saved."
+            );
+
+
+        } catch (error) {
+
+            console.error(
+                "Could not delete question:",
+                error
             );
 
         }
-
-
-        console.log(
-            "Question deleted and complete dataset saved."
-        );
-
-
-    } catch (error) {
-
-        console.error(
-            "Could not delete question:",
-            error
-        );
 
     }
 
-}
 
+    /* ============================================================
+       APP
+    ============================================================ */
 
-/* ============================================================
-   APP
-============================================================ */
+    return (
 
-return (
+        <Router>
 
-    <Router>
-
-        <div
-            className={`
+            <div
+                className={`
                 container
-                ${
-                    darkMode
+                ${darkMode
                         ? "bg-gray-700 text-gray-100"
                         : "bg-gray-100 text-gray-900"
-                }
+                    }
             `}
-        >
+            >
 
-            <Switch>
+                <Switch>
 
-                {/* ==================================================
+                    {/* ==================================================
                     HOME
                 ================================================== */}
 
-                <Route exact path="/">
+                    <Route exact path="/">
 
-                    <Home
+                        <Home
 
-                        firstQuestion={
-                            selectedQuestion
-                        }
+                            firstQuestion={
+                                selectedQuestion
+                            }
 
-                        darkMode={
-                            darkMode
-                        }
+                            darkMode={
+                                darkMode
+                            }
 
-                        setDarkMode={
-                            setDarkMode
-                        }
+                            setDarkMode={
+                                setDarkMode
+                            }
 
-                        historyIndex={
-                            historyIndex
-                        }
+                            historyIndex={
+                                historyIndex
+                            }
 
-                        historyArr={
-                            historyArr
-                        }
+                            historyArr={
+                                historyArr
+                            }
 
-                        data={
-                            data
-                        }
+                            data={
+                                data
+                            }
 
-                        setData={
-                            setData
-                        }
+                            setData={
+                                setData
+                            }
 
-                        url={
-                            fetch_url
-                        }
+                            url={
+                                fetch_url
+                            }
 
-                        open={
-                            open
-                        }
+                            open={
+                                open
+                            }
 
-                        onClose={
-                            setOpen
-                        }
+                            onClose={
+                                setOpen
+                            }
 
-                        isFavorite={
-                            isFavorite
-                        }
+                            isFavorite={
+                                isFavorite
+                            }
 
-                        setIsFavorite={
-                            setIsFavorite
-                        }
+                            setIsFavorite={
+                                setIsFavorite
+                            }
 
-                        deleteQuestion={
-                            deleteQuestion
-                        }
+                            deleteQuestion={
+                                deleteQuestion
+                            }
 
-                        handleBack={
-                            handleBack
-                        }
+                            handleBack={
+                                handleBack
+                            }
 
-                        handleNext={
-                            handleNext
-                        }
+                            handleNext={
+                                handleNext
+                            }
 
-                        setSelectedQuestion={
-                            setSelectedQuestion
-                        }
+                            setSelectedQuestion={
+                                setSelectedQuestion
+                            }
 
-                    />
+                        />
 
-                </Route>
+                    </Route>
 
 
-                {/* ==================================================
+                    {/* ==================================================
                     FAVORITES
                 ================================================== */}
 
-                <Route path="/favorites">
+                    <Route path="/favorites">
 
-                    <Favorites
-                        darkMode={
-                            darkMode
-                        }
+                        <Favorites
+                            darkMode={
+                                darkMode
+                            }
 
-                        setDarkMode={
-                            setDarkMode
-                        }
+                            setDarkMode={
+                                setDarkMode
+                            }
 
-                        fetch_url={
-                            fetch_url
-                        }
-                    />
+                            fetch_url={
+                                fetch_url
+                            }
+                        />
 
-                </Route>
+                    </Route>
 
 
-                {/* ==================================================
+                    {/* ==================================================
                     SEARCH
                 ================================================== */}
 
-                <Route path="/search">
+                    <Route path="/search">
 
-                    <Search
-                        darkMode={
-                            darkMode
-                        }
+                        <Search
+                            darkMode={
+                                darkMode
+                            }
 
-                        setDarkMode={
-                            setDarkMode
-                        }
+                            setDarkMode={
+                                setDarkMode
+                            }
 
-                        fetch_url={
-                            fetch_url
-                        }
+                            fetch_url={
+                                fetch_url
+                            }
 
-                        data={
-                            data
-                        }
+                            data={
+                                data
+                            }
 
-                        setData={
-                            setData
-                        }
-                    />
+                            setData={
+                                setData
+                            }
+                        />
 
-                </Route>
+                    </Route>
 
 
-                {/* ==================================================
+                    {/* ==================================================
                     ADD NEW
                 ================================================== */}
 
-                <Route path="/add-new">
+                    <Route path="/add-new">
 
-                    <AddNew
-                        darkMode={
-                            darkMode
-                        }
+                        <AddNew
+                            darkMode={darkMode}
+                            setDarkMode={setDarkMode}
+                            fetch_url={fetch_url}
+                            data={data}
+                            setData={setData}
+                            refreshData={refreshData}
+                            question={{}}
+                            historyIndex={historyIndex}
+                            historyArr={historyArr}
+                            setHistoryArr={setHistoryArr}
+                            setHistoryIndex={setHistoryIndex}
+                            setSelectedQuestion={setSelectedQuestion}
+                        />
 
-                        setDarkMode={
-                            setDarkMode
-                        }
-
-                        fetch_url={
-                            fetch_url
-                        }
-
-                        data={
-                            data
-                        }
-
-                        setData={
-                            setData
-                        }
-
-                        refreshData={
-                            refreshData
-                        }
-
-                        question={{}}
-
-                        historyIndex={
-                            historyIndex
-                        }
-
-                        historyArr={
-                            historyArr
-                        }
-                    />
-
-                </Route>
+                    </Route>
 
 
-                {/* ==================================================
+                    {/* ==================================================
                     EDIT
                 ================================================== */}
 
-                <Route path="/edit">
+                    <Route path="/edit">
 
-                    <Edit
-                        darkMode={
-                            darkMode
-                        }
-
-                        setDarkMode={
-                            setDarkMode
-                        }
-
-                        question={
-                            selectedQuestion
-                        }
-
-                        fetch_url={
-                            fetch_url
-                        }
-
-                        data={
-                            data
-                        }
-
-                        setData={
-                            setData
-                        }
-
-                        refreshData={
-                            refreshData
-                        }
-
-                        historyIndex={
-                            historyIndex
-                        }
-
-                        historyArr={
-                            historyArr
-                        }
-                    />
-
-                </Route>
+                        <Edit
+    darkMode={darkMode}
+    setDarkMode={setDarkMode}
+    question={selectedQuestion}
+    fetch_url={fetch_url}
+    data={data}
+    setData={setData}
+    refreshData={refreshData}
+    historyIndex={historyIndex}
+    historyArr={historyArr}
+    setHistoryArr={setHistoryArr}
+    setHistoryIndex={setHistoryIndex}
+    setSelectedQuestion={setSelectedQuestion}
+/>
+                    </Route>
 
 
-                {/* ==================================================
+                    {/* ==================================================
                     QUIZ
                 ================================================== */}
 
-                <Route path="/quiz">
+                    <Route path="/quiz">
 
-                    <QuizPage
-                        darkMode={
-                            darkMode
-                        }
+                        <QuizPage
+                            darkMode={
+                                darkMode
+                            }
 
-                        setDarkMode={
-                            setDarkMode
-                        }
-                    />
+                            setDarkMode={
+                                setDarkMode
+                            }
+                        />
 
-                </Route>
+                    </Route>
 
 
-                {/* ==================================================
+                    {/* ==================================================
                     RESUMEE
                 ================================================== */}
 
-                <Route path="/resumee">
+                    <Route path="/resumee">
 
-                    <Resumee
-                        darkMode={
-                            darkMode
-                        }
+                        <Resumee
+                            darkMode={
+                                darkMode
+                            }
 
-                        setDarkMode={
-                            setDarkMode
-                        }
-                    />
+                            setDarkMode={
+                                setDarkMode
+                            }
+                        />
 
-                </Route>
+                    </Route>
 
-            </Switch>
+                </Switch>
 
-        </div>
+            </div>
 
-    </Router>
+        </Router>
 
-);
+    );
 
 }
 
