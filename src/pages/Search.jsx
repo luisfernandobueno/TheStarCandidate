@@ -7,7 +7,15 @@ import { useEffect } from "react";
 
 
 
-const Search = ({ darkMode, setDarkMode, fetch_url  }) => {
+const Search = ({
+    darkMode,
+    setDarkMode,
+    fetch_url,
+    setSelectedQuestion,
+    setHistoryArr,
+    setHistoryIndex,
+    setIsFavorite
+}) => {
 
     const [data, setData] = useState([]);
     useEffect(() => {
@@ -34,14 +42,26 @@ const Search = ({ darkMode, setDarkMode, fetch_url  }) => {
 
 
     const saveQuestionLS = (question) => {
-        localStorage.setItem(
-            "questionSearched",
-            JSON.stringify(question)
-        );
 
-        /* console.clear(); */
-        history.push("/");
-    }
+    localStorage.setItem(
+        "questionSearched",
+        JSON.stringify(question)
+    );
+
+    setSelectedQuestion(question);
+
+    setHistoryArr([
+        question
+    ]);
+
+    setHistoryIndex(0);
+
+    setIsFavorite(
+        Boolean(question.favorite)
+    );
+
+    history.push("/");
+};
 
     return (
         <>

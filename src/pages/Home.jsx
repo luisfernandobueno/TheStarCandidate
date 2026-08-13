@@ -29,9 +29,7 @@ const Home = ({
     setSelectedQuestion
 }) => {
 
-    const questionSearched = JSON.parse(
-        localStorage.getItem("questionSearched")
-    );
+    
 
     return (
         <>
@@ -47,10 +45,7 @@ const Home = ({
     data={data}
     setData={setData}
 
-    info={
-        questionSearched ||
-        firstQuestion
-    }
+    info={firstQuestion}
 
     darkMode={darkMode}
 

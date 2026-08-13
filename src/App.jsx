@@ -10,8 +10,8 @@ import Edit from "./pages/Edit";
 import Resumee from "./pages/Resumee";
 
 // const fetch_url = "https://api.npoint.io/facb5749d433f9be2b92";
-const fetch_url = "https://getpantry.cloud/apiv1/pantry/2a537c44-2c08-4a2a-8699-db932d92f65c/basket/Mockup";
-//const fetch_url = "https://getpantry.cloud/apiv1/pantry/2a537c44-2c08-4a2a-8699-db932d92f65c/basket/API";
+//const fetch_url = "https://getpantry.cloud/apiv1/pantry/2a537c44-2c08-4a2a-8699-db932d92f65c/basket/Mockup";
+const fetch_url = "https://getpantry.cloud/apiv1/pantry/2a537c44-2c08-4a2a-8699-db932d92f65c/basket/API";
 // const fetch_url = "http://192.168.1.45:3000";
 
 function App() {
@@ -785,33 +785,33 @@ function App() {
                     <Route exact path="/">
 
                         <Home
-    firstQuestion={selectedQuestion}
+                            firstQuestion={selectedQuestion}
 
-    darkMode={darkMode}
-    setDarkMode={setDarkMode}
+                            darkMode={darkMode}
+                            setDarkMode={setDarkMode}
 
-    historyIndex={historyIndex}
-    historyArr={historyArr}
-    setHistoryArr={setHistoryArr}
+                            historyIndex={historyIndex}
+                            historyArr={historyArr}
+                            setHistoryArr={setHistoryArr}
 
-    data={data}
-    setData={setData}
+                            data={data}
+                            setData={setData}
 
-    url={fetch_url}
+                            url={fetch_url}
 
-    open={open}
-    onClose={setOpen}
+                            open={open}
+                            onClose={setOpen}
 
-    isFavorite={isFavorite}
-    setIsFavorite={setIsFavorite}
+                            isFavorite={isFavorite}
+                            setIsFavorite={setIsFavorite}
 
-    deleteQuestion={deleteQuestion}
+                            deleteQuestion={deleteQuestion}
 
-    handleBack={handleBack}
-    handleNext={handleNext}
+                            handleBack={handleBack}
+                            handleNext={handleNext}
 
-    setSelectedQuestion={setSelectedQuestion}
-/>
+                            setSelectedQuestion={setSelectedQuestion}
+                        />
 
                     </Route>
 
@@ -845,27 +845,22 @@ function App() {
 
                     <Route path="/search">
 
-                        <Search
-                            darkMode={
-                                darkMode
-                            }
+                        <Route path="/search">
 
-                            setDarkMode={
-                                setDarkMode
-                            }
+                            <Search
+                                darkMode={darkMode}
+                                setDarkMode={setDarkMode}
+                                fetch_url={fetch_url}
+                                data={data}
+                                setData={setData}
 
-                            fetch_url={
-                                fetch_url
-                            }
+                                setSelectedQuestion={setSelectedQuestion}
+                                setHistoryArr={setHistoryArr}
+                                setHistoryIndex={setHistoryIndex}
+                                setIsFavorite={setIsFavorite}
+                            />
 
-                            data={
-                                data
-                            }
-
-                            setData={
-                                setData
-                            }
-                        />
+                        </Route>
 
                     </Route>
 
